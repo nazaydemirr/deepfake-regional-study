@@ -3,7 +3,7 @@
 
 The list below mirrors the Drive "Deney 1" experiment material into the
 repository layout. Files larger than GitHub's practical single-file limit are
-recorded in a manifest instead of being downloaded.
+recorded as split-part assets when the split directory exists.
 """
 
 from __future__ import annotations
@@ -234,6 +234,9 @@ def download(asset_entry: dict[str, object]) -> tuple[str, str]:
     target = ROOT / str(asset_entry["target"])
     file_id = str(asset_entry["id"])
     if size > MAX_GITHUB_FILE_BYTES:
+        parts_dir = target.with_name(target.name.replace(".zip", "_zip_parts"))
+        if parts_dir.exists():
+            return "stored_as_split_parts", str(parts_dir.relative_to(ROOT))
         return "skipped_large", str(target.relative_to(ROOT))
     target.parent.mkdir(parents=True, exist_ok=True)
     if target.exists() and target.stat().st_size == size:
@@ -280,14 +283,16 @@ def write_manifest(rows: list[dict[str, object]], statuses: list[tuple[dict[str,
     md = ROOT / "01_data_splits/drive_exports/SKIPPED_LARGE_FILES.md"
     large = [item for item in rows if int(item["size"]) > MAX_GITHUB_FILE_BYTES]
     with md.open("w", encoding="utf-8") as handle:
-        handle.write("# Skipped Large Deney 1 Files\n\n")
-        handle.write("These Drive files were not committed because they exceed the GitHub-safe single-file threshold used by this repo.\n\n")
-        handle.write("| Source | File | Size bytes | Drive link |\n")
-        handle.write("| --- | --- | ---: | --- |\n")
+        handle.write("# Large Deney 1 Files\n\n")
+        handle.write("These Drive files exceed the GitHub-safe single-file threshold. If split parts exist in the repo, they are the committed representation of the original file.\n\n")
+        handle.write("| Source | Original file | Repo parts | Size bytes | Drive link |\n")
+        handle.write("| --- | --- | --- | ---: | --- |\n")
         for item in large:
             file_id = str(item["id"])
+            target = Path(str(item["target"]))
+            parts = target.with_name(target.name.replace(".zip", "_zip_parts"))
             handle.write(
-                f"| {item['source']} | `{item['target']}` | {item['size']} | "
+                f"| {item['source']} | `{target.name}` | `{parts}` | {item['size']} | "
                 f"https://drive.google.com/file/d/{file_id}/view |\n"
             )
 

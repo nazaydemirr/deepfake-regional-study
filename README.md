@@ -50,7 +50,7 @@ Drive'dan indirilen Deney 1 dosyalari repo icinde su sekilde yerlestirildi:
 - Kod aciklama raporlari: `08_article/code_explanations/`
 - Kucuk arsivler: `03_regional_models/drive_archives/`
 
-Tam Drive-to-repo envanteri `01_data_splits/drive_exports/DENEY1_DRIVE_ASSET_MANIFEST.csv` dosyasindadir. GitHub tek dosya limitini asan buyuk ZIP/checkpoint/frame paketleri fiziksel olarak commitlenmedi; Drive linkleri `01_data_splits/drive_exports/SKIPPED_LARGE_FILES.md` ve `01_data_splits/drive_exports/DENEY1_DRIVE_FOLDER_MANIFEST.md` icinde tutuldu.
+Tam Drive-to-repo envanteri `01_data_splits/drive_exports/DENEY1_DRIVE_ASSET_MANIFEST.csv` dosyasindadir. GitHub tek dosya limitini asan `20260808_1214_eye_densenet121_seed42.zip` dosyasi repo icinde parcalara ayrilarak `03_regional_models/drive_archives/eye/20260808_1214_eye_densenet121_seed42_zip_parts/` altinda tutuldu. Ham frame/ROI klasor kaynaklari ayrica `01_data_splits/drive_exports/DENEY1_DRIVE_FOLDER_MANIFEST.md` icinde belgelenir.
 
 ## Ana Deney Akisi
 

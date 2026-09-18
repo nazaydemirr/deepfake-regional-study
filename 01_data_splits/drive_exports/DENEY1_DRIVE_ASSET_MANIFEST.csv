@@ -122,7 +122,7 @@ downloaded,Goz Kodlar,1EgdPy10e4OaVKyx2jwrdYtO9JXq41fRi,23408,01_data_splits/dri
 downloaded,Goz ROI output,1JlJf699Ja4DceQhhRd8hJqmu_8tEGDhD,2044382,02_roi_preprocessing/drive_outputs/eye/eye_roi_output/metadata.csv,https://drive.google.com/file/d/1JlJf699Ja4DceQhhRd8hJqmu_8tEGDhD/view
 downloaded,Goz ROI output,14F8cxOOQEbRiAGRJ4xgCyEGQrq7CoXH7,696,02_roi_preprocessing/drive_outputs/eye/eye_roi_output/run_config.json,https://drive.google.com/file/d/14F8cxOOQEbRiAGRJ4xgCyEGQrq7CoXH7/view
 downloaded,Goz Sonuclar,1L_sGILh-WuaNVspKENO_WqtO_itDHgkA,107,03_regional_models/drive_archives/eye/20260808_1214_eye_densenet121_seed42.zip.sha256,https://drive.google.com/file/d/1L_sGILh-WuaNVspKENO_WqtO_itDHgkA/view
-skipped_large,Goz Sonuclar,1W9JInC-atMC75P5Mq5Jfv7rl3SD1noyF,215263815,03_regional_models/drive_archives/eye/20260808_1214_eye_densenet121_seed42.zip,https://drive.google.com/file/d/1W9JInC-atMC75P5Mq5Jfv7rl3SD1noyF/view
+stored_as_split_parts,Goz Sonuclar,1W9JInC-atMC75P5Mq5Jfv7rl3SD1noyF,215263815,03_regional_models/drive_archives/eye/20260808_1214_eye_densenet121_seed42.zip,https://drive.google.com/file/d/1W9JInC-atMC75P5Mq5Jfv7rl3SD1noyF/view
 downloaded,Goz Sonuclar,13UDMn5jk9VzfPtwjgkngnEAmIYdg93xe,4228,06_metrics_tables/drive_outputs/eye_densenet121/artifact_manifest.csv,https://drive.google.com/file/d/13UDMn5jk9VzfPtwjgkngnEAmIYdg93xe/view
 downloaded,Goz Sonuclar,19RBdwezZEv9cpMdgD3B2FE4Ws6BHTRsb,1817,06_metrics_tables/drive_outputs/eye_densenet121/final_audit.json,https://drive.google.com/file/d/19RBdwezZEv9cpMdgD3B2FE4Ws6BHTRsb/view
 downloaded,Goz Sonuclar,1nwBysOm7An3MpbZh4pWDH_oAAWR2LfPl,1687,06_metrics_tables/drive_outputs/eye_densenet121/RUN_SUMMARY.txt,https://drive.google.com/file/d/1nwBysOm7An3MpbZh4pWDH_oAAWR2LfPl/view
