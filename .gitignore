@@ -27,5 +27,12 @@ models/
 outputs/
 logs/
 
+# Deney 1 Drive archive outputs are intentionally versioned, including
+# checkpoints, model files, logs, and feature arrays copied from Drive.
+!03_regional_models/drive_outputs/
+!03_regional_models/drive_outputs/**
+!06_metrics_tables/drive_outputs/
+!06_metrics_tables/drive_outputs/**
+
 # OS
 .DS_Store

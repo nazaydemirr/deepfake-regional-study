@@ -1,0 +1,8 @@
+Python==3.12.13
+TensorFlow==2.20.0
+NumPy==2.0.2
+Pandas==2.2.2
+scikit-learn==1.6.1
+Platform=Linux-6.6.122+-x86_64-with-glibc2.35
+Seed=42
+Device=CPU

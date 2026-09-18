@@ -1,0 +1,22 @@
+{
+    "run_id": "20260808_1214_eye_densenet121_seed42",
+    "total_metadata_records": 3097,
+    "success_count": 2986,
+    "skipped_count": 111,
+    "error_count": 0,
+    "model_image_count": 2986,
+    "canonical_sample_id_unique": true,
+    "source_video_overlap_counts": {
+        "train_vs_val": 0,
+        "train_vs_test": 0,
+        "val_vs_test": 0
+    },
+    "sha256_overlap_counts": {
+        "train_vs_val": 0,
+        "train_vs_test": 0,
+        "val_vs_test": 0
+    },
+    "sha256_cache_file": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42/metadata/sha256_cache.csv",
+    "sha256_reused": 0,
+    "sha256_calculated": 2986
+}

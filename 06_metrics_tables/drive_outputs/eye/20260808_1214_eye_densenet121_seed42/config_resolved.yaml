@@ -1,0 +1,53 @@
+run_id: 20260808_1214_eye_densenet121_seed42
+task: Eye ROI Deepfake Binary Classification
+framework: TensorFlow / Keras
+tensorflow_version: 2.20.0
+mixed_precision_policy: <DTypePolicy "mixed_float16">
+dataset:
+  dataset_root: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney
+    1/Göz/eye_roi_output
+  manifest_path: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney
+    1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42/metadata/model_manifest.csv
+  train_count: 2388
+  validation_count: 296
+  test_count: 302
+  image_height: 224
+  image_width: 224
+  channels: 3
+model:
+  model_name: DenseNet121
+  weights: imagenet
+  include_top: false
+  input_shape:
+  - 224
+  - 224
+  - 3
+  global_pooling: GlobalAveragePooling2D
+  dropout_rate: 0.4
+  output_units: 1
+  output_activation: sigmoid
+  output_dtype: float32
+  frozen_learning_rate: 0.001
+  finetune_learning_rate: 1.0e-05
+  batch_size: 16
+  seed: 42
+  label_mapping:
+    real: 0
+    fake: 1
+  model_selection_metric: val_auc
+  model_selection_mode: max
+parameters:
+  total: 7038529
+  trainable_frozen_stage: 1025
+  non_trainable_frozen_stage: 7037504
+  base_model_total: 7037504
+  base_model_trainable: 0
+output_paths:
+  run_root: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney
+    1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42
+  best_model: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney
+    1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42/checkpoints/best.keras
+  last_model: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney
+    1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42/checkpoints/last.keras
+  backup_directory: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney
+    1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42/checkpoints/training_backup

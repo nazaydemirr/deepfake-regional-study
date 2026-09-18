@@ -1,0 +1,3 @@
+source_video,true_label,fake_probability,roi_count,selected_threshold,predicted_label,predicted_class,is_correct
+fake_test,1,0.620385381178214,156,0.4685651659965515,1,fake,True
+real_test,0,0.5074460653409566,146,0.4685651659965515,1,fake,False

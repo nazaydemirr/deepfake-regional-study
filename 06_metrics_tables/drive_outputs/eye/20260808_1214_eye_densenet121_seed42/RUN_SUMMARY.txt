@@ -1,0 +1,70 @@
+DENSENET121 EYE ROI DEEPFAKE EXPERIMENT
+=========================================
+
+Run ID
+------
+20260808_1214_eye_densenet121_seed42
+
+Dataset
+-------
+Training images   : 2388
+Validation images : 296
+Test images       : 302
+Total ROI images  : 2986
+
+Model
+-----
+Architecture      : ImageNet-pretrained DenseNet121
+Input             : 224 x 224 RGB eye ROI
+Frozen stage      : 12 configured epochs
+Fine-tuning stage : 20 configured epochs
+Global best epoch : 32
+Best val ROC-AUC  : 0.738710
+
+Threshold Selection
+-------------------
+Dataset           : Validation
+Method            : Youden J
+Threshold         : 0.468565
+Test used         : No
+
+Image-Level Independent Test Results
+------------------------------------
+Accuracy          : 0.602649
+Balanced Accuracy : 0.596944
+Precision         : 0.588235
+Recall            : 0.769231
+Specificity       : 0.424658
+F1-score          : 0.666667
+ROC-AUC           : 0.667896
+PR-AUC            : 0.708702
+
+Source-Level Independent Test Results
+-------------------------------------
+Source count      : 2
+Accuracy          : 0.500000
+Balanced Accuracy : 0.500000
+Precision         : 0.500000
+Recall            : 1.000000
+Specificity       : 0.000000
+F1-score          : 0.666667
+ROC-AUC           : 1.000000
+PR-AUC            : 1.000000
+
+Quality Gates
+-------------
+Metadata accounting       : PASS
+Image-metadata matching   : PASS
+Source-video leakage      : PASS
+SHA-256 leakage           : PASS
+Two-batch training smoke  : PASS
+Gradient NaN/Inf          : PASS
+Atomic checkpoint         : PASS
+Checkpoint reload         : PASS
+Clean-load inference      : PASS
+Figure resolution         : PASS
+
+Label Mapping
+-------------
+Real = 0
+Fake = 1

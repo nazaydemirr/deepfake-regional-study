@@ -1,0 +1,29 @@
+2026-08-08 12:41:42 | INFO | Experiment initialized.
+2026-08-08 12:41:42 | INFO | Run ID: 20260808_1240_mouth_vgg16_svm_seed42
+2026-08-08 12:41:42 | INFO | Dataset: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Ağız/mouth_roi_output
+2026-08-08 12:41:42 | INFO | Output: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/20260808_1240_mouth_vgg16_svm_seed42
+2026-08-08 12:41:42 | INFO | Execution device: CPU
+2026-08-08 12:43:41 | INFO | Dataset inventory created. Total images=5974
+2026-08-08 12:43:41 | INFO | 
+class_name  fake  real  total
+split                        
+train       2384  2394   4778
+val          282   310    592
+test         312   292    604
+2026-08-08 12:46:27 | INFO | Dataset audit completed: {'total_images': 5974, 'duplicate_path_count': 0, 'duplicate_sample_id_count': 0, 'cross_class_filename_count': 0, 'possible_video_leak_count': 4, 'all_splits_have_both_classes': True, 'video_id_note': 'video_id klasör veya dosya adından tahmin edilmiştir; kesin kaynak-video metadata bilgisi değildir.'}
+2026-08-08 12:49:34 | INFO | VGG16 initialized. Output dimension=512
+2026-08-08 12:49:34 | INFO | VGG16 smoke test passed. Shape=(2, 512)
+2026-08-08 13:07:01 | INFO | Mouth-only inventory created. Total=2987
+2026-08-08 13:07:01 | INFO | 
+class_name  fake  real  total
+split                        
+train       1192  1197   2389
+val          141   155    296
+test         156   146    302
+2026-08-08 13:08:51 | INFO | Dataset audit completed: {'total_images': 2987, 'duplicate_path_count': 0, 'duplicate_sample_id_count': 0, 'cross_class_filename_count': 0, 'possible_video_leak_count': 0, 'all_splits_have_both_classes': True, 'video_id_note': 'video_id klasör veya dosya adından tahmin edilmiştir; kesin kaynak-video metadata bilgisi değildir.'}
+2026-08-08 13:09:01 | INFO | VGG16 initialized. Output dimension=512
+2026-08-08 13:09:01 | INFO | VGG16 smoke test passed. Shape=(2, 512)
+2026-08-08 13:42:44 | INFO | train Mouth features completed: X=(2389, 512), y=(2389,)
+2026-08-08 13:46:27 | INFO | val Mouth features completed: X=(296, 512), y=(296,)
+2026-08-08 13:50:08 | INFO | test Mouth features completed: X=(302, 512), y=(302,)
+2026-08-08 13:50:08 | INFO | All feature extraction completed in 2252.30 seconds.

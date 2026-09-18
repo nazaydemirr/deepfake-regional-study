@@ -1,0 +1,142 @@
+{
+  "experiment": {
+    "name": "VGG16 Feature Extractor + SVM — Mouth Region",
+    "run_id": "20260808_1240_mouth_vgg16_svm_seed42",
+    "region": "mouth",
+    "task": "binary deepfake classification",
+    "classes": {
+      "0": "real",
+      "1": "fake"
+    },
+    "seed": 42,
+    "execution_device": "CPU"
+  },
+  "dataset": {
+    "root": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Ağız/mouth_roi_output",
+    "used_image_type": "mouth_roi_png_only",
+    "debug_images_used": false,
+    "total_samples": 2987,
+    "train_samples": 2389,
+    "validation_samples": 296,
+    "test_samples": 302,
+    "class_counts": {
+      "train": {
+        "real": 1197,
+        "fake": 1192
+      },
+      "validation": {
+        "real": 155,
+        "fake": 141
+      },
+      "test": {
+        "real": 146,
+        "fake": 156
+      },
+      "total": {
+        "real": 1498,
+        "fake": 1489
+      }
+    },
+    "duplicate_path_check": "PASS",
+    "duplicate_sample_id_check": "PASS",
+    "cross_class_filename_check": "PASS",
+    "split_overlap_check": "PASS"
+  },
+  "preprocessing": {
+    "color_mode": "RGB",
+    "image_size": [
+      224,
+      224
+    ],
+    "resize_method": "bilinear",
+    "augmentation": false,
+    "vgg16_preprocess_input": true,
+    "svm_feature_scaling": "StandardScaler",
+    "scaler_fit_stage": "train_plus_validation_for_final_model"
+  },
+  "feature_extractor": {
+    "architecture": "VGG16",
+    "weights": "ImageNet",
+    "include_top": false,
+    "pooling": "GlobalAveragePooling2D",
+    "trainable": false,
+    "output_dimension": 512
+  },
+  "model_selection": {
+    "classifier": "SVC",
+    "selection_data": "validation_only",
+    "selection_metric": "F1-score",
+    "test_used_during_selection": false,
+    "candidate_count": 12,
+    "kernels": [
+      "linear",
+      "rbf"
+    ],
+    "linear_C_values": [
+      0.1,
+      1,
+      10
+    ],
+    "rbf_C_values": [
+      1,
+      10,
+      100
+    ],
+    "rbf_gamma_values": [
+      "scale",
+      0.001,
+      0.01
+    ],
+    "best_parameters": {
+      "kernel": "linear",
+      "C": 0.1,
+      "gamma": "scale"
+    },
+    "best_validation_metrics": {
+      "accuracy": 0.6824324324324325,
+      "f1_score": 0.6666666666666666,
+      "roc_auc": 0.7110501029512697
+    }
+  },
+  "final_training": {
+    "training_data": "train_plus_validation",
+    "training_samples": 2685,
+    "test_samples_excluded": 302,
+    "class_weight": "balanced",
+    "support_vector_count": 1567,
+    "duration_seconds": 3.412930488586426
+  },
+  "final_test_results": {
+    "test_samples": 302,
+    "accuracy": 0.5695364238410596,
+    "balanced_accuracy": 0.567088162978574,
+    "precision_fake": 0.5747126436781609,
+    "recall_fake": 0.6410256410256411,
+    "specificity_real": 0.4931506849315068,
+    "f1_score_fake": 0.6060606060606061,
+    "roc_auc": 0.6269318580962417,
+    "average_precision": 0.6377253415909273,
+    "mcc": 0.13568599192106348,
+    "confusion_matrix": {
+      "tn": 72,
+      "fp": 74,
+      "fn": 56,
+      "tp": 100
+    }
+  },
+  "software_environment": {
+    "python": "3.12.13",
+    "tensorflow": "2.20.0",
+    "numpy": "2.0.2",
+    "pandas": "2.2.2",
+    "scikit_learn": "1.6.1",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35"
+  },
+  "output": {
+    "output_directory": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/20260808_1240_mouth_vgg16_svm_seed42",
+    "artifacts_directory": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/20260808_1240_mouth_vgg16_svm_seed42/artifacts",
+    "models_directory": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/20260808_1240_mouth_vgg16_svm_seed42/models",
+    "figures_directory": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/20260808_1240_mouth_vgg16_svm_seed42/figures"
+  },
+  "created_at": "2026-08-08T14:15:02"
+}

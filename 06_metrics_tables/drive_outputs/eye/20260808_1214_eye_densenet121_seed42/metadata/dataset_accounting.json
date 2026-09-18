@@ -1,0 +1,31 @@
+{
+  "raw_status_counts": {
+    "NO_FACE": 111,
+    "OK": 2986
+  },
+  "canonical_status_counts": {
+    "SUCCESS": 2986,
+    "SKIPPED": 111,
+    "ERROR": 0
+  },
+  "dataset_counts": {
+    "train": {
+      "real": 1197,
+      "fake": 1191,
+      "total": 2388
+    },
+    "val": {
+      "real": 155,
+      "fake": 141,
+      "total": 296
+    },
+    "test": {
+      "real": 146,
+      "fake": 156,
+      "total": 302
+    }
+  },
+  "metadata_records": 3097,
+  "canonical_success_records": 2986,
+  "run_id": "20260808_1214_eye_densenet121_seed42"
+}

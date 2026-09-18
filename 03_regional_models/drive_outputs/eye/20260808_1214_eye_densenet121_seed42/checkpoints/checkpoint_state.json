@@ -1,0 +1,9 @@
+{
+    "run_id": "20260808_1214_eye_densenet121_seed42",
+    "completed_epoch": 32,
+    "monitor": "val_auc",
+    "val_auc": 0.7387096881866455,
+    "latest_value": 0.7387096881866455,
+    "best_model_path": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42/checkpoints/best.keras",
+    "last_model_path": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42/checkpoints/last.keras"
+}

@@ -1,0 +1,33 @@
+{
+    "run_id": "20260808_1214_eye_densenet121_seed42",
+    "tested_batches": 2,
+    "gradient_loss": 0.5642508268356323,
+    "gradient_tensor_count": 2,
+    "training_step_results": [
+        {
+            "accuracy": 0.625,
+            "auc": 0.5396825075149536,
+            "loss": 0.8208954930305481,
+            "pr_auc": 0.5529565811157227,
+            "precision": 0.7142857313156128,
+            "recall": 0.5555555820465088
+        },
+        {
+            "accuracy": 0.59375,
+            "auc": 0.5568627119064331,
+            "loss": 0.7693756818771362,
+            "pr_auc": 0.5717675089836121,
+            "precision": 0.6428571343421936,
+            "recall": 0.529411792755127
+        }
+    ],
+    "optimizer_iterations_before": 0,
+    "optimizer_iterations_after_two_batches": 2,
+    "reloaded_optimizer_iterations": 2,
+    "loss_before_save": 0.8206490278244019,
+    "loss_after_reload": 0.8206490278244019,
+    "prediction_max_absolute_difference": 0.0,
+    "checkpoint_path": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42/checkpoints/smoke_test_checkpoint.keras",
+    "real_training_optimizer_reset": true,
+    "status": "PASS"
+}

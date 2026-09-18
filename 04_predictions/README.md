@@ -22,3 +22,10 @@ Alanlar:
 - `y_pred`: 0/1 tahmin
 
 Fuzyon betikleri bu semayi bekler.
+
+## Drive'dan Acilan Deney 1 Tahminleri
+
+Arsivlerden acilan test tahminleri bolge ve run adina gore tutulur:
+
+- `eye/20260808_1214_eye_densenet121_seed42/`: `test_image_predictions.csv`, `test_source_predictions.csv`
+- `mouth/20260808_1240_mouth_vgg16_svm_seed42/`: VGG16+SVM run arsivinden gelen prediction/artifact CSV dosyalari

@@ -1,0 +1,18 @@
+{
+    "run_id": "20260808_1214_eye_densenet121_seed42",
+    "stage": "finetune",
+    "epochs_completed": 20,
+    "maximum_epochs": 20,
+    "initial_epoch": 12,
+    "final_epoch_number": 32,
+    "unfrozen_layer_count": 80,
+    "frozen_batch_norm_count": 32,
+    "trainable_parameters": 2130945,
+    "best_finetune_epoch": 32,
+    "best_finetune_val_auc": 0.7387096881866455,
+    "global_best_epoch": 32,
+    "global_best_stage": "finetune",
+    "global_best_val_auc": 0.7387096881866455,
+    "best_model_path": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42/checkpoints/best.keras",
+    "last_model_path": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42/checkpoints/last.keras"
+}

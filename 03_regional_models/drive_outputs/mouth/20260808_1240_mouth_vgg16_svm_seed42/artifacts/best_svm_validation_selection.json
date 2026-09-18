@@ -1,0 +1,24 @@
+{
+  "selection_metric": "validation_f1",
+  "tie_break_metrics": [
+    "validation_roc_auc",
+    "validation_accuracy"
+  ],
+  "test_used_during_selection": false,
+  "positive_class": "fake",
+  "positive_class_value": 1,
+  "feature_extractor": "VGG16_ImageNet_GAP",
+  "feature_dimension": 512,
+  "scaler": "StandardScaler_train_only",
+  "kernel": "linear",
+  "C": 0.1,
+  "gamma": "scale",
+  "validation_accuracy": 0.6824324324324325,
+  "validation_precision": 0.6666666666666666,
+  "validation_recall": 0.6666666666666666,
+  "validation_f1": 0.6666666666666666,
+  "validation_roc_auc": 0.7110501029512697,
+  "search_duration_seconds": 774.6057004928589,
+  "candidate_count": 12,
+  "seed": 42
+}

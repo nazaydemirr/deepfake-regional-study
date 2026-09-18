@@ -1,0 +1,33 @@
+{
+  "evaluation_level": "mouth_roi_frame_level",
+  "test_sample_count": 302,
+  "positive_class": "fake",
+  "positive_class_value": 1,
+  "decision_threshold": 0.0,
+  "accuracy": 0.5695364238410596,
+  "balanced_accuracy": 0.567088162978574,
+  "precision": 0.5747126436781609,
+  "recall_sensitivity": 0.6410256410256411,
+  "specificity": 0.4931506849315068,
+  "f1_score": 0.6060606060606061,
+  "roc_auc": 0.6269318580962417,
+  "average_precision": 0.6377253415909273,
+  "matthews_correlation_coefficient": 0.13568599192106348,
+  "confusion_matrix": {
+    "true_negative": 72,
+    "false_positive": 74,
+    "false_negative": 56,
+    "true_positive": 100
+  },
+  "test_used_for_model_selection": false,
+  "test_used_for_training": false,
+  "model": {
+    "feature_extractor": "VGG16_ImageNet_GAP",
+    "feature_dimension": 512,
+    "classifier": "SVM",
+    "kernel": "linear",
+    "C": 0.1,
+    "gamma": "scale"
+  },
+  "seed": 42
+}

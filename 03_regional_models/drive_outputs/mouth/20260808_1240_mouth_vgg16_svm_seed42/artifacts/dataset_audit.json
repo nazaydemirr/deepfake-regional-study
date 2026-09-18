@@ -1,0 +1,9 @@
+{
+  "total_images": 2987,
+  "duplicate_path_count": 0,
+  "duplicate_sample_id_count": 0,
+  "cross_class_filename_count": 0,
+  "possible_video_leak_count": 0,
+  "all_splits_have_both_classes": true,
+  "video_id_note": "video_id klasör veya dosya adından tahmin edilmiştir; kesin kaynak-video metadata bilgisi değildir."
+}

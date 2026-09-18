@@ -1,0 +1,28 @@
+{
+  "feature_extractor": "VGG16",
+  "weights": "ImageNet",
+  "include_top": false,
+  "pooling": "GlobalAveragePooling",
+  "feature_dimension": 512,
+  "scaler": "StandardScaler",
+  "scaler_fit_data": "train_plus_validation",
+  "classifier": "SVC",
+  "kernel": "linear",
+  "C": 0.1,
+  "gamma": "scale",
+  "class_weight": "balanced",
+  "positive_class": "fake",
+  "positive_class_value": 1,
+  "train_samples": 2389,
+  "validation_samples": 296,
+  "final_training_samples": 2685,
+  "test_samples": 302,
+  "test_used_for_training": false,
+  "support_vector_count": 1567,
+  "support_vectors_per_class": {
+    "real": 790,
+    "fake": 777
+  },
+  "training_duration_seconds": 3.412930488586426,
+  "seed": 42
+}

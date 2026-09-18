@@ -1,0 +1,57 @@
+VGG16 FEATURE EXTRACTOR + SVM — MOUTH REGION
+============================================================
+
+Run ID
+------
+20260808_1240_mouth_vgg16_svm_seed42
+
+Dataset
+-------
+Total Mouth ROI : 2987
+Train           : 2389
+Validation      : 296
+Test            : 302
+Real total      : 1498
+Fake total      : 1489
+Debug used      : No
+
+Feature Extractor
+-----------------
+Architecture     : VGG16
+Weights          : ImageNet
+Include top      : False
+Pooling          : Global Average Pooling
+Trainable        : False
+Feature dimension: 512
+Input size       : 224 x 224 RGB
+
+Final SVM
+---------
+Kernel           : linear
+C                : 0.1
+Gamma            : scale
+Class weight     : balanced
+Training data    : train + validation
+Test selection   : No
+
+Validation
+----------
+F1-score         : 0.666667
+ROC-AUC          : 0.711050
+Accuracy         : 0.682432
+
+Final Test
+----------
+Accuracy          : 0.569536
+Balanced Accuracy : 0.567088
+Precision (Fake)  : 0.574713
+Recall (Fake)     : 0.641026
+Specificity       : 0.493151
+F1-score (Fake)   : 0.606061
+ROC-AUC           : 0.626932
+Average Precision : 0.637725
+MCC               : 0.135686
+
+Confusion Matrix
+----------------
+TN=72, FP=74, FN=56, TP=100

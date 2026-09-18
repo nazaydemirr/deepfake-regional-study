@@ -1,0 +1,49 @@
+experiment_name: 20260808_1240_mouth_vgg16_svm_seed42
+region: mouth
+dataset_dir: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney
+  1/Ağız/mouth_roi_output
+output_dir: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney
+  1/Sonuçlar/20260808_1240_mouth_vgg16_svm_seed42
+labels:
+  real: 0
+  fake: 1
+splits:
+- train
+- val
+- test
+image_size:
+- 224
+- 224
+batch_size: 32
+seed: 42
+preprocessing:
+  color_mode: RGB
+  resize:
+  - 224
+  - 224
+  keras_preprocess: tensorflow.keras.applications.vgg16.preprocess_input
+  augmentation: false
+feature_extractor:
+  architecture: VGG16
+  weights: imagenet
+  include_top: false
+  pooling: avg
+  trainable: false
+  feature_dim: 512
+svm:
+  class_weight: balanced
+  selection_metric: f1
+  search_space:
+    linear_C:
+    - 0.1
+    - 1
+    - 10
+    rbf_C:
+    - 1
+    - 10
+    - 100
+    rbf_gamma:
+    - scale
+    - 0.001
+    - 0.01
+reuse_cached_features: true
