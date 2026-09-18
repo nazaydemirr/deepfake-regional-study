@@ -1,0 +1,11 @@
+topic,year,reference,method,dataset,project_relevance
+regional_cvits,2024,"Soudy et al., Deepfake detection using convolutional vision transformers and convolutional neural networks","CNN + CViT + majority voting","FaceForensics++, DFDC","Eye/Nose/Whole Face regional decisions support this project's Eye/Brow/Mouth late fusion"
+facial_regions,2021,"Tolosana et al., DeepFakes Evolution","Xception and Capsule Network on facial regions","UADFV, FaceForensics++, Celeb-DF, DFDC Preview","Direct support for testing mouth, eye and other face regions separately"
+mouth_movement,2022,"Elhassan et al., DFT-MF","Mouth movement + transfer learning","Celeb-DF, DeepfakeTIMIT","Supports mouth ROI modeling and video-level aggregation"
+faceforensics,2019,"Rossler et al., FaceForensics++","Deepfake benchmark and Xception baseline","FaceForensics++","Core dataset and benchmark protocol reference"
+xception,2017,"Chollet, Xception","Depthwise separable CNN","ImageNet, JFT","Backbone reference for ROI transfer learning"
+densenet,2017,"Huang et al., Densely Connected Convolutional Networks","DenseNet / DenseNet-BC","CIFAR, SVHN, ImageNet","Backbone reference for DenseNet121 ROI models"
+feature_fusion,2025,"Yasir and Kim, Lightweight Deepfake Detection Based on Multi-Feature Fusion","HOG + LBP + KAZE with classical classifiers","FaceForensics++, Celeb-DF","Supports lightweight hand-crafted ROI feature fusion"
+swin_texture,2026,"Shivaprakash et al., Hybrid Facial Deepfake Detection Framework Using Swin V2 Vision Transformers and Multi-Scale Textural Descriptors","Swin V2 + LBP/Wavelet/GLCM/Gabor","Celeb-DF V2, FaceForensics++","Supports SwinV2 + texture model family"
+gaze_blink,2025,"Javed et al., Real-Time Deepfake Detection via Gaze and Blink Patterns","Transformer framework with gaze/blink cues","FaceForensics++, Celeb-DF, DFDC, FakeAVCeleb","Supports eye-region behavioral features"
+weighted_fusion,2025,"Regional and multimodal fusion references from AISC literature table","Decision-level late fusion and majority voting","Multiple benchmarks","Supports 2/3 hard voting and weighted soft voting design"

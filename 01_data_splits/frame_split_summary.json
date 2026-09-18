@@ -1,0 +1,23 @@
+{
+  "source": "Google Drive / AISC DeepFake Calismalari / Deney 1 Frame",
+  "total_frames": 3000,
+  "real": {
+    "train": 1200,
+    "val": 150,
+    "test": 150
+  },
+  "fake": {
+    "train": 1200,
+    "val": 150,
+    "test": 150
+  },
+  "rejected_frames": 206,
+  "completed_split_dirs": [
+    "Real/train",
+    "Real/val",
+    "Real/test",
+    "Fake/train",
+    "Fake/val",
+    "Fake/test"
+  ]
+}

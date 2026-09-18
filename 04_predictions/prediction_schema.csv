@@ -1,0 +1,4 @@
+sample_id,video_id,frame_id,split,label,roi,model_family,y_true,y_score,y_pred
+example_0001,video_001,42,test,real,eye,xception,0,0.184,0
+example_0001,video_001,42,test,real,brow,xception,0,0.331,0
+example_0001,video_001,42,test,real,mouth,xception,0,0.412,0

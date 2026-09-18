@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Data and model artifacts
+*.h5
+*.keras
+*.pt
+*.pth
+*.onnx
+*.pkl
+*.joblib
+*.npy
+*.npz
+data/raw/
+data/interim/
+data/processed/
+models/
+
+# Local notebooks and runtime outputs
+.ipynb_checkpoints/
+outputs/
+logs/
+
+# OS
+.DS_Store
