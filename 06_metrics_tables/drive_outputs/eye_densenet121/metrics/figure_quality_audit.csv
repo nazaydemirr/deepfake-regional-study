@@ -1,0 +1,5 @@
+figure,path,width_px,height_px,minimum_side_px,status
+training_curves,/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42/figures/training_validation_curves.png,1626,2076,1626,PASS
+confusion_matrices,/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42/figures/test_confusion_matrices.png,1656,802,802,PASS
+roc_pr_curves,/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42/figures/test_roc_pr_curves.png,1776,726,726,PASS
+probability_distribution,/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/DenseNet121_Eye_Results/20260808_1214_eye_densenet121_seed42/figures/test_probability_distribution.png,1476,876,876,PASS

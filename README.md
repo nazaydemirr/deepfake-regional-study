@@ -41,6 +41,17 @@ Deney 1 iceriginde kisi bazli calismalar bulunur:
 - Ortak: Deney 1 Frame veri bolme/metadata dosyalari
 - Ortak: agirlikli fuzyon tekrar calismasi ve corrected weighted fusion sonuclari
 
+Drive'dan indirilen Deney 1 dosyalari repo icinde su sekilde yerlestirildi:
+
+- Notebook ve egitim kodlari: `03_regional_models/notebooks/`
+- ROI/frame secimi ve on isleme ciktilari: `01_data_splits/drive_exports/`, `02_roi_preprocessing/drive_outputs/`
+- Fusion ve metrik ciktilari: `05_fusion/results/`, `06_metrics_tables/drive_outputs/`
+- Deney raporlari: `08_article/reports/`
+- Kod aciklama raporlari: `08_article/code_explanations/`
+- Kucuk arsivler: `03_regional_models/drive_archives/`
+
+Tam Drive-to-repo envanteri `01_data_splits/drive_exports/DENEY1_DRIVE_ASSET_MANIFEST.csv` dosyasindadir. GitHub tek dosya limitini asan buyuk ZIP/checkpoint/frame paketleri fiziksel olarak commitlenmedi; Drive linkleri `01_data_splits/drive_exports/SKIPPED_LARGE_FILES.md` ve `01_data_splits/drive_exports/DENEY1_DRIVE_FOLDER_MANIFEST.md` icinde tutuldu.
+
 ## Ana Deney Akisi
 
 1. Frame secimi ve train/validation/test ayrimi `01_data_splits/` altinda belgelenir.

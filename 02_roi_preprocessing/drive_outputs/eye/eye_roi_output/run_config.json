@@ -1,0 +1,17 @@
+{
+  "input_root": "/content/drive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deneyler/Deney 1 Frame",
+  "output_root": "/content/drive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output",
+  "model_path": "/content/face_landmarker.task",
+  "num_faces": 10,
+  "min_face_detection_confidence": 0.3,
+  "min_face_presence_confidence": 0.3,
+  "min_tracking_confidence": 0.3,
+  "eye_padding_ratio": 0.25,
+  "combined_padding_ratio": 0.18,
+  "output_size": 224,
+  "save_left_right": true,
+  "save_combined": true,
+  "save_debug": true,
+  "flush_every": 25,
+  "overwrite": false
+}

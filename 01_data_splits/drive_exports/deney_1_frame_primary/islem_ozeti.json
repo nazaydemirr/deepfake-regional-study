@@ -1,0 +1,24 @@
+{
+  "genel_toplam": 3000,
+  "real": {
+    "train": 1200,
+    "val": 150,
+    "test": 150
+  },
+  "fake": {
+    "train": 1200,
+    "val": 150,
+    "test": 150
+  },
+  "reddedilen_frame_sayisi": 206,
+  "tamamlanan_splitler": [
+    "Real/train",
+    "Real/val",
+    "Real/test",
+    "Fake/train",
+    "Fake/val",
+    "Fake/test"
+  ],
+  "metadata_csv": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Deney 1 Frame/secim_metadata.csv",
+  "output_root": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Deney 1 Frame"
+}

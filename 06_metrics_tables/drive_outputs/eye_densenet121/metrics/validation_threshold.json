@@ -1,0 +1,10 @@
+{
+    "run_id": "20260808_1214_eye_densenet121_seed42",
+    "selection_dataset": "validation",
+    "selection_method": "Youden J",
+    "selected_threshold": 0.4685651659965515,
+    "youden_j": 0.3588194921070693,
+    "validation_roc_auc": 0.7383207504003659,
+    "validation_f1_at_selected_threshold": 0.7069486404833837,
+    "test_set_used_for_threshold_selection": false
+}

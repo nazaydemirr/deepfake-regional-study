@@ -1,0 +1,12 @@
+{
+  "tamamlanan_splitler": [
+    "Real/train",
+    "Real/val",
+    "Real/test",
+    "Fake/train",
+    "Fake/val",
+    "Fake/test"
+  ],
+  "kopyalanan_frame_sayisi": 3000,
+  "reddedilen_frame_sayisi": 206
+}
