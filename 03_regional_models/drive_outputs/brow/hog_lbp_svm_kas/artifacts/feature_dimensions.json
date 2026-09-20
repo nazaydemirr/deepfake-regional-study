@@ -1,0 +1,9 @@
+{
+  "hog_dim": 3780,
+  "lbp_dim": 10,
+  "fused_dim": 3790,
+  "image_size": [
+    128,
+    64
+  ]
+}

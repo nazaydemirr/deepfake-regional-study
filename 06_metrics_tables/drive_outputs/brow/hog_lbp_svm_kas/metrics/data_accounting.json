@@ -1,0 +1,33 @@
+{
+  "run_id": "20260807_0948_eyebrow_hog_lbp_svm_seed42",
+  "total_inputs": 3000,
+  "success_count": 1962,
+  "skipped_count": 1038,
+  "error_count": 0,
+  "training_eligible_success_count": 1962,
+  "unique_source_videos": 1429,
+  "split_class_counts": {
+    "test": {
+      "fake": 95,
+      "real": 101
+    },
+    "train": {
+      "fake": 776,
+      "real": 786
+    },
+    "val": {
+      "fake": 98,
+      "real": 106
+    }
+  },
+  "split_source_video_counts": {
+    "train": 1145,
+    "val": 146,
+    "test": 138
+  },
+  "source_video_intersections": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "run_id": "20260807_0948_eyebrow_hog_lbp_svm_seed42",
+  "status": "COMPLETED",
+  "model": {
+    "pretrained_weights": false,
+    "feature_fusion": [
+      "HOG",
+      "LBP"
+    ],
+    "classifier": "LINEAR SVM",
+    "C": 0.1,
+    "gamma": null,
+    "threshold": -1.355763913766937
+  },
+  "paths": {
+    "input_data": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Kaş",
+    "roi_metadata": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Kaş/metadata.csv",
+    "selection_metadata": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Deney 1 Frame/secim_metadata.csv",
+    "output_run": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_0948_eyebrow_hog_lbp_svm_seed42",
+    "best_checkpoint": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_0948_eyebrow_hog_lbp_svm_seed42/checkpoints/best.ckpt",
+    "svm_model": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_0948_eyebrow_hog_lbp_svm_seed42/artifacts/svm_model.joblib"
+  },
+  "data": {
+    "run_id": "20260807_0948_eyebrow_hog_lbp_svm_seed42",
+    "total_inputs": 3000,
+    "success_count": 1962,
+    "skipped_count": 1038,
+    "error_count": 0,
+    "training_eligible_success_count": 1962,
+    "unique_source_videos": 1429,
+    "split_class_counts": {
+      "test": {
+        "fake": 95,
+        "real": 101
+      },
+      "train": {
+        "fake": 776,
+        "real": 786
+      },
+      "val": {
+        "fake": 98,
+        "real": 106
+      }
+    },
+    "split_source_video_counts": {
+      "train": 1145,
+      "val": 146,
+      "test": 138
+    },
+    "source_video_intersections": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    }
+  },
+  "feature_dimensions": {
+    "hog_dim": 3780,
+    "lbp_dim": 10,
+    "fused_dim": 3790,
+    "image_size": [
+      128,
+      64
+    ]
+  },
+  "selected_svm": {
+    "selection_set": "validation",
+    "selection_metric": "f1",
+    "kernel": "linear",
+    "C": 0.1,
+    "gamma": null,
+    "threshold": -1.355763913766937,
+    "validation_metrics": {
+      "accuracy": 0.5980392156862745,
+      "precision": 0.5470588235294118,
+      "recall": 0.9489795918367347,
+      "f1": 0.6940298507462687,
+      "specificity": 0.27358490566037735,
+      "roc_auc": 0.6547939930689257,
+      "average_precision": 0.5991077498845981
+    },
+    "candidate_count": 12,
+    "search_seconds": 144.91672372817993
+  },
+  "test_metrics": {
+    "frame_level": {
+      "accuracy": 0.5051020408163265,
+      "precision": 0.4939759036144578,
+      "recall": 0.8631578947368421,
+      "f1": 0.6283524904214559,
+      "specificity": 0.16831683168316833,
+      "roc_auc": 0.5398645127670662,
+      "average_precision": 0.512943959848368
+    },
+    "video_level": {
+      "accuracy": 0.572463768115942,
+      "precision": 0.5932203389830508,
+      "recall": 0.8641975308641975,
+      "f1": 0.7035175879396985,
+      "specificity": 0.15789473684210525,
+      "roc_auc": 0.5527398743773012,
+      "average_precision": 0.6566762329418301
+    }
+  },
+  "quality_gates": {
+    "schema_test": "PASS",
+    "split_test": "PASS",
+    "data_accounting_test": "PASS",
+    "numerical_feature_test": "PASS",
+    "classical_ml_smoke_test": "PASS",
+    "pytorch_forward_backward_smoke_test": "NOT_APPLICABLE_CLASSICAL_ML",
+    "checkpoint_atomic_save_reload_test": "PASS",
+    "fresh_load_inference_test": "PASS",
+    "test_set_used_for_selection": false
+  },
+  "figure_count": 9,
+  "checkpoint_note": "PyTorch optimizer/epoch state is not applicable to HOG+LBP+sklearn SVC. The complete SVC, train-fitted StandardScaler, threshold, config and RNG states are atomically serialized and reload-tested.",
+  "completed_at": "2026-08-07T10:21:31.383839"
+}

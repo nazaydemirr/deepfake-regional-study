@@ -1,0 +1,11 @@
+{
+  "schema_test": "PASS",
+  "split_test": "PASS",
+  "data_accounting_test": "PASS",
+  "numerical_feature_test": "PASS",
+  "classical_ml_smoke_test": "PASS",
+  "pytorch_forward_backward_smoke_test": "NOT_APPLICABLE_CLASSICAL_ML",
+  "checkpoint_atomic_save_reload_test": "PASS",
+  "fresh_load_inference_test": "PASS",
+  "test_set_used_for_selection": false
+}

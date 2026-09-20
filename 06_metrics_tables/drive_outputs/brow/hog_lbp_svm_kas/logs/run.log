@@ -1,0 +1,42 @@
+2026-08-07 09:48:40,578 | INFO | RUN_ID=20260807_0948_eyebrow_hog_lbp_svm_seed42
+2026-08-07 09:48:40,590 | INFO | Input=/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Kaş
+2026-08-07 09:48:40,596 | INFO | Output=/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_0948_eyebrow_hog_lbp_svm_seed42
+2026-08-07 09:51:03,470 | INFO | Feature extraction train: 100/1562
+2026-08-07 09:52:27,121 | INFO | Feature extraction train: 200/1562
+2026-08-07 09:53:51,635 | INFO | Feature extraction train: 300/1562
+2026-08-07 09:55:17,460 | INFO | Feature extraction train: 400/1562
+2026-08-07 09:56:41,423 | INFO | Feature extraction train: 500/1562
+2026-08-07 09:58:06,446 | INFO | Feature extraction train: 600/1562
+2026-08-07 09:59:30,113 | INFO | Feature extraction train: 700/1562
+2026-08-07 10:00:54,783 | INFO | Feature extraction train: 800/1562
+2026-08-07 10:02:18,343 | INFO | Feature extraction train: 900/1562
+2026-08-07 10:03:40,954 | INFO | Feature extraction train: 1000/1562
+2026-08-07 10:05:05,306 | INFO | Feature extraction train: 1100/1562
+2026-08-07 10:06:28,876 | INFO | Feature extraction train: 1200/1562
+2026-08-07 10:07:55,639 | INFO | Feature extraction train: 1300/1562
+2026-08-07 10:09:19,406 | INFO | Feature extraction train: 1400/1562
+2026-08-07 10:10:42,616 | INFO | Feature extraction train: 1500/1562
+2026-08-07 10:11:35,088 | INFO | Feature extraction train: 1562/1562
+2026-08-07 10:11:39,388 | INFO | Feature extraction train completed in 1319.60s
+2026-08-07 10:13:03,181 | INFO | Feature extraction val: 100/204
+2026-08-07 10:14:30,426 | INFO | Feature extraction val: 200/204
+2026-08-07 10:14:33,413 | INFO | Feature extraction val: 204/204
+2026-08-07 10:14:33,869 | INFO | Feature extraction val completed in 174.47s
+2026-08-07 10:15:59,229 | INFO | Feature extraction test: 100/196
+2026-08-07 10:17:19,166 | INFO | Feature extraction test: 196/196
+2026-08-07 10:17:19,613 | INFO | Feature extraction test completed in 165.73s
+2026-08-07 10:17:19,768 | INFO | Cached features loaded: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_0948_eyebrow_hog_lbp_svm_seed42/artifacts/features_train.npz
+2026-08-07 10:17:20,214 | INFO | Cached features loaded: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_0948_eyebrow_hog_lbp_svm_seed42/artifacts/features_val.npz
+2026-08-07 10:17:20,295 | INFO | Cached features loaded: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_0948_eyebrow_hog_lbp_svm_seed42/artifacts/features_test.npz
+2026-08-07 10:18:05,953 | INFO | SVM candidate 1/12: {'kernel': 'linear', 'C': 0.1, 'gamma': None} | val_f1=0.6940
+2026-08-07 10:18:19,567 | INFO | SVM candidate 2/12: {'kernel': 'linear', 'C': 1.0, 'gamma': None} | val_f1=0.6940
+2026-08-07 10:18:28,206 | INFO | SVM candidate 3/12: {'kernel': 'linear', 'C': 10.0, 'gamma': None} | val_f1=0.6940
+2026-08-07 10:18:37,436 | INFO | SVM candidate 4/12: {'kernel': 'rbf', 'C': 0.1, 'gamma': 'scale'} | val_f1=0.6644
+2026-08-07 10:18:47,201 | INFO | SVM candidate 5/12: {'kernel': 'rbf', 'C': 0.1, 'gamma': 0.001} | val_f1=0.6555
+2026-08-07 10:18:57,607 | INFO | SVM candidate 6/12: {'kernel': 'rbf', 'C': 0.1, 'gamma': 0.0001} | val_f1=0.6597
+2026-08-07 10:19:06,656 | INFO | SVM candidate 7/12: {'kernel': 'rbf', 'C': 1.0, 'gamma': 'scale'} | val_f1=0.6908
+2026-08-07 10:19:16,984 | INFO | SVM candidate 8/12: {'kernel': 'rbf', 'C': 1.0, 'gamma': 0.001} | val_f1=0.6571
+2026-08-07 10:19:26,757 | INFO | SVM candidate 9/12: {'kernel': 'rbf', 'C': 1.0, 'gamma': 0.0001} | val_f1=0.6867
+2026-08-07 10:19:36,469 | INFO | SVM candidate 10/12: {'kernel': 'rbf', 'C': 10.0, 'gamma': 'scale'} | val_f1=0.6786
+2026-08-07 10:19:46,610 | INFO | SVM candidate 11/12: {'kernel': 'rbf', 'C': 10.0, 'gamma': 0.001} | val_f1=0.6620
+2026-08-07 10:19:56,533 | INFO | SVM candidate 12/12: {'kernel': 'rbf', 'C': 10.0, 'gamma': 0.0001} | val_f1=0.6882
