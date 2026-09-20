@@ -1,0 +1,9 @@
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
+numpy==2.0.2
+pandas==2.2.2
+scikit-learn==1.6.1
+matplotlib==3.10.0
+Pillow==11.3.0
+PyYAML==6.0.3
+tqdm==4.67.3

@@ -1,0 +1,7 @@
+split,label,frame_count,source_video_count
+train,real,786,455
+train,fake,776,690
+val,real,106,60
+val,fake,98,86
+test,real,101,57
+test,fake,95,81

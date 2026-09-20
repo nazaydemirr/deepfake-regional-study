@@ -1,0 +1,46 @@
+{
+  "roi_metadata_columns": [
+    "sample_id",
+    "source_video",
+    "frame_index",
+    "face_index",
+    "label",
+    "split",
+    "status",
+    "skip_reason",
+    "input_path",
+    "input_relative_path",
+    "output_path",
+    "output_relative_path",
+    "input_sha256",
+    "output_sha256",
+    "run_id",
+    "processed_at",
+    "input_width",
+    "input_height",
+    "roi_width",
+    "roi_height",
+    "face_count",
+    "blur_score",
+    "eye_landmark_fraction",
+    "alignment_applied",
+    "alignment_angle_degrees",
+    "error_type",
+    "error_message"
+  ],
+  "selection_metadata_columns": [
+    "sinif",
+    "split",
+    "orijinal_yol",
+    "yeni_yol",
+    "dosya_adi"
+  ],
+  "canonical_aliases_or_provenance": {
+    "source_video": "recovered from secim_metadata.orijinal_yol parent folder",
+    "sha256": "output_sha256",
+    "output_path": "resolved from output_relative_path under Kaş root",
+    "roi_state": "not applicable to this static eyebrow ROI baseline"
+  },
+  "training_schema_gate_passed": true,
+  "note": "source_video is not guessed from the eyebrow metadata because it is blank in the upstream ROI table; it is recovered deterministically from selection metadata."
+}

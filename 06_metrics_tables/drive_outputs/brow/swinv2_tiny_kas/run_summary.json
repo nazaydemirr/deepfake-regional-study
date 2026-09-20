@@ -1,0 +1,69 @@
+{
+  "run_id": "20260807_1158_eyebrow_swinv2_tiny_seed42",
+  "architecture": "Swin V2 Tiny",
+  "region": "Eyebrow ROI",
+  "source_data": "Deneyler/Nazlıcan/Deney 1/Kaş",
+  "mode": "new",
+  "seed": 42,
+  "pretrained": true,
+  "normalization": {
+    "source": "Swin_V2_T_Weights.IMAGENET1K_V1",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "learned_from_project_data": false,
+    "uses_validation_or_test_statistics": false,
+    "config_source": "pretrained_weights",
+    "rationale": "ImageNet-pretrained Swin V2'nin kendi normalizasyonu kullanılır. Proje train/val/test verisinden mean/std öğrenilmez; validation veya test istatistiği normalizasyona karışmaz."
+  },
+  "best_epoch": 3,
+  "best_validation_score": 0.710723912206392,
+  "validation_selected_threshold": 0.12,
+  "test_frame_metrics": {
+    "accuracy": 0.5357142857142857,
+    "precision": 0.5116279069767442,
+    "recall": 0.9263157894736842,
+    "f1": 0.6591760299625468,
+    "roc_auc": 0.6815007816571129,
+    "pr_auc": 0.6543119873543204,
+    "threshold": 0.12,
+    "best_epoch": 3,
+    "run_id": "20260807_1158_eyebrow_swinv2_tiny_seed42"
+  },
+  "test_video_metrics": {
+    "accuracy": 0.6086956521739131,
+    "precision": 0.608,
+    "recall": 0.9382716049382716,
+    "f1": 0.7378640776699029,
+    "roc_auc": 0.7091184752003465,
+    "pr_auc": 0.7626986817182997,
+    "available": true,
+    "threshold": 0.12,
+    "run_id": "20260807_1158_eyebrow_swinv2_tiny_seed42"
+  },
+  "train_frames": 1562,
+  "val_frames": 204,
+  "test_frames": 196,
+  "train_videos": 1145,
+  "val_videos": 146,
+  "test_videos": 138,
+  "quality_gates": {
+    "metadata_schema": "passed",
+    "accounting_equality": "passed",
+    "source_video_split_isolation": "passed",
+    "two_batch_smoke_test": "passed",
+    "checkpoint_continuity": "passed",
+    "numerical_nan_inf": "passed",
+    "fresh_best_checkpoint_inference": "passed",
+    "test_used_only_for_final_evaluation": true,
+    "figure_language": "English",
+    "minimum_figure_short_edge_px": 600
+  }
+}

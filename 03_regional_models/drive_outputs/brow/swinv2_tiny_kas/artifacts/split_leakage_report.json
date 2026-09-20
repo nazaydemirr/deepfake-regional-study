@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "train_video_count": 1145,
+  "val_video_count": 146,
+  "test_video_count": 138,
+  "train_val_overlap": 0,
+  "train_test_overlap": 0,
+  "val_test_overlap": 0,
+  "class_source_video_split_ratios": {
+    "fake": {
+      "source_video_count": 857,
+      "observed": {
+        "test": 0.09451575262543757,
+        "train": 0.8051341890315052,
+        "val": 0.10035005834305717
+      },
+      "expected": {
+        "train": 0.8,
+        "val": 0.1,
+        "test": 0.1
+      }
+    },
+    "real": {
+      "source_video_count": 572,
+      "observed": {
+        "test": 0.09965034965034965,
+        "train": 0.7954545454545454,
+        "val": 0.1048951048951049
+      },
+      "expected": {
+        "train": 0.8,
+        "val": 0.1,
+        "test": 0.1
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "source": "Swin_V2_T_Weights.IMAGENET1K_V1",
+  "mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "learned_from_project_data": false,
+  "uses_validation_or_test_statistics": false,
+  "config_source": "pretrained_weights",
+  "rationale": "ImageNet-pretrained Swin V2'nin kendi normalizasyonu kullanılır. Proje train/val/test verisinden mean/std öğrenilmez; validation veya test istatistiği normalizasyona karışmaz."
+}

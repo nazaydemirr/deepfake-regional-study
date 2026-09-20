@@ -1,0 +1,11 @@
+{
+  "accuracy": 0.6086956521739131,
+  "precision": 0.608,
+  "recall": 0.9382716049382716,
+  "f1": 0.7378640776699029,
+  "roc_auc": 0.7091184752003465,
+  "pr_auc": 0.7626986817182997,
+  "available": true,
+  "threshold": 0.12,
+  "run_id": "20260807_1158_eyebrow_swinv2_tiny_seed42"
+}

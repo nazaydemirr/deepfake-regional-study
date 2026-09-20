@@ -1,0 +1,17 @@
+{
+  "run_id": "20260807_1158_eyebrow_swinv2_tiny_seed42",
+  "files": {
+    "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_1158_eyebrow_swinv2_tiny_seed42/artifacts/source_snapshot/deepfake_roi/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_1158_eyebrow_swinv2_tiny_seed42/artifacts/source_snapshot/deepfake_roi/data/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_1158_eyebrow_swinv2_tiny_seed42/artifacts/source_snapshot/deepfake_roi/data/dataset.py": "f19ba1c6ee28463abe8edbf0ec6c111e268aaa388f208003a547005fb5c4c983",
+    "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_1158_eyebrow_swinv2_tiny_seed42/artifacts/source_snapshot/deepfake_roi/evaluation/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_1158_eyebrow_swinv2_tiny_seed42/artifacts/source_snapshot/deepfake_roi/evaluation/plots.py": "8bb020ce14836a080dadb622e4281134644e34dc2f4861d308dd22bc6df81054",
+    "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_1158_eyebrow_swinv2_tiny_seed42/artifacts/source_snapshot/deepfake_roi/models/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_1158_eyebrow_swinv2_tiny_seed42/artifacts/source_snapshot/deepfake_roi/models/swin.py": "c4e99ce0ab871246d540963725c07b218234333f7b4dbf59d0c708a87fdf1a31",
+    "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_1158_eyebrow_swinv2_tiny_seed42/artifacts/source_snapshot/deepfake_roi/training/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_1158_eyebrow_swinv2_tiny_seed42/artifacts/source_snapshot/deepfake_roi/training/engine.py": "5f9da87322980ad1acae12ae48aa07724fb20b3645f29993d32b08f4956eef68",
+    "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_1158_eyebrow_swinv2_tiny_seed42/artifacts/source_snapshot/deepfake_roi/utils/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_1158_eyebrow_swinv2_tiny_seed42/artifacts/source_snapshot/deepfake_roi/utils/io.py": "9674c3a27951ad27d3fa26e071f8294cd9b150821cec720b49e0e3c806039f15",
+    "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_1158_eyebrow_swinv2_tiny_seed42/artifacts/source_snapshot/deepfake_roi/utils/repro.py": "9e61e1a856d28ae421abbcb9f6f85c4aa66e2b4584955d57d4abad0c163b4dc7"
+  }
+}

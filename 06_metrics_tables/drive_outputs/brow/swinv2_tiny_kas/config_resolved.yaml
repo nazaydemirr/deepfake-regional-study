@@ -1,0 +1,90 @@
+experiment:
+  region: eyebrow
+  model_name: swinv2_tiny
+  seed: 42
+  notebook_version: v4_eyebrow_pdf_standard
+  mode: new
+  resume_run_id: null
+paths:
+  project_root_candidates:
+  - /content/drive/MyDrive/AISC DeepFake Çalışmaları
+  - /content/drive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC
+    DeepFake Çalışmaları
+  eyebrow_roi_relative: Deneyler/Nazlıcan/Deney 1/Kaş
+  selection_metadata_relative: Deneyler/Deney 1 Frame/secim_metadata.csv
+  results_relative: Deneyler/Nazlıcan/Deney 1/Sonuçlar
+data:
+  roi_metadata_filename: metadata.csv
+  sample_id_column: sample_id
+  label_column: label
+  split_column: split
+  status_column: status
+  relative_path_column: output_relative_path
+  absolute_path_column: output_path
+  input_path_column: input_path
+  output_sha256_column: output_sha256
+  accepted_status:
+  - SUCCESS
+  - OK
+  allowed_labels:
+  - real
+  - fake
+  allowed_splits:
+  - train
+  - val
+  - test
+  image_size: 224
+  batch_size: 32
+  num_workers: 2
+  pin_memory: true
+  expected_split_ratios:
+    train: 0.8
+    val: 0.1
+    test: 0.1
+  split_ratio_tolerance: 0.06
+selection_metadata:
+  class_column: sinif
+  split_column: split
+  original_path_column: orijinal_yol
+  selected_path_column: yeni_yol
+  filename_column: dosya_adi
+normalization:
+  source: pretrained_weights
+  weights: Swin_V2_T_Weights.IMAGENET1K_V1
+  rationale: ImageNet-pretrained Swin V2'nin kendi normalizasyonu kullanılır. Proje
+    train/val/test verisinden mean/std öğrenilmez; validation veya test istatistiği
+    normalizasyona karışmaz.
+model:
+  pretrained: true
+  dropout: 0.2
+training:
+  epochs: 20
+  backbone_lr: 1.0e-05
+  head_lr: 0.0001
+  weight_decay: 0.01
+  gradient_clip_norm: 1.0
+  mixed_precision: false
+  amp_overflow_abort_after: 8
+  early_stopping_patience: 6
+  monitor_metric: roc_auc
+  fallback_metric: f1
+  keep_last_n_epoch_checkpoints: 3
+  scheduler_eta_min_factor: 0.1
+  min_improvement: 1.0e-06
+  default_threshold: 0.5
+  threshold_search_min: 0.05
+  threshold_search_max: 0.95
+  threshold_search_steps: 181
+augmentation:
+  horizontal_flip_probability: 0.5
+  rotation_degrees: 5
+  brightness: 0.1
+  contrast: 0.1
+  saturation: 0.05
+  hue: 0.02
+quality:
+  smoke_test_batches: 2
+  smoke_test_lr: 1.0e-06
+  min_figure_short_edge_px: 600
+  checkpoint_continuity_atol: 1.0e-07
+  checkpoint_continuity_rtol: 1.0e-06
