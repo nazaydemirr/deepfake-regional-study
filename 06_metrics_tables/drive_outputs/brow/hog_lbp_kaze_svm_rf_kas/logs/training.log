@@ -1,0 +1,7 @@
+2026-08-08 09:19:03,648 | INFO | Run ID: 20260808_121903_eyebrow_hog_lbp_kaze_seed42
+2026-08-08 09:19:03,670 | INFO | Dataset: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Kaş
+2026-08-08 09:19:03,677 | INFO | Output : /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/HOG_LBP_KAZE_SVM_RF_Kas_Deneyi_Sonuc_
+2026-08-08 09:19:18,977 | INFO | metadata.csv eğitim indeksine birleştirildi.
+2026-08-08 09:19:19,123 | INFO | Kullanılan ROI sayısı: 1962
+2026-08-08 09:51:05,878 | INFO | Standart model/metrik/tahmin/grafik çıktıları kaydedildi.
+2026-08-08 09:51:45,373 | INFO | Experiment completed in 32.60 minutes

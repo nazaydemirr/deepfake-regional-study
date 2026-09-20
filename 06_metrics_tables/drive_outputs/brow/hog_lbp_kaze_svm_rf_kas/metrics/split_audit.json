@@ -1,0 +1,10 @@
+{
+  "exact_roi_hash_audit": {
+    "status": "PASSED",
+    "cross_split_duplicate_hashes": 0
+  },
+  "source_video_audit": {
+    "status": "NOT_AVAILABLE",
+    "cross_split_source_videos": null
+  }
+}

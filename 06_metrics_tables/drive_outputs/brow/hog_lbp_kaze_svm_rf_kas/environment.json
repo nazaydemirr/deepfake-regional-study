@@ -1,0 +1,9 @@
+{
+  "python": "3.12.13",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+  "opencv": "4.13.0",
+  "numpy": "2.0.2",
+  "pandas": "2.2.2",
+  "scikit_learn": "1.6.1",
+  "scikit_image": "0.25.2"
+}

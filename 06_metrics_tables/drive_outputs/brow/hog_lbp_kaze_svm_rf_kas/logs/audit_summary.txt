@@ -1,0 +1,21 @@
+Run ID: 20260808_121903_eyebrow_hog_lbp_kaze_seed42
+Region: eyebrow
+Seed: 42
+
+Total ROI samples: 1962
+Training samples: 1562
+Validation samples: 204
+Test samples: 196
+
+Raw/cropped eyebrow ROI files modified: NO
+Features extracted during experiment: YES
+NaN or Inf detected: NO
+Test set used for model selection: NO
+Saved-model inference reload test: PASSED
+Exact ROI hash cross-split audit: PASSED
+Source-video cross-split audit: NOT_AVAILABLE
+
+NOTE:
+source_video bilgisi metadata içinde dolu olmadığı için
+video-level split izolasyonu bağımsız doğrulanamadı.
+Mevcut train/val/test klasörleri aynen korunmuştur.

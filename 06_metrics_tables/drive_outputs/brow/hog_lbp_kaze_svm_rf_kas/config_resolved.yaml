@@ -1,0 +1,70 @@
+run_id: 20260808_121903_eyebrow_hog_lbp_kaze_seed42
+run_name: HOG_LBP_KAZE_SVM_RF_Kas_Deneyi_Sonuc_
+region: eyebrow
+seed: 42
+dataset:
+  path: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Kaş
+  total_samples: 1962
+  train_samples: 1562
+  validation_samples: 204
+  test_samples: 196
+  train_real: 786
+  train_fake: 776
+  validation_real: 106
+  validation_fake: 98
+  test_real: 101
+  test_fake: 95
+  label_mapping:
+    real: 0
+    fake: 1
+  split_source: pre-existing real|fake/train|val|test folders
+  input_images_modified: false
+  source_metadata: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney
+    1/Kaş/metadata.csv
+features:
+  image_size:
+  - 224
+  - 224
+  hog:
+    orientations: 9
+    pixels_per_cell:
+    - 16
+    - 16
+    cells_per_block:
+    - 2
+    - 2
+    length: 6084
+  lbp:
+    radius: 3
+    points: 24
+    method: uniform
+    length: 26
+  kaze:
+    pooling: descriptor mean + descriptor std
+    length: 128
+  fused_length: 6238
+model_selection:
+  selection_split: validation
+  primary_metric: f1_fake
+  secondary_metric: roc_auc
+  test_used_for_selection: false
+models:
+  E1:
+    name: HOG + LBP - RBF-SVM
+    selected_C: 10.0
+  E2:
+    name: HOG + LBP + KAZE - RBF-SVM
+    selected_C: 1.0
+  E3:
+    name: RF-1
+    n_estimators: 300
+    max_depth: null
+    min_samples_leaf: 1
+    max_features: sqrt
+split_audit:
+  exact_roi_hash_audit:
+    status: PASSED
+    cross_split_duplicate_hashes: 0
+  source_video_audit:
+    status: NOT_AVAILABLE
+    cross_split_source_videos: null

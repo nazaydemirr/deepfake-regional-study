@@ -1,0 +1,78 @@
+{
+  "run_id": "20260808_121903_eyebrow_hog_lbp_kaze_seed42",
+  "run_name": "HOG_LBP_KAZE_SVM_RF_Kas_Deneyi_Sonuc_",
+  "region": "eyebrow",
+  "status": "COMPLETED",
+  "duration_seconds": 1956.124,
+  "data_accounting": {
+    "total_samples": 1962,
+    "train_samples": 1562,
+    "validation_samples": 204,
+    "test_samples": 196,
+    "train_real": 786,
+    "train_fake": 776,
+    "validation_real": 106,
+    "validation_fake": 98,
+    "test_real": 101,
+    "test_fake": 95
+  },
+  "split_audit": {
+    "exact_roi_hash_audit": {
+      "status": "PASSED",
+      "cross_split_duplicate_hashes": 0
+    },
+    "source_video_audit": {
+      "status": "NOT_AVAILABLE",
+      "cross_split_source_videos": null
+    }
+  },
+  "selected_models": {
+    "E1_C": 10.0,
+    "E2_C": 1.0,
+    "E3_configuration": {
+      "name": "RF-1",
+      "n_estimators": 300,
+      "max_depth": null,
+      "min_samples_leaf": 1,
+      "max_features": "sqrt"
+    }
+  },
+  "test_metrics": {
+    "E1": {
+      "accuracy": 0.4897959183673469,
+      "precision_fake": 0.47706422018348627,
+      "recall_fake": 0.5473684210526316,
+      "f1_fake": 0.5098039215686274,
+      "roc_auc": 0.48702449192287645,
+      "specificity_real": 0.43564356435643564,
+      "tn": 44,
+      "fp": 57,
+      "fn": 43,
+      "tp": 52
+    },
+    "E2": {
+      "accuracy": 0.5306122448979592,
+      "precision_fake": 0.5161290322580645,
+      "recall_fake": 0.5052631578947369,
+      "f1_fake": 0.5106382978723404,
+      "roc_auc": 0.5388223032829599,
+      "specificity_real": 0.5544554455445545,
+      "tn": 56,
+      "fp": 45,
+      "fn": 47,
+      "tp": 48
+    },
+    "E3": {
+      "accuracy": 0.5255102040816326,
+      "precision_fake": 0.5113636363636364,
+      "recall_fake": 0.47368421052631576,
+      "f1_fake": 0.4918032786885246,
+      "roc_auc": 0.5556539864512767,
+      "specificity_real": 0.5742574257425742,
+      "tn": 58,
+      "fp": 43,
+      "fn": 50,
+      "tp": 45
+    }
+  }
+}
