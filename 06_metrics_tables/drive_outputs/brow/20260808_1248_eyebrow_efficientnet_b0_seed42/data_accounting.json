@@ -1,0 +1,43 @@
+{
+  "run_id": "20260808_1248_eyebrow_efficientnet_b0_seed42",
+  "metadata_path": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Kaş/metadata.csv",
+  "total_metadata_rows": 3000,
+  "success_status_rows": 1962,
+  "skipped_status_rows": 1038,
+  "error_status_rows": 0,
+  "audit_only_rows": 1038,
+  "missing_files_among_success": 0,
+  "training_eligible_success_count": 1962,
+  "status_counts": {
+    "success": 1962,
+    "skipped": 1038
+  },
+  "split_class_counts": {
+    "train": {
+      "fake": 776,
+      "real": 786
+    },
+    "val": {
+      "fake": 98,
+      "real": 106
+    },
+    "test": {
+      "fake": 95,
+      "real": 101
+    }
+  },
+  "cross_split_path_intersections": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "cross_split_input_sha256_intersections": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "source_group_column": null,
+  "source_group_leakage_status": "NOT_VERIFIABLE",
+  "source_group_intersections": {},
+  "source_group_note": "VERIFIED means a populated source_video/person/subject ID was checked with disjoint sets. NOT_VERIFIABLE means the upstream metadata did not provide authoritative source identity."
+}

@@ -1,0 +1,6 @@
+{
+  "selection_dataset": "validation",
+  "method": "Youden J",
+  "selected_threshold": 0.5567432641983032,
+  "youden_j": 0.12105596955763437
+}

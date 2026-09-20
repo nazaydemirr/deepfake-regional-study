@@ -1,0 +1,6 @@
+file,width_px,height_px,short_side_px,resolution_pass
+test_confusion_matrix.png,1124,1185,1124,True
+test_precision_recall_curve.png,1485,885,885,True
+test_roc_curve.png,1485,885,885,True
+training_validation_auc.png,1485,885,885,True
+training_validation_loss.png,1484,885,885,True

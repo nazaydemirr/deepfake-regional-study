@@ -1,0 +1,7 @@
+{
+  "schema_test": true,
+  "split_test": true,
+  "smoke_test": true,
+  "numerical_test": true,
+  "checkpoint_test": true
+}

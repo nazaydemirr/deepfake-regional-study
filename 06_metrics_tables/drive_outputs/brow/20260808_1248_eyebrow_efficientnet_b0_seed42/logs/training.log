@@ -1,0 +1,28 @@
+2026-08-08 12:48:57,660 | INFO | Run initialized: 20260808_1248_eyebrow_efficientnet_b0_seed42
+2026-08-08 12:48:57,661 | INFO | Input eyebrow root: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Kaş
+2026-08-08 12:48:57,662 | INFO | Results root: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar
+2026-08-08 12:49:11,639 | WARNING | WARNING: True video/person-level split isolation cannot be verified because source_video/person_id is not populated. The notebook will preserve the upstream train/val/test split and has verified exact path/hash isolation only.
+2026-08-08 12:49:11,812 | INFO | Metadata validated: total=3000 eligible=1962 skipped=1038 error=0
+2026-08-08 12:58:59,727 | INFO | Local cache ready: 1962 images at /content/eyebrow_roi_cache
+2026-08-08 13:00:38,324 | INFO | EfficientNet-B0 model built with 4008829 parameters
+2026-08-08 13:01:57,645 | INFO | [frozen] epoch 01/5 | train_loss=0.68310 | val_loss=0.67369 | val_auc=0.60281 | val_f1=0.55172 | lr=1.00e-03 | time=9.0s
+2026-08-08 13:02:06,954 | INFO | [frozen] epoch 02/5 | train_loss=0.66446 | val_loss=0.67038 | val_auc=0.61966 | val_f1=0.60000 | lr=1.00e-03 | time=8.3s
+2026-08-08 13:02:16,112 | INFO | [frozen] epoch 03/5 | train_loss=0.64998 | val_loss=0.66418 | val_auc=0.62803 | val_f1=0.51163 | lr=1.00e-03 | time=8.1s
+2026-08-08 13:02:26,452 | INFO | [frozen] epoch 04/5 | train_loss=0.64427 | val_loss=0.66787 | val_auc=0.64247 | val_f1=0.39189 | lr=1.00e-03 | time=9.2s
+2026-08-08 13:02:36,753 | INFO | [frozen] epoch 05/5 | train_loss=0.64022 | val_loss=0.67020 | val_auc=0.64411 | val_f1=0.63717 | lr=1.00e-03 | time=9.3s
+2026-08-08 13:03:09,313 | INFO | [finetune] epoch 01/15 | train_loss=0.74692 | val_loss=0.71918 | val_auc=0.53494 | val_f1=0.30657 | lr=2.00e-05 | time=14.6s
+2026-08-08 13:03:27,623 | INFO | [finetune] epoch 02/15 | train_loss=0.66593 | val_loss=0.69202 | val_auc=0.57124 | val_f1=0.52571 | lr=2.00e-05 | time=15.5s
+2026-08-08 13:03:46,376 | INFO | [finetune] epoch 03/15 | train_loss=0.64565 | val_loss=0.69020 | val_auc=0.57711 | val_f1=0.52809 | lr=2.00e-05 | time=16.1s
+2026-08-08 13:04:06,099 | INFO | [finetune] epoch 04/15 | train_loss=0.63250 | val_loss=0.68916 | val_auc=0.58625 | val_f1=0.53476 | lr=2.00e-05 | time=16.6s
+2026-08-08 13:04:25,158 | INFO | [finetune] epoch 05/15 | train_loss=0.62928 | val_loss=0.68001 | val_auc=0.60223 | val_f1=0.53107 | lr=2.00e-05 | time=16.2s
+2026-08-08 13:04:46,882 | INFO | [finetune] epoch 06/15 | train_loss=0.59599 | val_loss=0.67234 | val_auc=0.62437 | val_f1=0.55249 | lr=2.00e-05 | time=16.5s
+2026-08-08 13:05:05,771 | INFO | [finetune] epoch 07/15 | train_loss=0.58089 | val_loss=0.67028 | val_auc=0.62717 | val_f1=0.57895 | lr=2.00e-05 | time=16.3s
+2026-08-08 13:05:25,031 | INFO | [finetune] epoch 08/15 | train_loss=0.56025 | val_loss=0.67111 | val_auc=0.63487 | val_f1=0.55497 | lr=2.00e-05 | time=15.7s
+2026-08-08 13:05:44,281 | INFO | [finetune] epoch 09/15 | train_loss=0.54694 | val_loss=0.66054 | val_auc=0.65431 | val_f1=0.58201 | lr=2.00e-05 | time=16.5s
+2026-08-08 13:06:03,797 | INFO | [finetune] epoch 10/15 | train_loss=0.52567 | val_loss=0.66111 | val_auc=0.65922 | val_f1=0.56354 | lr=2.00e-05 | time=16.5s
+2026-08-08 13:06:23,272 | INFO | [finetune] epoch 11/15 | train_loss=0.52157 | val_loss=0.65055 | val_auc=0.66952 | val_f1=0.60513 | lr=2.00e-05 | time=16.4s
+2026-08-08 13:06:43,649 | INFO | [finetune] epoch 12/15 | train_loss=0.49617 | val_loss=0.64651 | val_auc=0.68194 | val_f1=0.58065 | lr=2.00e-05 | time=17.3s
+2026-08-08 13:07:02,620 | INFO | [finetune] epoch 13/15 | train_loss=0.48802 | val_loss=0.66962 | val_auc=0.66115 | val_f1=0.58031 | lr=2.00e-05 | time=16.7s
+2026-08-08 13:07:20,065 | INFO | [finetune] epoch 14/15 | train_loss=0.46060 | val_loss=0.67852 | val_auc=0.66086 | val_f1=0.54945 | lr=2.00e-05 | time=15.7s
+2026-08-08 13:07:38,482 | INFO | [finetune] epoch 15/15 | train_loss=0.44790 | val_loss=0.66910 | val_auc=0.67857 | val_f1=0.56989 | lr=1.00e-05 | time=16.5s
+2026-08-08 13:08:22,487 | INFO | Experiment complete: 20260808_1248_eyebrow_efficientnet_b0_seed42 | output files=38

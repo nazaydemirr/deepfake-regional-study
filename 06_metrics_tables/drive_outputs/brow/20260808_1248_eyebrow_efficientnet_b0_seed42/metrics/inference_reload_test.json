@@ -1,0 +1,11 @@
+{
+  "status": "PASSED",
+  "checkpoint": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260808_1248_eyebrow_efficientnet_b0_seed42/checkpoints/finetune/best.ckpt",
+  "n_samples": 4,
+  "probabilities": [
+    0.5050852298736572,
+    0.5161343216896057,
+    0.29075413942337036,
+    0.44651493430137634
+  ]
+}

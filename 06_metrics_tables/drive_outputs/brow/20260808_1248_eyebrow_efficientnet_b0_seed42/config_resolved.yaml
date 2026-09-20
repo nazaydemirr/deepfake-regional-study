@@ -1,0 +1,26 @@
+seed: 42
+image_size: 224
+batch_size: 32
+num_workers: 0
+frozen_epochs: 5
+finetune_epochs: 15
+frozen_lr: 0.001
+finetune_lr: 2.0e-05
+weight_decay: 0.0001
+early_stopping_patience: 4
+scheduler_patience: 2
+grad_clip_norm: 1.0
+epoch_checkpoint_keep: 3
+dropout: 0.2
+threshold_min: 0.05
+threshold_max: 0.95
+threshold_steps: 181
+accepted_statuses:
+- ok
+- success
+negative_label: real
+positive_label: fake
+cache_images_locally: true
+verify_cached_images: true
+resume_compatible_run: true
+allow_unverifiable_source_split: true

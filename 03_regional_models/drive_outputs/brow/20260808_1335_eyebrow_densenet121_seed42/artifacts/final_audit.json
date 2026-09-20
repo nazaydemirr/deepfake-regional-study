@@ -1,0 +1,15 @@
+{
+  "input_folder_untouched_by_design": true,
+  "schema_gate": true,
+  "source_split_gate": true,
+  "smoke_gate": true,
+  "numerical_gate": true,
+  "checkpoint_gate": true,
+  "test_only_final_evaluation": true,
+  "all_figure_short_sides_ge_600px": true,
+  "english_figure_labels": true,
+  "best_checkpoint_exists": true,
+  "last_checkpoint_exists": true,
+  "final_audit_pass": true,
+  "output_manifest_note": "output_manifest.csv is generated after final_audit.json and excludes only itself."
+}

@@ -1,0 +1,65 @@
+{
+  "run_id": "20260808_1248_eyebrow_efficientnet_b0_seed42",
+  "run_schema_version": 5,
+  "experiment": "EfficientNet-B0 Eyebrow ROI Transfer Learning Baseline",
+  "model": "torchvision EfficientNet-B0",
+  "pretrained_weights": "EfficientNet_B0_Weights.DEFAULT",
+  "input": "raw color eyebrow ROI crops",
+  "preprocessing": "aspect-ratio preserving resize + ImageNet-mean padding + ImageNet pretrained normalization",
+  "image_size": 224,
+  "seed": 42,
+  "device": "cuda",
+  "metadata_path": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Kaş/metadata.csv",
+  "eyebrow_root": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Kaş",
+  "results_root": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar",
+  "run_dir": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260808_1248_eyebrow_efficientnet_b0_seed42",
+  "split_counts": {
+    "train": {
+      "fake": 776,
+      "real": 786
+    },
+    "val": {
+      "fake": 98,
+      "real": 106
+    },
+    "test": {
+      "fake": 95,
+      "real": 101
+    }
+  },
+  "source_group_leakage_status": "NOT_VERIFIABLE",
+  "source_group_column": null,
+  "validation_selected_threshold": 0.27999999999999997,
+  "validation_metrics": {
+    "threshold": 0.27999999999999997,
+    "accuracy": 0.5931372549019608,
+    "balanced_accuracy": 0.6042549095109742,
+    "precision": 0.5471698113207547,
+    "recall": 0.8877551020408163,
+    "f1": 0.6770428015564203,
+    "specificity": 0.32075471698113206,
+    "roc_auc": 0.6819407008086252,
+    "average_precision": 0.6976401318715859,
+    "tn": 34,
+    "fp": 72,
+    "fn": 11,
+    "tp": 87
+  },
+  "final_test_metrics": {
+    "threshold": 0.27999999999999997,
+    "accuracy": 0.5459183673469388,
+    "balanced_accuracy": 0.5556539864512767,
+    "precision": 0.51875,
+    "recall": 0.8736842105263158,
+    "f1": 0.6509803921568628,
+    "specificity": 0.2376237623762376,
+    "roc_auc": 0.5873892652423137,
+    "average_precision": 0.5761101304032796,
+    "tn": 24,
+    "fp": 77,
+    "fn": 12,
+    "tp": 83
+  },
+  "inference_reload_test": "PASSED",
+  "output_file_count": 38
+}

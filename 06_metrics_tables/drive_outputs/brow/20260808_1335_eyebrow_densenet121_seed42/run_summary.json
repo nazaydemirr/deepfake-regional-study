@@ -1,0 +1,55 @@
+{
+  "run_id": "20260808_1335_eyebrow_densenet121_seed42",
+  "task": "Eyebrow ROI Deepfake Binary Classification",
+  "model": "DenseNet121",
+  "pretraining": "ImageNet",
+  "input_root": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Kaş",
+  "output_root": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/DenseNet121_Kas_Results_20260808_1335_eyebrow_densenet121_seed42",
+  "seed": 42,
+  "image_size": [
+    224,
+    224
+  ],
+  "resize_policy": "resize_with_pad_preserve_aspect_ratio",
+  "split_policy": "source_group_80_10_10_real_fake_independent",
+  "train_images": 1548,
+  "validation_images": 225,
+  "test_images": 189,
+  "test_sources": 141,
+  "best_validation_auc": 0.5752734541893005,
+  "completed_epoch": 21,
+  "selected_validation_threshold": 0.5567432641983032,
+  "image_level_test_metrics": {
+    "accuracy": 0.5026455026455027,
+    "balanced_accuracy": 0.49058084772370486,
+    "precision": 0.45454545454545453,
+    "recall_sensitivity": 0.16483516483516483,
+    "specificity": 0.8163265306122449,
+    "f1": 0.24193548387096775,
+    "roc_auc": 0.554047992823503,
+    "pr_auc": 0.5292930068489279,
+    "mcc": -0.02479455273924247,
+    "threshold": 0.5567432641983032,
+    "n_test_images": 189
+  },
+  "source_level_test_metrics": {
+    "accuracy": 0.41134751773049644,
+    "balanced_accuracy": 0.46364769422517654,
+    "precision": 0.5,
+    "recall": 0.1686746987951807,
+    "f1": 0.25225225225225223,
+    "roc_auc": 0.533651848774408,
+    "pr_auc": 0.6152798664764509,
+    "n_test_sources": 141,
+    "threshold": 0.5567432641983032
+  },
+  "quality_gates": {
+    "schema_test": true,
+    "split_test": true,
+    "smoke_test": true,
+    "numerical_test": true,
+    "checkpoint_test": true
+  },
+  "leakage_pass": true,
+  "test_used_for_model_selection": false
+}

@@ -1,0 +1,36 @@
+{
+  "policy": "source_group_80_10_10_real_fake_independent",
+  "exact_source_video_overlap_by_class": {
+    "real": {
+      "train_val": [],
+      "train_test": [],
+      "val_test": []
+    },
+    "fake": {
+      "train_val": [],
+      "train_test": [],
+      "val_test": []
+    }
+  },
+  "source_group_overlap": {
+    "train_val": [],
+    "train_test": [],
+    "val_test": []
+  },
+  "cross_split_duplicate_hash_count": 0,
+  "class_presence": {
+    "test": 2,
+    "train": 2,
+    "val": 2
+  },
+  "exact_source_pass": true,
+  "group_isolation_pass": true,
+  "content_isolation_pass": true,
+  "class_presence_pass": true,
+  "leakage_pass": true,
+  "unique_split_groups": {
+    "train": 811,
+    "val": 101,
+    "test": 103
+  }
+}
