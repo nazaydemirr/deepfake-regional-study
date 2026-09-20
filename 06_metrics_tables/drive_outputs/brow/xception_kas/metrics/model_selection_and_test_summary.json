@@ -1,0 +1,23 @@
+{
+    "selection_metric": "validation_auc",
+    "frozen_validation_auc": 0.6137369871139526,
+    "finetuned_validation_auc": 0.6706777215003967,
+    "selected_stage": "fine_tuned",
+    "selected_model_path": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_123945_xception_eyebrow/checkpoints/best_xception_finetuned.keras",
+    "selected_validation_auc": 0.6706777215003967,
+    "decision_threshold": 0.5,
+    "test_samples": 196,
+    "actual_real": 101,
+    "actual_fake": 95,
+    "predicted_real": 76,
+    "predicted_fake": 120,
+    "keras_test_evaluation": {
+        "accuracy": 0.5153061151504517,
+        "auc": 0.5514851212501526,
+        "loss": 0.843407928943634,
+        "precision": 0.5,
+        "recall": 0.6315789222717285
+    },
+    "evaluation_seconds": 18.888267479999968,
+    "prediction_seconds": 10.260419758000126
+}

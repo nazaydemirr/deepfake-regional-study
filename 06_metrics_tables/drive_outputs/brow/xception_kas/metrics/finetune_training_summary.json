@@ -1,0 +1,14 @@
+{
+    "training_stage": "fine_tuning",
+    "unfreeze_last_n": 30,
+    "trainable_xception_layers": 21,
+    "requested_epochs": 10,
+    "completed_epochs": 10,
+    "learning_rate": 1e-05,
+    "best_validation_auc": 0.6706777215003967,
+    "best_validation_auc_epoch": 9,
+    "best_validation_accuracy": 0.6274510025978088,
+    "training_seconds": 244.75887273400008,
+    "training_minutes": 4.079314545566668,
+    "best_model_path": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_123945_xception_eyebrow/checkpoints/best_xception_finetuned.keras"
+}

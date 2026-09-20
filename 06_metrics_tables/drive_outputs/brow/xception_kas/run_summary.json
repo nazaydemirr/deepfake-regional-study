@@ -1,0 +1,63 @@
+{
+  "run_id": "20260807_123945_xception_eyebrow",
+  "task": "eyebrow_roi_deepfake_detection",
+  "region": "eyebrow",
+  "model": "Xception",
+  "pretrained_weights": "ImageNet",
+  "training_strategy": "imagenet_xception_transfer_learning_then_fine_tuning",
+  "data_io_strategy": "copy_drive_dataset_to_colab_local_cache_before_training",
+  "class_mapping": {
+    "real": 0,
+    "fake": 1
+  },
+  "source_frame_root": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Deney 1 Frame",
+  "eyebrow_roi_drive_root": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Kaş",
+  "eyebrow_roi_training_cache": "/content/eyebrow_dataset_cache",
+  "results_root": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_123945_xception_eyebrow",
+  "dataset": {
+    "train_total": 1562,
+    "val_total": 204,
+    "test_total": 196,
+    "total_roi": 1962,
+    "fake_train": 776,
+    "real_train": 786,
+    "fake_val": 98,
+    "real_val": 106,
+    "fake_test": 95,
+    "real_test": 101
+  },
+  "model_selection": {
+    "selected_model_path": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_123945_xception_eyebrow/checkpoints/best_xception_finetuned.keras",
+    "final_model_path": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260807_123945_xception_eyebrow/artifacts/Xception_Eyebrow_Final.keras",
+    "selection_metric": "validation_auc",
+    "frozen_best_val_auc": null,
+    "finetuned_best_val_auc": null
+  },
+  "test_metrics": {
+    "model": "Xception",
+    "region": "eyebrow",
+    "selected_model_stage": "fine_tuned",
+    "decision_threshold": 0.5,
+    "test_samples": 196,
+    "accuracy": 0.5153061224489796,
+    "balanced_accuracy": 0.5187597707139135,
+    "precision_fake": 0.5,
+    "recall_fake": 0.631578947368421,
+    "sensitivity": 0.631578947368421,
+    "specificity": 0.40594059405940597,
+    "f1_score_fake": 0.5581395348837209,
+    "roc_auc": 0.5513288170922355,
+    "negative_predictive_value": 0.5394736842105263,
+    "false_positive_rate": 0.594059405940594,
+    "false_negative_rate": 0.3684210526315789,
+    "confusion_matrix": {
+      "true_negative": 41,
+      "false_positive": 60,
+      "false_negative": 35,
+      "true_positive": 60
+    }
+  },
+  "started_at_utc": "2026-08-07T12:39:45.994462+00:00",
+  "completed_at_utc": "2026-08-07T13:02:00.092233+00:00",
+  "duration_seconds": 1334.098
+}

@@ -1,0 +1,21 @@
+{
+    "region": "eyebrow",
+    "horizontal_flip_enabled": false,
+    "random_rotation_factor": 0.015,
+    "random_zoom_height": [
+        -0.03,
+        0.03
+    ],
+    "random_zoom_width": [
+        -0.03,
+        0.03
+    ],
+    "random_contrast_factor": 0.03,
+    "blur": false,
+    "random_erasing": false,
+    "xception_preprocess_input": true,
+    "train_augmentation": true,
+    "validation_augmentation": false,
+    "test_augmentation": false,
+    "seed": 42
+}

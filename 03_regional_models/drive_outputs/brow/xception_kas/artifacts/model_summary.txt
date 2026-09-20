@@ -1,0 +1,1 @@
+Model summary üretilemedi: NameError: name 'selected_model' is not defined

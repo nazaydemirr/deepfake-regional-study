@@ -1,0 +1,18 @@
+{
+    "region": "eyebrow",
+    "model": "Xception",
+    "dpi": 600,
+    "figure_count": 10,
+    "figures": [
+        "01_confusion_matrix.png",
+        "02_roc_curve.png",
+        "03_frozen_accuracy.png",
+        "04_frozen_auc.png",
+        "05_frozen_loss.png",
+        "06_finetune_accuracy.png",
+        "07_finetune_auc.png",
+        "08_finetune_loss.png",
+        "09_frozen_vs_finetuned.png",
+        "10_final_test_metrics.png"
+    ]
+}
