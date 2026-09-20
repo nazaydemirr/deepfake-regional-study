@@ -1,0 +1,21 @@
+{
+  "experiment": "VGG16_FeatureExtractor_SVM_Kas",
+  "region": "eyebrow",
+  "feature_extractor": "VGG16 ImageNet / include_top=False / pooling=avg",
+  "classifier": "SVM",
+  "best_svm_params": {
+    "kernel": "rbf",
+    "C": 1.0,
+    "gamma": 0.001
+  },
+  "frame_level": {
+    "accuracy": 0.576530612244898,
+    "precision": 0.5588235294117647,
+    "recall": 0.6,
+    "f1_score": 0.5786802030456852,
+    "roc_auc": 0.6004168837936426,
+    "average_precision": 0.5975338505535301,
+    "n_test_frames": 196
+  },
+  "video_level": null
+}

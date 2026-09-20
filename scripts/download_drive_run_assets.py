@@ -137,6 +137,29 @@ ASSETS: list[dict[str, object]] = [
     item("10Rh4Am-86c53Rxro1uIJ90BqecmSWyxY", "03_regional_models/drive_outputs/brow/hog_lbp_kaze_svm_rf_kas/checkpoints/best_hog_lbp_kaze_random_forest.joblib", 8236505),
     item("13UFccuyMRGkJv726pqU8_kFEfmlcz7wP", "03_regional_models/drive_outputs/brow/hog_lbp_kaze_svm_rf_kas/checkpoints/best_hog_lbp_kaze_rbf_svm.joblib", 76435677),
     item("1V49v_YGLni6RRBZa1bqVHAIAgoANxyQj", "03_regional_models/drive_outputs/brow/hog_lbp_kaze_svm_rf_kas/checkpoints/best_hog_lbp_rbf_svm.joblib", 76041533),
+
+    # brow / VGG16 feature extractor + SVM run
+    item("1XCF6gnWEFFytYsP3nse3SeTuv8Aiou-v", "06_metrics_tables/drive_outputs/brow/vgg16_feature_extractor_svm_kas/output_manifest.csv", 1982),
+    item("1o-ngZDPVcub2_QDNU1WjSDzU0Ucg1FZa", "06_metrics_tables/drive_outputs/brow/vgg16_feature_extractor_svm_kas/run_summary.json", 1421),
+    item("10huk0CL6asRXS2YsxSQpfBffD6Gq076f", "06_metrics_tables/drive_outputs/brow/vgg16_feature_extractor_svm_kas/requirements_lock.txt", 14001),
+    item("1qWgGKTGl627Yue4sfhrJJ4_Uu11LGKNr", "06_metrics_tables/drive_outputs/brow/vgg16_feature_extractor_svm_kas/environment.json", 375),
+    item("1fh4eT8CVajWk4U2qRJRGPeKro3P4-EAw", "06_metrics_tables/drive_outputs/brow/vgg16_feature_extractor_svm_kas/config_resolved.yaml", 765),
+    item("1qgSh_1EBn4NRyOZpsxyzXFKtRxcSPj2q", "07_figures/brow/vgg16_feature_extractor_svm_kas/precision_recall_curve.png", 59102),
+    item("1ABM3Zs_wx4GVM8jxIe5rTUw6S_xhz0sJ", "07_figures/brow/vgg16_feature_extractor_svm_kas/roc_curve.png", 58653),
+    item("1FJ3TT4RJn-4xVBZLT8T0ypyfikxHUN8A", "07_figures/brow/vgg16_feature_extractor_svm_kas/confusion_matrix.png", 31058),
+    item("19Wm75b5rzH1z8223GUyzjETMBpcJckl6", "04_predictions/brow/vgg16_feature_extractor_svm_kas/test_predictions.csv", 36059),
+    item("1ckEnqmY0FQGi7YhvQKg7DEFFHfGoNioL", "06_metrics_tables/drive_outputs/brow/vgg16_feature_extractor_svm_kas/metrics/metrics.json", 534),
+    item("1x6Hew91BHp5A10ibqL0L4iPchZr4zNCb", "06_metrics_tables/drive_outputs/brow/vgg16_feature_extractor_svm_kas/metrics/confusion_matrix.csv", 56),
+    item("1WBcpIu_8WOOSqGC6pYTyaYJcARie3bCd", "06_metrics_tables/drive_outputs/brow/vgg16_feature_extractor_svm_kas/metrics/classification_report.csv", 386),
+    item("17HrWx_uqiabuWcw_Hx0N6TULHpP_oXiP", "06_metrics_tables/drive_outputs/brow/vgg16_feature_extractor_svm_kas/metrics/svm_validation_search.csv", 1556),
+    item("1s3eLIIWqvtwWF1ycyjWl0FMz5cgT1MYf", "06_metrics_tables/drive_outputs/brow/vgg16_feature_extractor_svm_kas/logs/training.log", 1126),
+    item("1POU4GzAH1_QTywAB0xUf6w_QLdqoKMGX", "03_regional_models/drive_outputs/brow/vgg16_feature_extractor_svm_kas/artifacts/test_features.npz", 289174),
+    item("1WGFGwI_zbUwtquxAujMmqmMOTCnKZ1nw", "03_regional_models/drive_outputs/brow/vgg16_feature_extractor_svm_kas/artifacts/val_features.npz", 299807),
+    item("1DSqB4sS-o2rolKeVSPPt7vH_v6xvNBg9", "03_regional_models/drive_outputs/brow/vgg16_feature_extractor_svm_kas/artifacts/train_features.npz", 2258948),
+    item("1CCrtcUP0DsKy801R1Are238d3Fipmwos", "03_regional_models/drive_outputs/brow/vgg16_feature_extractor_svm_kas/artifacts/feature_extractor.json", 189),
+    item("1uSDeSDxUZ2GnbD6YaH140_BxXB-HuKnO", "03_regional_models/drive_outputs/brow/vgg16_feature_extractor_svm_kas/artifacts/dataset_inventory.csv", 286038),
+    item("14iTx4uyfdboj_69WwJQ673ZkGaIU1WMV", "03_regional_models/drive_outputs/brow/vgg16_feature_extractor_svm_kas/checkpoints/scaler.joblib", 12903),
+    item("1byF0QNL_S9ipffyTWHwQAkZC4bHpnbgL", "03_regional_models/drive_outputs/brow/vgg16_feature_extractor_svm_kas/checkpoints/svm_model.joblib", 6517259),
 ]
 
 

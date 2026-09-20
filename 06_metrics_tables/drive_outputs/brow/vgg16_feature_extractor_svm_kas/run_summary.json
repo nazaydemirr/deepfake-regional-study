@@ -1,0 +1,68 @@
+{
+  "status": "completed",
+  "experiment_name": "VGG16_FeatureExtractor_SVM_Kas",
+  "dataset_dir": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Kaş",
+  "output_dir": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/VGG16_FeatureExtractor_SVM_Kas",
+  "dataset_counts": [
+    {
+      "split": "test",
+      "class_name": "fake",
+      "count": 95
+    },
+    {
+      "split": "test",
+      "class_name": "real",
+      "count": 101
+    },
+    {
+      "split": "train",
+      "class_name": "fake",
+      "count": 776
+    },
+    {
+      "split": "train",
+      "class_name": "real",
+      "count": 786
+    },
+    {
+      "split": "val",
+      "class_name": "fake",
+      "count": 98
+    },
+    {
+      "split": "val",
+      "class_name": "real",
+      "count": 106
+    }
+  ],
+  "feature_shapes": {
+    "train": [
+      1562,
+      512
+    ],
+    "val": [
+      204,
+      512
+    ],
+    "test": [
+      196,
+      512
+    ]
+  },
+  "best_svm_params": {
+    "kernel": "rbf",
+    "C": 1.0,
+    "gamma": 0.001
+  },
+  "final_fit_seconds": 3.518848180770874,
+  "frame_level_metrics": {
+    "accuracy": 0.576530612244898,
+    "precision": 0.5588235294117647,
+    "recall": 0.6,
+    "f1_score": 0.5786802030456852,
+    "roc_auc": 0.6004168837936426,
+    "average_precision": 0.5975338505535301,
+    "n_test_frames": 196
+  },
+  "video_level_metrics": null
+}

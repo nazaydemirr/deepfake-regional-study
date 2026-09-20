@@ -1,0 +1,42 @@
+experiment_name: VGG16_FeatureExtractor_SVM_Kas
+region: eyebrow
+dataset_dir: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney
+  1/Kaş
+output_dir: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney
+  1/Sonuçlar/VGG16_FeatureExtractor_SVM_Kas
+labels:
+  real: 0
+  fake: 1
+splits:
+- train
+- val
+- test
+image_size:
+- 224
+- 224
+batch_size: 32
+seed: 42
+feature_extractor:
+  architecture: VGG16
+  weights: imagenet
+  include_top: false
+  pooling: avg
+  trainable: false
+  feature_dim: 512
+svm:
+  class_weight: balanced
+  selection_metric: f1
+  search_space:
+    linear_C:
+    - 0.1
+    - 1
+    - 10
+    rbf_C:
+    - 1
+    - 10
+    - 100
+    rbf_gamma:
+    - scale
+    - 0.001
+    - 0.01
+reuse_cached_features: true

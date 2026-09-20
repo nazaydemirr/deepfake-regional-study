@@ -1,0 +1,13 @@
+{
+  "architecture": "VGG16",
+  "weights": "imagenet",
+  "include_top": false,
+  "pooling": "avg",
+  "input_shape": [
+    224,
+    224,
+    3
+  ],
+  "output_dim": 512,
+  "trainable": false
+}

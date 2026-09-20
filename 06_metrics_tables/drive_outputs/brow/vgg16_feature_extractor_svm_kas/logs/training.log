@@ -1,0 +1,18 @@
+2026-08-08 09:10:00 | INFO | Experiment initialized.
+2026-08-08 09:10:00 | INFO | Dataset: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Kaş
+2026-08-08 09:10:00 | INFO | Output : /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/VGG16_FeatureExtractor_SVM_Kas
+2026-08-08 09:10:37 | INFO | Dataset inventory created. Total images=1962
+2026-08-08 09:10:37 | INFO | 
+class_name  fake  real
+split                 
+train        776   786
+val           98   106
+test          95   101
+2026-08-08 09:15:49 | INFO | train features extracted: X=(1562, 512) y=(1562,)
+2026-08-08 09:17:03 | INFO | val features extracted: X=(204, 512) y=(204,)
+2026-08-08 09:18:10 | INFO | test features extracted: X=(196, 512) y=(196,)
+2026-08-08 09:22:59 | INFO | Best validation parameters: {'kernel': 'rbf', 'C': 1.0, 'gamma': 0.001}
+2026-08-08 09:23:11 | INFO | Final SVM trained in 3.52 seconds.
+2026-08-08 09:23:11 | INFO | Final model/scaler saved.
+2026-08-08 09:23:38 | INFO | Metrics and run metadata saved.
+2026-08-08 09:23:44 | INFO | Output manifest saved. Files=20
