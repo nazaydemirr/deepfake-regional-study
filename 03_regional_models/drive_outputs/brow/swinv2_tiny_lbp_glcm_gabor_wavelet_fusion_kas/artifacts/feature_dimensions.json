@@ -1,0 +1,27 @@
+{
+  "total_texture_dimension": 240,
+  "feature_counts": {
+    "lbp": 54,
+    "glcm": 72,
+    "gabor": 72,
+    "wavelet": 42
+  },
+  "feature_slices": {
+    "lbp": [
+      0,
+      54
+    ],
+    "glcm": [
+      54,
+      126
+    ],
+    "gabor": [
+      126,
+      198
+    ],
+    "wavelet": [
+      198,
+      240
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+file,width_px,height_px,short_edge_px,minimum_600_px_passed
+dataset_distribution.png,1485,885,885,True
+test_confusion_matrix_frame_level.png,1123,1185,1123,True
+test_confusion_matrix_video_level.png,1123,1185,1123,True
+test_precision_recall_curve_frame_level.png,1335,1035,1035,True
+test_precision_recall_curve_video_level.png,1335,1035,1035,True
+test_probability_distribution_frame_level.png,1485,885,885,True
+test_roc_curve_frame_level.png,1335,1035,1035,True
+test_roc_curve_video_level.png,1335,1035,1035,True
+training_f1_curve.png,1485,885,885,True
+training_loss_curve.png,1484,885,885,True

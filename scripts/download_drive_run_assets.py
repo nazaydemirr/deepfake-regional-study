@@ -326,6 +326,48 @@ ASSETS: list[dict[str, object]] = [
     item("1TurH4H3iinhZJqCx6wElgiHEH7JlHuxJ", "06_metrics_tables/drive_outputs/brow/vgg16_scratch_hog_gist_rbf_svm_kas/metrics/quality_gates.json", 598),
     item("1zGsfn1fdBBpyyhfxkNdpQqjvX8Tp9mTu", "06_metrics_tables/drive_outputs/brow/vgg16_scratch_hog_gist_rbf_svm_kas/metrics/data_accounting.json", 630),
     item("1ev_nISo49RG2Vw4w9UpzWhW6v4xFXSc7", "06_metrics_tables/drive_outputs/brow/vgg16_scratch_hog_gist_rbf_svm_kas/logs/training_history.csv", 2811),
+
+    # brow / SwinV2 Tiny + LBP + GLCM + Gabor + Wavelet fusion run (large checkpoints are downloaded and split separately)
+    item("1HlZIbENdOBIY95rTQn4VrEjRzSSde8QO", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/output_manifest.csv", 5412),
+    item("1GuCQ4A0Wb0ChkCK-G7ZfAmUesHUw4gVP", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/run_summary.json", 2471),
+    item("1_eduwyG4DWaDp4HETPQxkWg-o_VMNNbB", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/requirements_lock.txt", 14001),
+    item("1iXEgwlmGxEPeEoX-8MenYV-k-v2xh13y", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/environment.json", 524),
+    item("1bjxy0_yX5CfmxRDh1rEZsDb6EpT9sjWE", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/config_resolved.yaml", 1973),
+    item("1J5DAxeIOp71QSFrkXrJlaJamIfWUZNIO", "03_regional_models/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/artifacts/model_architecture.json", 14767),
+    item("1WoNI5ckGy7ZEOOPGMyD8tLiyrAPUtzT_", "03_regional_models/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/artifacts/texture_features_c68f21a30090.joblib", 2134834),
+    item("11tiDA7Yd5czx0BKSwBqPW75gcyOmGjFM", "03_regional_models/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/artifacts/texture_features_test.npz", 337842),
+    item("1aarpOiuzhf09_R1Y6JSKLvV_qTS2epGn", "03_regional_models/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/artifacts/texture_features_val.npz", 351718),
+    item("11_E5HJb1gszmDHQJab_tMEWu4U239u9H", "03_regional_models/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/artifacts/texture_features_train.npz", 2679038),
+    item("1ESUtT6cE8bUpa2UOOUuRKuFEXLxr0xzg", "03_regional_models/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/artifacts/texture_feature_schema.json", 282),
+    item("1oWr6IUKPQCbptW_k6CW2XdKoUmmNgD74", "03_regional_models/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/artifacts/texture_scaler.joblib", 6375),
+    item("1Fr2wI7tpCv7kd5eJStUlRjuid2_CpWJa", "03_regional_models/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/artifacts/texture_manifest_c68f21a30090.csv", 1876683),
+    item("1w3D49EiVNJeziJfYBug3lh7K9wC3nYsK", "03_regional_models/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/artifacts/feature_names.txt", 4908),
+    item("1ec541BcOsvXI91BHI-ApfQDcNQktQlIU", "03_regional_models/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/artifacts/feature_dimensions.json", 322),
+    item("12OCQwtbqBpH3wzqv9o3ragfnRBeci-Ve", "03_regional_models/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/artifacts/metadata_used.csv", 1866858),
+    item("1OSvVxdgN3UUChqMi6jSBCWSkTbYCIyDI", "07_figures/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/test_precision_recall_curve_video_level.png", 57976),
+    item("1yw14XVg3vj0fIhXZqDm2prf8mZ-mH0X6", "07_figures/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/test_roc_curve_video_level.png", 62993),
+    item("1lFKzrKF5UQZky-1rK86vXhUKZ4yyflCh", "07_figures/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/test_confusion_matrix_video_level.png", 37767),
+    item("1x3SIaqDz2MhktSLh1bT1shIYuQQ0l1qC", "07_figures/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/test_probability_distribution_frame_level.png", 34805),
+    item("1A5vHjQxBEOPTccPjV6jbyELYKsJ6AkQk", "07_figures/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/test_precision_recall_curve_frame_level.png", 59143),
+    item("1qZjsyAuviGzTpFl7x9RsdwK3f3LGcjfC", "07_figures/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/test_roc_curve_frame_level.png", 64388),
+    item("1fNjNjyGuN0Yb_rrOejxiM7r2ikTkVLnc", "07_figures/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/test_confusion_matrix_frame_level.png", 38991),
+    item("1PDFDapXBOgvs7ZzSmQPK-4WCxXya8awI", "07_figures/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/training_f1_curve.png", 75861),
+    item("1n9_e4euXHCgKTgD2rh0ay_dPzxRKTXul", "07_figures/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/training_loss_curve.png", 82273),
+    item("1OXeRlIQUcRPklyYro12Z-2HmJetm15uD", "07_figures/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/dataset_distribution.png", 45753),
+    item("1wxC8VH691q0_ljfr0O_rHW6D9_TM_jzV", "04_predictions/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/test_predictions_video_level.csv", 23338),
+    item("1WvydYMJ_sPioLM4LafLJxMQOZWeh7Uu5", "04_predictions/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/test_predictions_frame_level.csv", 67267),
+    item("1Vpq6oqbdY26q3jEWQ-jtks4jUaywEcns", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/metrics/quality_gates.json", 209),
+    item("19kE8j61mO301Y2mDP3TFGRPRK2kstnlg", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/metrics/figure_quality_audit.csv", 595),
+    item("1VGiItIejK3PXvhvDeuHMbZ0CrHGgKqfP", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/metrics/test_metrics_summary.csv", 418),
+    item("1c4f5v_cn5H-j0aK2JkizprKmgWszN3ef", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/metrics/test_metrics_video_level.json", 410),
+    item("15jJ8XbL-XThw6F0EMnhki3BOaMfhfa98", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/metrics/ablation_results.csv", 595),
+    item("1BrErxnI-xFHYFyLVAqVml-dqCvs7-hex", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/metrics/test_metrics_frame_level.json", 557),
+    item("1FpvL4tMi5vxDTzOjdGiyZuT8iSOOOJB1", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/metrics/validation_threshold_search.csv", 4451),
+    item("1rrsKE_XiVhubuohqVQnCY6sNykSZta01", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/metrics/epoch_metrics.csv", 4869),
+    item("1bAwgVR5qKdwXHxQg9dgUc-wb9qUdO22_", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/metrics/quality_gates_initial.json", 291),
+    item("1Pn07GGHj603LjpZiljaIL45eqH_jbe7T", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/metrics/data_accounting.json", 354),
+    item("1IsC9KyeWHDQwPjsVLDCKqXNXUEq9gbbY", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/logs/pipeline.log", 6823),
+    item("10rfnpIvqEFbmc5Czl6E5HHypJbG6JYOA", "06_metrics_tables/drive_outputs/brow/swinv2_tiny_lbp_glcm_gabor_wavelet_fusion_kas/logs/training_history.csv", 4869),
 ]
 
 
@@ -336,22 +378,16 @@ def download(asset: dict[str, object]) -> str:
         return "exists"
     target.parent.mkdir(parents=True, exist_ok=True)
     tmp = target.with_suffix(target.suffix + ".download")
-    url = f"https://drive.google.com/uc?export=download&id={asset['id']}"
     cmd = [
-        "curl",
-        "-L",
-        "--fail",
-        "--silent",
-        "--show-error",
-        "--connect-timeout",
-        "20",
-        "--max-time",
-        "240",
-        url,
-        "-o",
+        sys.executable,
+        str(ROOT / "scripts" / "download_large_drive_file.py"),
+        str(asset["id"]),
         str(tmp),
     ]
     subprocess.run(cmd, cwd=ROOT, check=True)
+    actual_size = tmp.stat().st_size
+    if actual_size != size:
+        raise RuntimeError(f"unexpected size for {target}: got {actual_size}, expected {size}")
     tmp.replace(target)
     return "downloaded"
 

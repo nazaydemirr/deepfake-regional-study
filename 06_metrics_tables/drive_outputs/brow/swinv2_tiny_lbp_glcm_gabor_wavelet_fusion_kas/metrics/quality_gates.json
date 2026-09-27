@@ -1,0 +1,8 @@
+{
+  "required_outputs": "PASSED",
+  "checkpoint_integrity": "PASSED",
+  "numeric_metrics": "PASSED",
+  "prediction_uniqueness": "PASSED",
+  "figure_resolution": "PASSED",
+  "metadata_video_leakage": "PASSED"
+}

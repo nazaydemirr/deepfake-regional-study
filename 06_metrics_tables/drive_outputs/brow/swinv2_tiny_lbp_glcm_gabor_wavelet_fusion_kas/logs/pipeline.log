@@ -1,0 +1,59 @@
+2026-08-06 21:24:37,969 | INFO | Device: cuda
+2026-08-06 21:24:37,972 | INFO | Run ID: 20260806_2124_eyebrow_swinv2_lbp_glcm_gabor_wavelet_seed42
+2026-08-06 21:24:37,975 | INFO | Run directory: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260806_2124_eyebrow_swinv2_lbp_glcm_gabor_wavelet_seed42
+2026-08-06 21:25:04,811 | INFO | Toplam kaş metadata satırı: 3000
+2026-08-06 21:25:04,813 | INFO | Kullanılacak başarılı kaş frame sayısı: 1962
+2026-08-06 21:25:04,817 | INFO | Split dağılımı: {'train': 1562, 'val': 204, 'test': 196}
+2026-08-06 21:25:04,820 | INFO | Sınıf dağılımı: {'real': 993, 'fake': 969}
+2026-08-06 21:25:26,031 | INFO | Cached texture samples: 0
+2026-08-06 21:25:26,033 | INFO | Pending texture samples: 1962
+2026-08-06 22:25:38,432 | INFO | Final cached eyebrow samples used: 1962
+2026-08-06 22:26:14,387 | INFO | Smoke test passed | mode=full | train_loss=0.69888 | val_loss=0.73660
+2026-08-06 22:26:51,504 | INFO | ======================================================================
+2026-08-06 22:26:51,506 | INFO | Training mode: full
+2026-08-06 22:26:51,507 | INFO | ======================================================================
+2026-08-06 22:27:05,892 | INFO | Epoch 01/30 | Train Loss 0.6919 | Val Loss 0.6783 | Val F1 0.6863 | Val AUC 0.6132 | Threshold 0.360
+2026-08-06 22:27:19,101 | INFO | Epoch 02/30 | Train Loss 0.6698 | Val Loss 0.6681 | Val F1 0.6760 | Val AUC 0.6371 | Threshold 0.310
+2026-08-06 22:27:33,762 | INFO | Epoch 03/30 | Train Loss 0.6563 | Val Loss 0.6418 | Val F1 0.7077 | Val AUC 0.6986 | Threshold 0.335
+2026-08-06 22:27:47,932 | INFO | Epoch 04/30 | Train Loss 0.6520 | Val Loss 0.6305 | Val F1 0.7190 | Val AUC 0.7138 | Threshold 0.410
+2026-08-06 22:28:01,590 | INFO | Epoch 05/30 | Train Loss 0.6244 | Val Loss 0.6273 | Val F1 0.7085 | Val AUC 0.7147 | Threshold 0.420
+2026-08-06 22:28:01,595 | INFO | Final Swin stage unfrozen.
+2026-08-06 22:28:15,235 | INFO | Epoch 06/30 | Train Loss 0.6205 | Val Loss 0.6335 | Val F1 0.7186 | Val AUC 0.6948 | Threshold 0.440
+2026-08-06 22:28:28,746 | INFO | Epoch 07/30 | Train Loss 0.6182 | Val Loss 0.6446 | Val F1 0.6992 | Val AUC 0.6925 | Threshold 0.440
+2026-08-06 22:28:46,983 | INFO | Epoch 08/30 | Train Loss 0.6078 | Val Loss 0.6275 | Val F1 0.6957 | Val AUC 0.7184 | Threshold 0.415
+2026-08-06 22:29:03,830 | INFO | Epoch 09/30 | Train Loss 0.6032 | Val Loss 0.6318 | Val F1 0.6941 | Val AUC 0.6997 | Threshold 0.440
+2026-08-06 22:29:26,700 | INFO | Epoch 10/30 | Train Loss 0.6069 | Val Loss 0.6655 | Val F1 0.6914 | Val AUC 0.6856 | Threshold 0.445
+2026-08-06 22:29:43,859 | INFO | Epoch 11/30 | Train Loss 0.6063 | Val Loss 0.6343 | Val F1 0.6939 | Val AUC 0.6828 | Threshold 0.370
+2026-08-06 22:30:00,230 | INFO | Epoch 12/30 | Train Loss 0.5991 | Val Loss 0.6309 | Val F1 0.7037 | Val AUC 0.7131 | Threshold 0.500
+2026-08-06 22:30:17,264 | INFO | Epoch 13/30 | Train Loss 0.5997 | Val Loss 0.6330 | Val F1 0.7041 | Val AUC 0.6926 | Threshold 0.315
+2026-08-06 22:30:34,230 | INFO | Epoch 14/30 | Train Loss 0.5940 | Val Loss 0.6287 | Val F1 0.7045 | Val AUC 0.7081 | Threshold 0.360
+2026-08-06 22:30:53,045 | INFO | Epoch 15/30 | Train Loss 0.5907 | Val Loss 0.6287 | Val F1 0.6991 | Val AUC 0.7216 | Threshold 0.485
+2026-08-06 22:31:09,913 | INFO | Epoch 16/30 | Train Loss 0.5874 | Val Loss 0.6304 | Val F1 0.6917 | Val AUC 0.7074 | Threshold 0.370
+2026-08-06 22:31:30,322 | INFO | Epoch 17/30 | Train Loss 0.5770 | Val Loss 0.6280 | Val F1 0.6992 | Val AUC 0.7146 | Threshold 0.415
+2026-08-06 22:31:47,657 | INFO | Epoch 18/30 | Train Loss 0.5721 | Val Loss 0.6335 | Val F1 0.6914 | Val AUC 0.7144 | Threshold 0.455
+2026-08-06 22:32:04,422 | INFO | Epoch 19/30 | Train Loss 0.5723 | Val Loss 0.6287 | Val F1 0.6937 | Val AUC 0.7149 | Threshold 0.350
+2026-08-06 22:32:20,729 | INFO | Epoch 20/30 | Train Loss 0.5620 | Val Loss 0.6203 | Val F1 0.6966 | Val AUC 0.7148 | Threshold 0.325
+2026-08-06 22:32:37,514 | INFO | Epoch 21/30 | Train Loss 0.5703 | Val Loss 0.6242 | Val F1 0.6891 | Val AUC 0.7129 | Threshold 0.315
+2026-08-06 22:32:54,155 | INFO | Epoch 22/30 | Train Loss 0.5612 | Val Loss 0.6312 | Val F1 0.6863 | Val AUC 0.7033 | Threshold 0.225
+2026-08-06 22:33:11,236 | INFO | Epoch 23/30 | Train Loss 0.5600 | Val Loss 0.6250 | Val F1 0.6911 | Val AUC 0.7118 | Threshold 0.400
+2026-08-06 22:33:11,238 | INFO | Early stopping activated.
+2026-08-06 22:33:24,907 | INFO | ======================================================================
+2026-08-06 22:33:24,910 | INFO | Training mode: full
+2026-08-06 22:33:24,913 | INFO | ======================================================================
+2026-08-06 22:33:49,582 | INFO | Epoch 01/30 | Train Loss 0.6922 | Val Loss 0.6837 | Val F1 0.6766 | Val AUC 0.6347 | Threshold 0.310
+2026-08-06 22:34:14,634 | INFO | Epoch 02/30 | Train Loss 0.6770 | Val Loss 0.6633 | Val F1 0.6816 | Val AUC 0.6552 | Threshold 0.370
+2026-08-06 22:34:28,963 | INFO | Epoch 03/30 | Train Loss 0.6570 | Val Loss 0.6422 | Val F1 0.7296 | Val AUC 0.7152 | Threshold 0.375
+2026-08-06 22:34:43,282 | INFO | Epoch 04/30 | Train Loss 0.6392 | Val Loss 0.6255 | Val F1 0.7107 | Val AUC 0.7242 | Threshold 0.405
+2026-08-06 22:34:57,791 | INFO | Epoch 05/30 | Train Loss 0.6204 | Val Loss 0.6231 | Val F1 0.7220 | Val AUC 0.7280 | Threshold 0.330
+2026-08-06 22:34:57,797 | INFO | Final Swin stage unfrozen.
+2026-08-06 22:35:12,894 | INFO | Epoch 06/30 | Train Loss 0.6067 | Val Loss 0.6400 | Val F1 0.7073 | Val AUC 0.7006 | Threshold 0.365
+2026-08-06 22:35:29,990 | INFO | Epoch 07/30 | Train Loss 0.5986 | Val Loss 0.6323 | Val F1 0.7027 | Val AUC 0.7008 | Threshold 0.375
+2026-08-06 22:35:47,350 | INFO | Epoch 08/30 | Train Loss 0.6026 | Val Loss 0.6214 | Val F1 0.7104 | Val AUC 0.7191 | Threshold 0.360
+2026-08-06 22:36:04,744 | INFO | Epoch 09/30 | Train Loss 0.5873 | Val Loss 0.6226 | Val F1 0.7032 | Val AUC 0.7242 | Threshold 0.440
+2026-08-06 22:36:21,763 | INFO | Epoch 10/30 | Train Loss 0.5955 | Val Loss 0.6504 | Val F1 0.6960 | Val AUC 0.6859 | Threshold 0.460
+2026-08-06 22:36:39,975 | INFO | Epoch 11/30 | Train Loss 0.6030 | Val Loss 0.6306 | Val F1 0.7115 | Val AUC 0.6922 | Threshold 0.325
+2026-08-06 22:36:56,944 | INFO | Epoch 12/30 | Train Loss 0.5987 | Val Loss 0.6290 | Val F1 0.7013 | Val AUC 0.7224 | Threshold 0.465
+2026-08-06 22:37:13,989 | INFO | Epoch 13/30 | Train Loss 0.6030 | Val Loss 0.6310 | Val F1 0.7037 | Val AUC 0.6943 | Threshold 0.300
+2026-08-06 22:37:13,994 | INFO | Early stopping activated.
+2026-08-06 22:38:35,414 | INFO | Experiment completed successfully.
+2026-08-06 22:38:35,416 | INFO | Output directory: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260806_2124_eyebrow_swinv2_lbp_glcm_gabor_wavelet_seed42

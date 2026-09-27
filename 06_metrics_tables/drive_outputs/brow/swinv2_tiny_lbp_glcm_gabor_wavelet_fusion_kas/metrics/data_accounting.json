@@ -1,0 +1,20 @@
+{
+  "roi_metadata_total_rows": 3000,
+  "successful_rows_before_file_check": 1962,
+  "missing_success_files": 0,
+  "final_usable_samples": 1962,
+  "split_counts": {
+    "train": 1562,
+    "val": 204,
+    "test": 196
+  },
+  "class_counts": {
+    "real": 993,
+    "fake": 969
+  },
+  "video_counts": {
+    "train": 1145,
+    "val": 146,
+    "test": 138
+  }
+}

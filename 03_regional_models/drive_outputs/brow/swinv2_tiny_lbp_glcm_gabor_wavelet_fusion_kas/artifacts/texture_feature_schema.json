@@ -1,0 +1,23 @@
+{
+  "fit_split": "train",
+  "feature_dimension": 240,
+  "cache_version": "c68f21a30090",
+  "feature_groups": {
+    "lbp": [
+      0,
+      54
+    ],
+    "glcm": [
+      54,
+      126
+    ],
+    "gabor": [
+      126,
+      198
+    ],
+    "wavelet": [
+      198,
+      240
+    ]
+  }
+}

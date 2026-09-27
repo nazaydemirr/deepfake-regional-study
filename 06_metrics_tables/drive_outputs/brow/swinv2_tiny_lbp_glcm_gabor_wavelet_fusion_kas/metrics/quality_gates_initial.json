@@ -1,0 +1,10 @@
+{
+  "metadata_columns": "PASSED",
+  "successful_file_existence": "PASSED",
+  "selection_metadata_match": "PASSED",
+  "label_consistency": "PASSED",
+  "split_consistency": "PASSED",
+  "sample_id_uniqueness": "PASSED",
+  "video_split_leakage": "PASSED",
+  "video_label_consistency": "PASSED"
+}

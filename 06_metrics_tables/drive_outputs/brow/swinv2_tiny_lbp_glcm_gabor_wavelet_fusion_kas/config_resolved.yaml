@@ -1,0 +1,92 @@
+seed: 42
+region: eyebrow
+model_name: swinv2_t_lbp_glcm_gabor_wavelet_fusion
+data_root: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney
+  1/Kaş
+roi_metadata_path: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney
+  1/Kaş/metadata.csv
+selection_metadata_path: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Deney
+  1 Frame/secim_metadata.csv
+results_root: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney
+  1/Sonuçlar
+sample_id_column: sample_id
+path_column: output_path
+relative_path_column: output_relative_path
+input_path_column: input_path
+label_column: label
+split_column: split
+status_column: status
+success_status_values:
+- SUCCESS
+- OK
+image_size: 224
+pretrained: true
+freeze_backbone_epochs: 5
+unfreeze_last_stages: true
+lbp_radii:
+- 1
+- 2
+- 3
+lbp_points:
+- 8
+- 16
+- 24
+glcm_distances:
+- 1
+- 2
+- 4
+glcm_angles_deg:
+- 0
+- 45
+- 90
+- 135
+glcm_levels: 32
+gabor_orientations_deg:
+- 0
+- 30
+- 60
+- 90
+- 120
+- 150
+gabor_frequencies:
+- 0.1
+- 0.2
+- 0.3
+wavelet: db2
+wavelet_level: 2
+batch_size: 16
+num_workers: 2
+epochs: 30
+learning_rate: 0.0002
+backbone_learning_rate: 2.0e-05
+weight_decay: 0.0001
+dropout: 0.3
+hidden_dim: 256
+patience: 8
+threshold: 0.5
+threshold_search_min: 0.1
+threshold_search_max: 0.9
+threshold_search_steps: 161
+amp: true
+gradient_clip_norm: 1.0
+smoke_test: true
+smoke_train_batches: 2
+smoke_val_batches: 2
+feature_cache_flush_every: 100
+overwrite_feature_cache: false
+save_feature_arrays: true
+active_mode: full
+run_all_ablations: false
+ablation_modes:
+- swin_only
+- texture_only
+- swin_lbp
+- swin_lbp_glcm
+- swin_lbp_glcm_gabor
+- full
+resume_run_id: null
+run_id: 20260806_2124_eyebrow_swinv2_lbp_glcm_gabor_wavelet_seed42
+run_dir: /content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney
+  1/Sonuçlar/20260806_2124_eyebrow_swinv2_lbp_glcm_gabor_wavelet_seed42
+device: cuda
+created_at_utc: '2026-08-06T21:24:36.432172+00:00'

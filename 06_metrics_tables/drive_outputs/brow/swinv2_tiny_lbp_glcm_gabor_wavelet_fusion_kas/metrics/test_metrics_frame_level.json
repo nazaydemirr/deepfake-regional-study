@@ -1,0 +1,23 @@
+{
+  "accuracy": 0.6020408163265306,
+  "balanced_accuracy": 0.6091714434601354,
+  "precision": 0.5594405594405595,
+  "recall": 0.8421052631578947,
+  "f1": 0.6722689075630253,
+  "roc_auc": 0.6687858259510162,
+  "average_precision": 0.6707913954129812,
+  "evaluation_level": "frame",
+  "mode": "full",
+  "best_epoch": 5,
+  "selection_metric": "val_roc_auc",
+  "best_validation_auc": 0.727955333076627,
+  "selected_threshold": 0.33,
+  "texture_dimension": 240,
+  "feature_groups": [
+    "lbp",
+    "glcm",
+    "gabor",
+    "wavelet"
+  ],
+  "sample_count": 196
+}

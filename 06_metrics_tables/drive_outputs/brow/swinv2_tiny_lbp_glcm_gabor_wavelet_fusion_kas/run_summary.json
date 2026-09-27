@@ -1,0 +1,89 @@
+{
+  "run_id": "20260806_2124_eyebrow_swinv2_lbp_glcm_gabor_wavelet_seed42",
+  "region": "eyebrow",
+  "model_name": "swinv2_t_lbp_glcm_gabor_wavelet_fusion",
+  "active_mode": "full",
+  "feature_extractors": [
+    "LBP",
+    "GLCM",
+    "Gabor",
+    "Wavelet"
+  ],
+  "feature_counts": {
+    "lbp": 54,
+    "glcm": 72,
+    "gabor": 72,
+    "wavelet": 42
+  },
+  "total_handcrafted_feature_dimension": 240,
+  "frame_level_metrics": {
+    "accuracy": 0.6020408163265306,
+    "balanced_accuracy": 0.6091714434601354,
+    "precision": 0.5594405594405595,
+    "recall": 0.8421052631578947,
+    "f1": 0.6722689075630253,
+    "roc_auc": 0.6687858259510162,
+    "average_precision": 0.6707913954129812,
+    "evaluation_level": "frame",
+    "mode": "full",
+    "best_epoch": 5,
+    "selection_metric": "val_roc_auc",
+    "best_validation_auc": 0.727955333076627,
+    "selected_threshold": 0.33,
+    "texture_dimension": 240,
+    "feature_groups": [
+      "lbp",
+      "glcm",
+      "gabor",
+      "wavelet"
+    ],
+    "sample_count": 196
+  },
+  "video_level_metrics": {
+    "accuracy": 0.6521739130434783,
+    "balanced_accuracy": 0.6075373619233269,
+    "precision": 0.6542056074766355,
+    "recall": 0.8641975308641975,
+    "f1": 0.7446808510638298,
+    "roc_auc": 0.6826943902967294,
+    "average_precision": 0.7549471855705238,
+    "evaluation_level": "video",
+    "mode": "full",
+    "selected_threshold": 0.33,
+    "video_count": 138,
+    "frame_count": 196,
+    "aggregation": "mean_probability"
+  },
+  "data_accounting": {
+    "roi_metadata_total_rows": 3000,
+    "successful_rows_before_file_check": 1962,
+    "missing_success_files": 0,
+    "final_usable_samples": 1962,
+    "split_counts": {
+      "train": 1562,
+      "val": 204,
+      "test": 196
+    },
+    "class_counts": {
+      "real": 993,
+      "fake": 969
+    },
+    "video_counts": {
+      "train": 1145,
+      "val": 146,
+      "test": 138
+    }
+  },
+  "quality_gates": {
+    "required_outputs": "PASSED",
+    "checkpoint_integrity": "PASSED",
+    "numeric_metrics": "PASSED",
+    "prediction_uniqueness": "PASSED",
+    "figure_resolution": "PASSED",
+    "metadata_video_leakage": "PASSED"
+  },
+  "started_at_utc": "2026-08-06T21:24:36.432172+00:00",
+  "completed_at_utc": "2026-08-06T22:38:30.573622+00:00",
+  "duration_seconds": 4434.142,
+  "run_directory": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260806_2124_eyebrow_swinv2_lbp_glcm_gabor_wavelet_seed42"
+}
