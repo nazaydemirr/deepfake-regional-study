@@ -1,1 +1,121 @@
-<!DOCTYPE html><html><head><title>Google Drive - Virus scan warning</title><meta http-equiv="content-type" content="text/html; charset=utf-8"/><style nonce="GMTF8qfkqW0cg-ySTIRLgg">.goog-link-button{position:relative;color:#15c;text-decoration:underline;cursor:pointer}.goog-link-button-disabled{color:#ccc;text-decoration:none;cursor:default}body{color:#222;font:normal 13px/1.4 arial,sans-serif;margin:0}.grecaptcha-badge{visibility:hidden}.uc-main{padding-top:50px;text-align:center}#uc-dl-icon{display:inline-block;margin-top:16px;padding-right:1em;vertical-align:top}#uc-text{display:inline-block;max-width:68ex;text-align:left}.uc-error-caption,.uc-warning-caption{color:#222;font-size:16px}#uc-download-link{text-decoration:none}.uc-name-size a{color:#15c;text-decoration:none}.uc-name-size a:visited{color:#61c;text-decoration:none}.uc-name-size a:active{color:#d14836;text-decoration:none}.uc-footer{color:#777;font-size:11px;padding-bottom:5ex;padding-top:5ex;text-align:center}.uc-footer a{color:#15c}.uc-footer a:visited{color:#61c}.uc-footer a:active{color:#d14836}.uc-footer-divider{color:#ccc;width:100%}.goog-inline-block{position:relative;display:-moz-inline-box;display:inline-block}* html .goog-inline-block{display:inline}:first-child+html .goog-inline-block{display:inline}sentinel{}</style><link rel="icon" href="//ssl.gstatic.com/docs/doclist/images/drive_favicon_2026_32dp.png"/></head><body><div class="uc-main"><div id="uc-dl-icon" class="image-container"><div class="drive-sprite-aux-download-file"></div></div><div id="uc-text"><p class="uc-warning-caption">Google Drive can't scan this file for viruses.</p><p class="uc-warning-subcaption">This file is executable and may harm your computer. <p class="uc-warning-subcaption"><span class="uc-name-size"><a href="/open?id=1ANBXjAN9iuPWguI34MKSm37KvVA3-eBJ">dataset.py</a> (3.5k)</span></p></p><form id="download-form" action="https://drive.usercontent.google.com/download" method="get"><input type="submit" id="uc-download-link" class="goog-inline-block jfk-button jfk-button-action" value="Download anyway"/><input type="hidden" name="id" value="1ANBXjAN9iuPWguI34MKSm37KvVA3-eBJ"><input type="hidden" name="export" value="download"><input type="hidden" name="confirm" value="t"><input type="hidden" name="uuid" value="6e1a8900-8556-45fb-a8bc-1ededa5100d0"></form></div></div><div class="uc-footer"><hr class="uc-footer-divider"></div></body></html>
+from __future__ import annotations
+
+from pathlib import Path
+from typing import Any, Dict
+
+import pandas as pd
+import torch
+from PIL import Image
+from torch.utils.data import Dataset
+from torchvision import transforms
+from torchvision.models import Swin_V2_T_Weights
+
+
+LABEL_TO_INDEX = {
+    "real": 0.0,
+    "fake": 1.0,
+}
+
+
+def build_transforms(
+    image_size: int,
+    augmentation: Dict[str, float],
+):
+    # Methodological choice:
+    # For ImageNet-pretrained Swin V2, the normalization attached to the
+    # pretrained weights is used. No validation/test statistics are learned.
+    weights = Swin_V2_T_Weights.IMAGENET1K_V1
+    weight_transform = weights.transforms()
+    mean = weight_transform.mean
+    std = weight_transform.std
+
+    train_transform = transforms.Compose(
+        [
+            transforms.Resize((image_size, image_size)),
+            transforms.RandomHorizontalFlip(
+                p=float(augmentation["horizontal_flip_probability"])
+            ),
+            transforms.RandomRotation(
+                degrees=float(augmentation["rotation_degrees"])
+            ),
+            transforms.ColorJitter(
+                brightness=float(augmentation["brightness"]),
+                contrast=float(augmentation["contrast"]),
+                saturation=float(augmentation["saturation"]),
+                hue=float(augmentation["hue"]),
+            ),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=mean, std=std),
+        ]
+    )
+
+    eval_transform = transforms.Compose(
+        [
+            transforms.Resize((image_size, image_size)),
+            transforms.ToTensor(),
+            transforms.Normalize(mean=mean, std=std),
+        ]
+    )
+
+    normalization_info = {
+        "source": "Swin_V2_T_Weights.IMAGENET1K_V1",
+        "mean": list(mean),
+        "std": list(std),
+        "learned_from_project_data": False,
+        "uses_validation_or_test_statistics": False,
+    }
+
+    return train_transform, eval_transform, normalization_info
+
+
+class EyebrowROIDataset(Dataset):
+    def __init__(
+        self,
+        dataframe: pd.DataFrame,
+        transform,
+        sample_col: str,
+        video_col: str,
+        label_col: str,
+        resolved_path_col: str = "_resolved_image_path",
+    ) -> None:
+        self.df = dataframe.reset_index(drop=True).copy()
+        self.transform = transform
+        self.sample_col = sample_col
+        self.video_col = video_col
+        self.label_col = label_col
+        self.resolved_path_col = resolved_path_col
+
+    def __len__(self) -> int:
+        return len(self.df)
+
+    def __getitem__(self, index: int) -> Dict[str, Any]:
+        row = self.df.iloc[index]
+        path = Path(str(row[self.resolved_path_col]))
+
+        if not path.is_file():
+            raise FileNotFoundError(
+                f"ROI image disappeared after audit: {path}"
+            )
+
+        try:
+            with Image.open(path) as img:
+                image = img.convert("RGB")
+        except Exception as exc:
+            raise RuntimeError(f"Image decode failed: {path}") from exc
+
+        image = self.transform(image)
+
+        label_text = str(row[self.label_col])
+        if label_text not in LABEL_TO_INDEX:
+            raise ValueError(f"Unexpected label: {label_text}")
+
+        return {
+            "image": image,
+            "label": torch.tensor(
+                LABEL_TO_INDEX[label_text],
+                dtype=torch.float32,
+            ),
+            "sample_id": str(row[self.sample_col]),
+            "video_id": str(row[self.video_col]),
+            "path": str(path),
+        }

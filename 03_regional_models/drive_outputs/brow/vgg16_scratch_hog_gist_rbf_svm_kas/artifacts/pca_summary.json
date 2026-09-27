@@ -1,0 +1,6 @@
+{
+  "input_dimension": 4804,
+  "pca_components": 256,
+  "explained_variance_ratio_sum": 0.8000237941741943,
+  "fitted_on_split": "train"
+}

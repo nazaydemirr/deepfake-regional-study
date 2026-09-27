@@ -1,0 +1,7 @@
+{
+  "training_duration_seconds": 164.83191347122192,
+  "epochs_completed": 9,
+  "best_validation_f1": 0.6490066225165563,
+  "best_checkpoint": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260806_1540_eyebrow_vgg16scratch_hog_gist_svm_seed42/checkpoints/best.ckpt",
+  "last_checkpoint": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260806_1540_eyebrow_vgg16scratch_hog_gist_svm_seed42/checkpoints/last.ckpt"
+}

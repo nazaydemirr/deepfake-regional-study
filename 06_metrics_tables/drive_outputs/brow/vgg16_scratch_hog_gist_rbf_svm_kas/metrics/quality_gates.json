@@ -1,0 +1,20 @@
+{
+  "status": "PASSED",
+  "smoke_batches": [
+    {
+      "batch_index": 0,
+      "loss": 0.7013633847236633,
+      "batch_size": 32
+    },
+    {
+      "batch_index": 1,
+      "loss": 0.6937482357025146,
+      "batch_size": 32
+    }
+  ],
+  "checkpoint_path": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deneyler/Nazlıcan/Deney 1/Sonuçlar/20260806_1540_eyebrow_vgg16scratch_hog_gist_svm_seed42/checkpoints/checkpoint_quality_gate.ckpt",
+  "original_loss": 0.6526658535003662,
+  "loaded_loss": 0.6526658535003662,
+  "output_equivalence": true,
+  "tested_at": "2026-08-06T15:46:37.110399"
+}
