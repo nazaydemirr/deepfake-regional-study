@@ -1,0 +1,62 @@
+{
+  "model_family": "xception",
+  "method": "corrected_validation_weighted_soft_voting_common_formula",
+  "n_common_cohort": 196,
+  "decision_threshold": 0.5,
+  "weight_formula": "max(validation_roc_auc - 0.5, epsilon), normalized to sum=1",
+  "validation_auc": {
+    "eye": 0.7252,
+    "brow": 0.671,
+    "mouth": 0.8228
+  },
+  "weights": {
+    "eye": 0.3132127955493741,
+    "brow": 0.23783031988873443,
+    "mouth": 0.4489568845618915
+  },
+  "fusion_metrics": {
+    "n": 196,
+    "threshold": 0.5,
+    "accuracy": 0.6887755102040817,
+    "balanced_accuracy": 0.6905158936946326,
+    "precision": 0.6574074074074074,
+    "recall": 0.7473684210526316,
+    "specificity": 0.6336633663366337,
+    "f1": 0.6995073891625616,
+    "roc_auc": 0.7412193850964044,
+    "pr_auc": 0.6922108365574641,
+    "tn": 64,
+    "fp": 37,
+    "fn": 24,
+    "tp": 71
+  },
+  "mouth_only_metrics_same_cohort": {
+    "n": 196,
+    "threshold": 0.5,
+    "accuracy": 0.7040816326530612,
+    "balanced_accuracy": 0.7053673788431475,
+    "precision": 0.6761904761904762,
+    "recall": 0.7473684210526316,
+    "specificity": 0.6633663366336634,
+    "f1": 0.71,
+    "roc_auc": 0.7526836894215737,
+    "pr_auc": 0.7242482701776141,
+    "tn": 67,
+    "fp": 34,
+    "fn": 24,
+    "tp": 71
+  },
+  "delta_auc_fusion_minus_mouth": -0.011464304325169317,
+  "paired_bootstrap": {
+    "bootstrap_iterations_valid": 5000,
+    "mouth_auc_ci95_low": 0.6821691632789656,
+    "mouth_auc_ci95_high": 0.8189865321530719,
+    "fusion_auc_ci95_low": 0.6680229498078766,
+    "fusion_auc_ci95_high": 0.8106411405673587,
+    "delta_auc_ci95_low": -0.04552696914886364,
+    "delta_auc_ci95_high": 0.022634176787161116,
+    "delta_ci_excludes_zero": false
+  },
+  "source_test_predictions": "/content/xception_aligned_test_predictions.csv",
+  "important_note": "Old fusion_probability was ignored. Only regional probabilities and labels were reused."
+}

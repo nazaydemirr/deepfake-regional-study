@@ -1,0 +1,62 @@
+{
+  "model_family": "swinv2_tiny",
+  "method": "corrected_validation_weighted_soft_voting_common_formula",
+  "n_common_cohort": 196,
+  "decision_threshold": 0.5,
+  "weight_formula": "max(validation_roc_auc - 0.5, epsilon), normalized to sum=1",
+  "validation_auc": {
+    "eye": 0.8453900709219859,
+    "brow": 0.7190989603388525,
+    "mouth": 0.8858384808968199
+  },
+  "weights": {
+    "eye": 0.3634431987955391,
+    "brow": 0.2305510021922886,
+    "mouth": 0.40600579901217226
+  },
+  "fusion_metrics": {
+    "n": 196,
+    "threshold": 0.5,
+    "accuracy": 0.7959183673469388,
+    "balanced_accuracy": 0.7938509640437728,
+    "precision": 0.8313253012048193,
+    "recall": 0.7263157894736842,
+    "specificity": 0.8613861386138614,
+    "f1": 0.7752808988764045,
+    "roc_auc": 0.8762897342365815,
+    "pr_auc": 0.88033437036844,
+    "tn": 87,
+    "fp": 14,
+    "fn": 26,
+    "tp": 69
+  },
+  "mouth_only_metrics_same_cohort": {
+    "n": 196,
+    "threshold": 0.5,
+    "accuracy": 0.8061224489795918,
+    "balanced_accuracy": 0.8040646169880146,
+    "precision": 0.8433734939759037,
+    "recall": 0.7368421052631579,
+    "specificity": 0.8712871287128713,
+    "f1": 0.7865168539325843,
+    "roc_auc": 0.8802501302761855,
+    "pr_auc": 0.8700508242567214,
+    "tn": 88,
+    "fp": 13,
+    "fn": 25,
+    "tp": 70
+  },
+  "delta_auc_fusion_minus_mouth": -0.003960396039603964,
+  "paired_bootstrap": {
+    "bootstrap_iterations_valid": 5000,
+    "mouth_auc_ci95_low": 0.8304021667545647,
+    "mouth_auc_ci95_high": 0.9262625376583167,
+    "fusion_auc_ci95_low": 0.8246320154641895,
+    "fusion_auc_ci95_high": 0.9227166557777935,
+    "delta_auc_ci95_low": -0.043356200348821095,
+    "delta_auc_ci95_high": 0.03668825418565651,
+    "delta_ci_excludes_zero": false
+  },
+  "source_test_predictions": "/content/drive/MyDrive/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/Fusion_Experiments/02_weighted_soft_voting/20260809_163157_934154_weighted_soft_voting_seed42/swinv2_tiny/predictions/aligned_test_predictions.csv",
+  "important_note": "Old fusion_probability was ignored. Only regional probabilities and labels were reused."
+}
