@@ -1,0 +1,8 @@
+{
+  "run_id": "20260808_0729_eye_efficientnet_b0_seed42",
+  "python": "3.12.13",
+  "torch": "2.11.0+cu128",
+  "device": "cuda",
+  "gpu": "Tesla T4",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.35"
+}

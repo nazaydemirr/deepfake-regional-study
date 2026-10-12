@@ -1,0 +1,11 @@
+{
+    "label": "real",
+    "split": "val",
+    "total_records": 155,
+    "success_count": 155,
+    "skipped_count": 0,
+    "error_count": 0,
+    "no_face_count": 0,
+    "mouth_not_detected_count": 0,
+    "average_processing_ms": 77.328
+}

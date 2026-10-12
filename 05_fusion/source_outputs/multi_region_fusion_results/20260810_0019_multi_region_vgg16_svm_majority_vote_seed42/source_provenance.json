@@ -1,0 +1,28 @@
+{
+  "no_source_archive_id_removeds_hardcoded": true,
+  "path_resolution": "name-based, Unicode-normalized",
+  "source_runs": {
+    "eyebrow": {
+      "run_name": "VGG16_FeatureExtractor_SVM_Kas",
+      "run_path": "source_archive/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/VGG16_FeatureExtractor_SVM_Kas",
+      "prediction_file": "source_archive/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/VGG16_FeatureExtractor_SVM_Kas/predictions/test_predictions.csv",
+      "prediction_sha256": "249d690c6b2e55596d79ba0292dfb31728737d78004631c54196d183b3c1115d"
+    },
+    "mouth": {
+      "run_name": "20260808_1240_mouth_vgg16_svm_seed42",
+      "run_path": "source_archive/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260808_1240_mouth_vgg16_svm_seed42",
+      "prediction_file": "source_archive/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260808_1240_mouth_vgg16_svm_seed42/artifacts/test_predictions.csv",
+      "prediction_sha256": "2d7d35bd2fbd0bb192d7e1c77c8ac51aca5af0673b994da4b9586b5c71a0bdc7",
+      "test_features_file": "source_archive/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260808_1240_mouth_vgg16_svm_seed42/artifacts/test_features.npz",
+      "test_features_sha256": "b9055b82abb8b49e44449b9dfab1255a06c4e5675ac4089287e2b766c56dae08"
+    },
+    "eye": {
+      "run_name": "20260808_1124_eye_vgg16_svm_seed42",
+      "run_path": "source_archive/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260808_1124_eye_vgg16_svm_seed42",
+      "prediction_file": "source_archive/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260808_1124_eye_vgg16_svm_seed42/predictions/test_predictions.csv",
+      "prediction_sha256": "c14baf052b7630b415588008dbfd795494c24eceab2c3a17544e8216e2f5abc3"
+    }
+  },
+  "target_root": "source_archive/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/füzyon sonuçları",
+  "created_run_dir": "source_archive/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/füzyon sonuçları/20260810_0019_multi_region_vgg16_svm_majority_vote_seed42"
+}

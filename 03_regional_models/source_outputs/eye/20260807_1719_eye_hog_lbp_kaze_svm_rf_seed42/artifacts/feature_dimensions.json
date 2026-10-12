@@ -1,0 +1,11 @@
+{
+  "hog_dim": 6084,
+  "lbp_dim": 26,
+  "kaze_dim": 128,
+  "base_dim": 6110,
+  "fused_dim": 6238,
+  "image_size": [
+    224,
+    224
+  ]
+}

@@ -1,0 +1,7 @@
+﻿split,label,folder,available_samples,selected_samples,smoke_test_enabled
+train,real,Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output/real/train/combined,1197,1197,False
+train,fake,Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output/fake/train/combined,1191,1191,False
+val,real,Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output/real/val/combined,155,155,False
+val,fake,Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output/fake/val/combined,141,141,False
+test,real,Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output/real/test/combined,146,146,False
+test,fake,Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output/fake/test/combined,156,156,False

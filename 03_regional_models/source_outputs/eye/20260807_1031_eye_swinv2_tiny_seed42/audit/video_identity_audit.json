@@ -1,0 +1,5 @@
+{
+  "video_identity_reliable_for_video_level_metrics": false,
+  "coarse_label_split_bucket_fraction": 1.0,
+  "interpretation": "If false, video_id appears to encode only label/split buckets. Frame-level training may continue because upstream splits already exist, but true source-video-level leakage cannot be independently verified and video-level metrics must not be interpreted as per-original-video performance."
+}

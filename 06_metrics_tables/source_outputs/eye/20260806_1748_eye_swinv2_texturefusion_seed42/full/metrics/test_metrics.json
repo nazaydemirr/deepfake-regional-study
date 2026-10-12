@@ -1,0 +1,16 @@
+{
+  "accuracy": 0.6125827814569537,
+  "balanced_accuracy": 0.6039251844046365,
+  "precision": 0.5844155844155844,
+  "recall": 0.8653846153846154,
+  "f1": 0.6976744186046512,
+  "roc_auc": 0.7090358271865123,
+  "average_precision": 0.7335039357077998,
+  "mode": "full",
+  "best_epoch": 5,
+  "selection_metric": "val_roc_auc",
+  "best_validation_auc": 0.7222374742621827,
+  "selected_threshold": 0.265,
+  "texture_dimension": 240,
+  "sample_count": 302
+}

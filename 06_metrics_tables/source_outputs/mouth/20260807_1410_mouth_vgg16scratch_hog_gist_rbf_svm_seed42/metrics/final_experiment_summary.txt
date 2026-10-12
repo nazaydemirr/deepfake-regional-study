@@ -1,0 +1,23 @@
+FINAL EXPERIMENT SUMMARY
+======================================================================
+Run ID: 20260807_1410_mouth_vgg16scratch_hog_gist_rbf_svm_seed42
+Run directory: Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/VGG16_HOG_GIST_RBF_SVM_Mouth/20260807_1410_mouth_vgg16scratch_hog_gist_rbf_svm_seed42
+
+DATA ACCOUNTING
+Input: 3000
+Success: 2889
+Skipped: 111
+Error: 0
+
+FRAME-LEVEL TEST
+Accuracy: 0.575342
+F1: 0.630952
+ROC-AUC: 0.672156
+
+VIDEO-LEVEL TEST
+Accuracy: 0.622449
+F1: 0.706349
+ROC-AUC: 0.698197
+
+AUDIT RESULT
+PASS

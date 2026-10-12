@@ -23,7 +23,7 @@ Alanlar:
 
 Fuzyon betikleri bu semayi bekler.
 
-## Drive'dan Acilan Deney 1 Tahminleri
+## 'dan Acilan Deney 1 Tahminleri
 
 Arsivlerden acilan test tahminleri bolge ve run adina gore tutulur:
 

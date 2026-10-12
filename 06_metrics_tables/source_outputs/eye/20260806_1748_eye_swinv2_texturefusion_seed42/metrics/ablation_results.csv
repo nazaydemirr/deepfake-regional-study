@@ -1,0 +1,2 @@
+mode,accuracy,balanced_accuracy,precision,recall,f1,roc_auc,average_precision,best_epoch,selection_metric,best_validation_auc,selected_threshold,texture_dimension,sample_count,mode_dir
+full,0.6125827814569537,0.6039251844046365,0.5844155844155844,0.8653846153846154,0.6976744186046512,0.7090358271865123,0.7335039357077998,5,val_roc_auc,0.7222374742621827,0.265,240,302,Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Sonuçlar/SwinV2_TextureFusion/20260806_1748_eye_swinv2_texturefusion_seed42/full

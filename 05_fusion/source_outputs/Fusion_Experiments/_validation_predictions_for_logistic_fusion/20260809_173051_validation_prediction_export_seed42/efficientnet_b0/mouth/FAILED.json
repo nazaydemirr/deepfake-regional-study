@@ -1,0 +1,9 @@
+{
+  "status": "FAILED",
+  "family": "efficientnet_b0",
+  "region": "mouth",
+  "experiment_root": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260808_1257_mouth_efficientnet_b0_seed42",
+  "error_type": "FileNotFoundError",
+  "error": "Usable training/validation manifest not found near: Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260808_1257_mouth_efficientnet_b0_seed42",
+  "test_used": false
+}

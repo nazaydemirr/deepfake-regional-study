@@ -1,0 +1,10 @@
+file,width_px,height_px,short_edge_px,quality_pass
+dataset_distribution.png,1485,885,885,True
+svm_validation_f1_comparison.png,1785,1035,1035,True
+test_confusion_matrix_frame_level.png,1165,1185,1165,True
+test_confusion_matrix_video_level.png,1165,1185,1165,True
+test_roc_curve_frame_level.png,1485,885,885,True
+test_roc_curve_video_level.png,1485,885,885,True
+test_precision_recall_curve_frame_level.png,1485,885,885,True
+test_precision_recall_curve_video_level.png,1485,885,885,True
+test_decision_score_distribution.png,1485,885,885,True

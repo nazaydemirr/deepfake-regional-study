@@ -1,0 +1,7 @@
+split,label,frames,videos
+train,real,1197,1172
+train,fake,1192,1138
+val,real,155,150
+val,fake,141,137
+test,real,146,145
+test,fake,156,147

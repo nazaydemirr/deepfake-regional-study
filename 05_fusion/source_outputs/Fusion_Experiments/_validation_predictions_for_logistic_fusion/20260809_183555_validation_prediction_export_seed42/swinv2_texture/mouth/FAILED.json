@@ -1,0 +1,9 @@
+{
+  "status": "FAILED",
+  "family": "swinv2_texture",
+  "region": "mouth",
+  "experiment_root": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/SwinV2_TextureFusion_Mouth/20260807_1550_mouth_swinv2_texturefusion_seed42/full",
+  "error_type": "FileNotFoundError",
+  "error": "No usable training/validation manifest was resolved near:\nDeney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/SwinV2_TextureFusion_Mouth/20260807_1550_mouth_swinv2_texturefusion_seed42/full\n\nInspected manifest diagnostics:\n[\n  {\n    \"path\": \"Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/SwinV2_TextureFusion_Mouth/20260807_1550_mouth_swinv2_texturefusion_seed42/audit/valid_mouth_manifest.csv\",\n    \"status\": \"no_resolvable_image_column\",\n    \"image_column_audits\": [\n      {\n        \"column\": \"resolved_image_path\",\n        \"checked\": 250,\n        \"resolved\": 0,\n        \"fraction\": 0.0,\n        \"priority_index\": 1\n      },\n      {\n        \"column\": \"mouth_path\",\n        \"checked\": 250,\n        \"resolved\": 0,\n        \"fraction\": 0.0,\n        \"priority_index\": 7\n      }\n    ]\n  }\n]",
+  "test_used": false
+}

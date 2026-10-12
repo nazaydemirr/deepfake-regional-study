@@ -1,0 +1,2 @@
+threshold,sample_count,accuracy,balanced_accuracy,precision,recall,specificity,f1_score,roc_auc,pr_auc,matthews_correlation_coefficient,true_negative,false_positive,false_negative,true_positive
+0.508567750453949,292,0.6952054794520548,0.6946516537649543,0.6705882352941176,0.7755102040816326,0.6137931034482759,0.7192429022082019,0.7565095003518649,0.7297743216928667,0.3946629756064302,89,56,33,114

@@ -1,0 +1,122 @@
+[
+  {
+    "relative_path": "README_FINAL.txt",
+    "size_bytes": 1886,
+    "sha256": "cb9b1d512edcc24c400e74c5480a5e7e83caec0f9e99b138f6ecbe9fdc68305c"
+  },
+  {
+    "relative_path": "artifacts/excluded_eye_nonzero_faces.csv",
+    "size_bytes": 3082,
+    "sha256": "d0dabd4e403c9c59c1092f0fa8a0438f867b8aadb5b13a01bffd4f1172382b5e"
+  },
+  {
+    "relative_path": "artifacts/excluded_mouth_nonzero_faces.csv",
+    "size_bytes": 3159,
+    "sha256": "1cfd02f6de21faf7e30d0726e706bc88a0b574c870d2151dcf695f3d40b27482"
+  },
+  {
+    "relative_path": "artifacts/matching_audit.json",
+    "size_bytes": 534,
+    "sha256": "b7be72c41a11bd262770a9b73d4e42287535a215897184f557373867e3ea49b7"
+  },
+  {
+    "relative_path": "checkpoints/README.txt",
+    "size_bytes": 128,
+    "sha256": "b8ebd38e51e7aed88c0d30d12348ecd6c584ea14dd69200263a3a85372dee155"
+  },
+  {
+    "relative_path": "config_resolved.yaml",
+    "size_bytes": 1109,
+    "sha256": "91df0dd695381cb1ade2411989d914a4212e12b0b280c32808a299dd923f71bc"
+  },
+  {
+    "relative_path": "environment.json",
+    "size_bytes": 268,
+    "sha256": "6ebb5e7b4886b54e3efe0f687cd7cc592b691c17b3407b9f8f2814c6e08cb4b7"
+  },
+  {
+    "relative_path": "figures/confusion_matrix.pdf",
+    "size_bytes": 22340,
+    "sha256": "26f163a7f175154abcfd784f125c81793340cc73fb32a4a147b41437be5303ae"
+  },
+  {
+    "relative_path": "figures/confusion_matrix.png",
+    "size_bytes": 43086,
+    "sha256": "ef9e114b9db1320caf252eb19d8860a8687313d9a28f392c8d91ea9070998401"
+  },
+  {
+    "relative_path": "figures/precision_recall_curve.pdf",
+    "size_bytes": 19591,
+    "sha256": "d9809c60ea51c5dc87e382888aa01d4e4394119d3d46ebbcf341ab1dbafa6f6e"
+  },
+  {
+    "relative_path": "figures/precision_recall_curve.png",
+    "size_bytes": 64080,
+    "sha256": "25934f702e91b6d84d34acc3debac4c49278dce9fd8d1ae559d22732b26de5e3"
+  },
+  {
+    "relative_path": "figures/regional_vs_fusion_comparison.pdf",
+    "size_bytes": 22688,
+    "sha256": "f4b080e61a70e10dd5da1f9c599fd7e9196bfc8cf16de015cf904e7e6ef91c1d"
+  },
+  {
+    "relative_path": "figures/regional_vs_fusion_comparison.png",
+    "size_bytes": 60566,
+    "sha256": "4743eafc6e1a1548b756b479a9e499562cd4bf0cef651430fbd079358ad4dd5a"
+  },
+  {
+    "relative_path": "figures/roc_curve.pdf",
+    "size_bytes": 20383,
+    "sha256": "93a14a03289aa77b054486de1badff95ac47e85312995cc0134882c1b8f4a71f"
+  },
+  {
+    "relative_path": "figures/roc_curve.png",
+    "size_bytes": 80384,
+    "sha256": "9309580558ed0bf44a3dcd147a2057b1e70179db36fadd95c36007434d461af6"
+  },
+  {
+    "relative_path": "logs/fusion.log",
+    "size_bytes": 148,
+    "sha256": "502b522596bed799c33070729fae20b9ca79bf575a481fd01f3d7c3d98d28b53"
+  },
+  {
+    "relative_path": "metrics/classification_report.json",
+    "size_bytes": 629,
+    "sha256": "a224d8ac67b31481a7aaf07318f7266ecdc24bd813941fe4c6ea1fb05dbabf89"
+  },
+  {
+    "relative_path": "metrics/confusion_matrix.csv",
+    "size_bytes": 66,
+    "sha256": "994f96c94255435e4bf3227e4b4c5543824f7c11919e19584cbb7b9cc880a4b5"
+  },
+  {
+    "relative_path": "metrics/fusion_metrics.json",
+    "size_bytes": 785,
+    "sha256": "d7747c55eb9cbbddbe153de55ff3b62d237c4ad5734957a42ef321e109b2568c"
+  },
+  {
+    "relative_path": "metrics/region_comparison_common_cohort.csv",
+    "size_bytes": 970,
+    "sha256": "528448db2c2398dc2d20dde582b3997bba518db00b81e8351be068a0e3c494a1"
+  },
+  {
+    "relative_path": "predictions/fused_test_predictions.csv",
+    "size_bytes": 124688,
+    "sha256": "30379c094872a3997d5f5f38ffaf80abab919e439751b521e102db1ac246e91d"
+  },
+  {
+    "relative_path": "quality_gates.json",
+    "size_bytes": 619,
+    "sha256": "9fa7319879324b1640da5edad68ff8bba233d3ff1fa3cad1fedcce5055a2d556"
+  },
+  {
+    "relative_path": "requirements_lock.txt",
+    "size_bytes": 12614,
+    "sha256": "733334e34a164feb15b1b9964dea01c2a3b8b553e7786a814fedc1763296e0d0"
+  },
+  {
+    "relative_path": "source_provenance.json",
+    "size_bytes": 2208,
+    "sha256": "db9214b282639cacc6bfc8047b5656a8bf50d77ee3ba226c0060b3480f66872d"
+  }
+]

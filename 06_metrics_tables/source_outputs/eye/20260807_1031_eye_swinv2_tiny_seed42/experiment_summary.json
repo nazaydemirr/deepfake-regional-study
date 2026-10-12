@@ -1,0 +1,55 @@
+{
+  "run_id": "20260807_1031_eye_swinv2_tiny_seed42",
+  "architecture": "Swin V2 Tiny",
+  "region": "Combined Eye ROI",
+  "mode": "new",
+  "seed": 42,
+  "normalization": {
+    "source": "Swin_V2_T_Weights.IMAGENET1K_V1",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "learned_from_project_data": false,
+    "uses_validation_or_test_statistics": false,
+    "config_source": "pretrained_weights",
+    "rationale": "ImageNet-pretrained Swin V2'nin beklediği normalizasyon kullanılır. Project train/val/test verisinden mean/std öğrenilmez; dolayısıyla validation/test istatistiği sızıntısı oluşmaz."
+  },
+  "best_epoch": 8,
+  "best_validation_score": 0.8453900709219859,
+  "validation_selected_threshold": 0.27499999999999997,
+  "test_frame_metrics": {
+    "accuracy": 0.6986754966887417,
+    "precision": 0.6815642458100558,
+    "recall": 0.782051282051282,
+    "f1": 0.7283582089552239,
+    "roc_auc": 0.7868370214260625,
+    "pr_auc": 0.7942285261606122,
+    "threshold": 0.27499999999999997,
+    "best_epoch": 8,
+    "run_id": "20260807_1031_eye_swinv2_tiny_seed42"
+  },
+  "test_video_metrics": {
+    "available": false,
+    "run_id": "20260807_1031_eye_swinv2_tiny_seed42",
+    "reason": "video_id appears to be a label/split bucket rather than a true source-video identifier; per-original-video metrics are disabled."
+  },
+  "train_frames": 2388,
+  "val_frames": 296,
+  "test_frames": 302,
+  "train_videos": 2,
+  "val_videos": 2,
+  "test_videos": 2,
+  "ssot_schema_missing_reported": [
+    "frame_index",
+    "roi_state",
+    "run_id",
+    "sha256"
+  ]
+}

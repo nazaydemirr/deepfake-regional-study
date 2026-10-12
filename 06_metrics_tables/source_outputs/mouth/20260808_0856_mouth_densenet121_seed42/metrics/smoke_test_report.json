@@ -1,0 +1,33 @@
+{
+    "run_id": "20260808_0856_mouth_densenet121_seed42",
+    "tested_batches": 2,
+    "gradient_loss": 0.7775877714157104,
+    "gradient_tensor_count": 2,
+    "training_step_results": [
+        {
+            "accuracy": 0.375,
+            "auc": 0.4682539701461792,
+            "loss": 0.8159010410308838,
+            "pr_auc": 0.6096884608268738,
+            "precision": 0.4285714328289032,
+            "recall": 0.3333333432674408
+        },
+        {
+            "accuracy": 0.5,
+            "auc": 0.552734375,
+            "loss": 0.7839415073394775,
+            "pr_auc": 0.5330737829208374,
+            "precision": 0.5,
+            "recall": 0.375
+        }
+    ],
+    "optimizer_iterations_before": 0,
+    "optimizer_iterations_after_two_batches": 2,
+    "reloaded_optimizer_iterations": 2,
+    "loss_before_save": 0.5215162038803101,
+    "loss_after_reload": 0.5215162038803101,
+    "prediction_max_absolute_difference": 0.0,
+    "checkpoint_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/DenseNet121_Mouth_Results/20260808_0856_mouth_densenet121_seed42/checkpoints/smoke_test_checkpoint.keras",
+    "real_training_optimizer_reset": true,
+    "status": "PASS"
+}

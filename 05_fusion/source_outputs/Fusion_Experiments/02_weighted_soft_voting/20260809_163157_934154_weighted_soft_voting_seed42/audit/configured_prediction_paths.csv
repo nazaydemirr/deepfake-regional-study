@@ -1,0 +1,10 @@
+model_family,region,path,exists
+swinv2_tiny,eye,Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260807_1031_eye_swinv2_tiny_seed42/predictions/test_frame_predictions.csv,True
+swinv2_tiny,brow,Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Kas_SwinV2_Tiny_Detayli_Sonuc_pdf/predictions/test_frame_predictions.csv,True
+swinv2_tiny,mouth,Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260807_2235_mouth_swinv2_tiny_seed42/predictions/test_frame_predictions.csv,True
+efficientnet_b0,eye,Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260808_0803_eye_efficientnet_b0_seed42/predictions/test_predictions.csv,True
+efficientnet_b0,brow,Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/20260808_1248_eyebrow_efficientnet_b0_seed42/predictions/test_predictions.csv,True
+efficientnet_b0,mouth,Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260808_1257_mouth_efficientnet_b0_seed42/predictions/test_predictions.csv,True
+swinv2_texture,eye,Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260806_1748_eye_swinv2_texturefusion_seed42/full/predictions/test_predictions.csv,True
+swinv2_texture,brow,Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Swin V2-Tiny + LBP + GLCM + Gabor + Wavelet Fusion/predictions/test_predictions_frame_level.csv,True
+swinv2_texture,mouth,Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/SwinV2_TextureFusion_Mouth/20260807_1550_mouth_swinv2_texturefusion_seed42/full/predictions/test_predictions.csv,True

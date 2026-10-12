@@ -1,0 +1,34 @@
+{
+  "run_id": "20260807_2034_mouth_hog_lbp_svm_seed42",
+  "total_metadata_rows": 3098,
+  "unique_source_frames": 3000,
+  "success_count": 2987,
+  "skipped_count": 111,
+  "error_count": 0,
+  "training_eligible_success_count": 2987,
+  "unique_source_videos": 1940,
+  "split_class_counts": {
+    "test": {
+      "fake": 156,
+      "real": 146
+    },
+    "train": {
+      "fake": 1192,
+      "real": 1197
+    },
+    "val": {
+      "fake": 141,
+      "real": 155
+    }
+  },
+  "split_source_video_counts": {
+    "train": 1557,
+    "val": 187,
+    "test": 196
+  },
+  "source_video_intersections": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "run_id": "20260809_162333_region_equal_soft_voting_seed42",
+  "method": "01_equal_soft_voting",
+  "model_family": "swinv2_texture",
+  "decision_threshold": 0.5,
+  "threshold_source": "fixed_predefined_0.50",
+  "frame_aggregation": "mean",
+  "alignment_audit": {
+    "counts": {
+      "eye_frames": 292,
+      "brow_frames": 196,
+      "mouth_frames": 292,
+      "common_frames": 196,
+      "real_common_frames": 101,
+      "fake_common_frames": 95
+    },
+    "eye": {
+      "region": "eye",
+      "prediction_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260806_1748_eye_swinv2_texturefusion_seed42/full/predictions/test_predictions.csv",
+      "source_rows": 302,
+      "unique_upstream_frames": 292,
+      "multi_roi_frames": 10,
+      "max_roi_count_per_frame": 2,
+      "label_column": "target",
+      "probability_column": "probability_fake",
+      "frame_aggregation": "mean",
+      "key_resolution": "prediction_column",
+      "key_column": "image_path"
+    },
+    "brow": {
+      "region": "brow",
+      "prediction_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Swin V2-Tiny + LBP + GLCM + Gabor + Wavelet Fusion/predictions/test_predictions_frame_level.csv",
+      "source_rows": 196,
+      "unique_upstream_frames": 196,
+      "multi_roi_frames": 0,
+      "max_roi_count_per_frame": 1,
+      "label_column": "target",
+      "probability_column": "probability_fake",
+      "frame_aggregation": "mean",
+      "key_resolution": "prediction_column",
+      "key_column": "image_path"
+    },
+    "mouth": {
+      "region": "mouth",
+      "prediction_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/SwinV2_TextureFusion_Mouth/20260807_1550_mouth_swinv2_texturefusion_seed42/full/predictions/test_predictions.csv",
+      "source_rows": 302,
+      "unique_upstream_frames": 292,
+      "multi_roi_frames": 10,
+      "max_roi_count_per_frame": 2,
+      "label_column": "target",
+      "probability_column": "probability_fake",
+      "frame_aggregation": "mean",
+      "key_resolution": "prediction_column",
+      "key_column": "image_path"
+    }
+  },
+  "fusion_metrics": {
+    "model_family": "swinv2_texture",
+    "method": "01_equal_soft_voting",
+    "evaluation": "fusion",
+    "threshold_source": "fixed_predefined_0.50",
+    "n": 196,
+    "threshold": 0.5,
+    "accuracy": 0.6938775510204082,
+    "balanced_accuracy": 0.6920270974465867,
+    "precision": 0.7058823529411765,
+    "recall": 0.631578947368421,
+    "specificity": 0.7524752475247525,
+    "f1": 0.6666666666666666,
+    "roc_auc": 0.7522668056279311,
+    "pr_auc": 0.7361026101796728,
+    "tn": 76,
+    "fp": 25,
+    "fn": 35,
+    "tp": 60
+  }
+}

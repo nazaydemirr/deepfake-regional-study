@@ -1,0 +1,71 @@
+
+MOUTH ROI EXTRACTION - FINAL VALIDATION REPORT
+============================================================
+
+1. INPUT DATASET
+------------------------------------------------------------
+Expected frame count : 3000
+Detected frame count : 3000
+
+Fake Train : 1200
+Fake Val   : 150
+Fake Test  : 150
+
+Real Train : 1200
+Real Val   : 150
+Real Test  : 150
+
+
+2. PROCESSING RESULTS
+------------------------------------------------------------
+Metadata records     : 3098
+Unique source frames : 3000
+
+Successful Mouth ROI : 2987
+Skipped records      : 111
+Error records        : 0
+No-face records      : 111
+
+Frame coverage       : 100.00%
+Metadata success     : 96.42%
+
+
+3. OUTPUT FILES
+------------------------------------------------------------
+Mouth ROI images     : 2987
+Landmark JSON files  : 2987
+Debug images         : 2987
+
+
+4. PREPROCESSING CONFIGURATION
+------------------------------------------------------------
+Face Landmarker      : MediaPipe Face Landmarker
+Mouth landmarks      : 40
+Mouth padding ratio  : 0.25
+Output resolution    : 224 x 224
+Aspect ratio         : Preserved
+Resize strategy      : Resize + padding
+
+
+5. DATA ORGANIZATION
+------------------------------------------------------------
+Classes              : Fake / Real
+Splits               : Train / Validation / Test
+
+Fake split           : 80% / 10% / 10%
+Real split           : 80% / 10% / 10%
+
+
+6. VALIDATION
+------------------------------------------------------------
+Input count valid    : True
+Frame coverage valid : True
+Duplicate sample ID  : 0
+
+Mouth count valid    : True
+Landmark count valid : True
+Debug count valid    : True
+
+FINAL VALIDATION     : PASSED
+
+============================================================

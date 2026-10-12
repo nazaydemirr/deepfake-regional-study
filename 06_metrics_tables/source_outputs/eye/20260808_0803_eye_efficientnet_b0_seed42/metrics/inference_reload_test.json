@@ -1,0 +1,11 @@
+{
+  "status": "PASSED",
+  "checkpoint": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260808_0803_eye_efficientnet_b0_seed42/checkpoints/finetune/best.ckpt",
+  "n_samples": 4,
+  "probabilities": [
+    0.9558027982711792,
+    0.9348265528678894,
+    0.6453229188919067,
+    0.5392727255821228
+  ]
+}

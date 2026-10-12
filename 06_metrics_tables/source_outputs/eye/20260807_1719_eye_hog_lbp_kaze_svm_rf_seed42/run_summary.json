@@ -1,0 +1,237 @@
+{
+  "run_id": "20260807_1719_eye_hog_lbp_kaze_svm_rf_seed42",
+  "status": "COMPLETED",
+  "experiment": "Eye ROI HOG + LBP + KAZE -> SVM / Random Forest",
+  "region": "eye",
+  "roi": "combined_eye",
+  "positive_class": "fake",
+  "seed": 42,
+  "paths": {
+    "input_data": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output",
+    "roi_metadata": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output/metadata.csv",
+    "output_run": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260807_1719_eye_hog_lbp_kaze_svm_rf_seed42"
+  },
+  "data": {
+    "run_id": "20260807_1719_eye_hog_lbp_kaze_svm_rf_seed42",
+    "total_inputs": 3097,
+    "success_count": 2986,
+    "skipped_count": 111,
+    "error_count": 0,
+    "generated_audit_sample_ids": 111,
+    "training_eligible_success_count": 2986,
+    "split_class_counts": {
+      "test": {
+        "fake": 156,
+        "real": 146
+      },
+      "train": {
+        "fake": 1191,
+        "real": 1197
+      },
+      "val": {
+        "fake": 141,
+        "real": 155
+      }
+    },
+    "video_id_group_counts": {
+      "train": 2,
+      "val": 2,
+      "test": 2
+    },
+    "video_id_group_intersections": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    },
+    "cross_split_duplicate_output_path_count": 0,
+    "cross_split_duplicate_sha256_count": 0,
+    "true_video_level_leakage_status": "NOT_VERIFIABLE_FROM_CURRENT_METADATA",
+    "true_video_level_note": "ROI metadata video_id is preserved exactly as provided. It is not treated as authoritative original source-video identity."
+  },
+  "feature_dimensions": {
+    "hog_dim": 6084,
+    "lbp_dim": 26,
+    "kaze_dim": 128,
+    "base_dim": 6110,
+    "fused_dim": 6238,
+    "image_size": [
+      224,
+      224
+    ]
+  },
+  "validation_selection": {
+    "hog_lbp_rbf_svm": {
+      "C": 0.1,
+      "threshold": -0.37756271582633527,
+      "validation_metrics": {
+        "accuracy": 0.6351351351351351,
+        "balanced_accuracy": 0.6445664607641273,
+        "precision": 0.5804878048780487,
+        "recall": 0.8439716312056738,
+        "f1": 0.6878612716763006,
+        "specificity": 0.44516129032258067,
+        "roc_auc": 0.6553649050560513,
+        "average_precision": 0.5956897768601832,
+        "tn": 69,
+        "fp": 86,
+        "fn": 22,
+        "tp": 119
+      }
+    },
+    "hog_lbp_kaze_rbf_svm": {
+      "C": 1.0,
+      "threshold": -0.6357366818537233,
+      "validation_metrics": {
+        "accuracy": 0.6148648648648649,
+        "balanced_accuracy": 0.6290551361244566,
+        "precision": 0.5574468085106383,
+        "recall": 0.9290780141843972,
+        "f1": 0.6968085106382979,
+        "specificity": 0.32903225806451614,
+        "roc_auc": 0.6814458933882406,
+        "average_precision": 0.6135726107244189,
+        "tn": 51,
+        "fp": 104,
+        "fn": 10,
+        "tp": 131
+      }
+    },
+    "hog_lbp_kaze_random_forest": {
+      "configuration": {
+        "name": "RF-2",
+        "n_estimators": 300,
+        "max_depth": 20,
+        "min_samples_leaf": 1,
+        "max_features": "sqrt"
+      },
+      "threshold": 0.4241177456151339,
+      "validation_metrics": {
+        "accuracy": 0.5945945945945946,
+        "balanced_accuracy": 0.6077785403797757,
+        "precision": 0.5458515283842795,
+        "recall": 0.8865248226950354,
+        "f1": 0.6756756756756757,
+        "specificity": 0.32903225806451614,
+        "roc_auc": 0.660398078242965,
+        "average_precision": 0.6096240369154848,
+        "tn": 51,
+        "fp": 104,
+        "fn": 16,
+        "tp": 125
+      }
+    }
+  },
+  "test_metrics": [
+    {
+      "model": "HOG + LBP -> RBF-SVM",
+      "threshold": -0.37756271582633527,
+      "accuracy": 0.5695364238410596,
+      "balanced_accuracy": 0.5626975763962065,
+      "precision": 0.5607476635514018,
+      "recall": 0.7692307692307693,
+      "f1": 0.6486486486486487,
+      "specificity": 0.3561643835616438,
+      "roc_auc": 0.615296803652968,
+      "average_precision": 0.6471154087209459,
+      "tn": 52,
+      "fp": 94,
+      "fn": 36,
+      "tp": 120
+    },
+    {
+      "model": "HOG + LBP + KAZE -> RBF-SVM",
+      "threshold": -0.6357366818537233,
+      "accuracy": 0.5927152317880795,
+      "balanced_accuracy": 0.5822795925535652,
+      "precision": 0.5668016194331984,
+      "recall": 0.8974358974358975,
+      "f1": 0.6947890818858561,
+      "specificity": 0.2671232876712329,
+      "roc_auc": 0.6011591148577451,
+      "average_precision": 0.5745248022949409,
+      "tn": 39,
+      "fp": 107,
+      "fn": 16,
+      "tp": 140
+    },
+    {
+      "model": "HOG + LBP + KAZE -> Random Forest",
+      "threshold": 0.4241177456151339,
+      "accuracy": 0.5927152317880795,
+      "balanced_accuracy": 0.5831577098700387,
+      "precision": 0.5690376569037657,
+      "recall": 0.8717948717948718,
+      "f1": 0.6886075949367089,
+      "specificity": 0.2945205479452055,
+      "roc_auc": 0.6004566210045663,
+      "average_precision": 0.5885143000297974,
+      "tn": 43,
+      "fp": 103,
+      "fn": 20,
+      "tp": 136
+    }
+  ],
+  "metadata_group_level_metrics": [
+    {
+      "model": "HOG + LBP + KAZE -> RBF-SVM",
+      "accuracy": 0.5,
+      "balanced_accuracy": 0.5,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "specificity": 0.0,
+      "roc_auc": 1.0,
+      "average_precision": 1.0,
+      "tn": 0,
+      "fp": 1,
+      "fn": 0,
+      "tp": 1
+    },
+    {
+      "model": "HOG + LBP + KAZE -> Random Forest",
+      "accuracy": 0.5,
+      "balanced_accuracy": 0.5,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "specificity": 0.0,
+      "roc_auc": 1.0,
+      "average_precision": 1.0,
+      "tn": 0,
+      "fp": 1,
+      "fn": 0,
+      "tp": 1
+    },
+    {
+      "model": "HOG + LBP -> RBF-SVM",
+      "accuracy": 0.5,
+      "balanced_accuracy": 0.5,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "specificity": 0.0,
+      "roc_auc": 1.0,
+      "average_precision": 1.0,
+      "tn": 0,
+      "fp": 1,
+      "fn": 0,
+      "tp": 1
+    }
+  ],
+  "quality_gates": {
+    "schema_test": "PASS",
+    "current_video_id_group_split_test": "PASS",
+    "true_video_level_split_test": "NOT_VERIFIABLE_FROM_CURRENT_METADATA",
+    "data_accounting_test": "PASS",
+    "exact_duplicate_sha256_split_test": "PASS",
+    "numerical_feature_test": "PASS",
+    "classical_ml_smoke_test": "PASS",
+    "pytorch_forward_backward_smoke_test": "NOT_APPLICABLE_CLASSICAL_ML",
+    "checkpoint_atomic_save_reload_test": "PASS",
+    "fresh_load_inference_test": "PASS",
+    "test_set_used_for_selection": false
+  },
+  "figure_count": 9,
+  "checkpoint_note": "Classical ML experiment: SVC/RF models, train-fitted scalers, validation-selected thresholds, config and RNG state are atomically serialized and fresh-load tested. PyTorch optimizer/epoch state is not applicable.",
+  "completed_at": "2026-08-07T17:49:36.280788+03:00"
+}

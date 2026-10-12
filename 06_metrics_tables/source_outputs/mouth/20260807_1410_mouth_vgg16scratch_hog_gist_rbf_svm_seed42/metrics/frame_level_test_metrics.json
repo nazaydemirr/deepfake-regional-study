@@ -1,0 +1,22 @@
+{
+  "run_id": "20260807_1410_mouth_vgg16scratch_hog_gist_rbf_svm_seed42",
+  "evaluation_level": "frame",
+  "model": "VGG16 + HOG + GIST + PCA + RBF-SVM",
+  "threshold_source": "validation_only",
+  "decision_threshold": 0.44480303313075675,
+  "sample_count": 292,
+  "accuracy": 0.5753424657534246,
+  "balanced_accuracy": 0.5743373211353507,
+  "precision": 0.5608465608465608,
+  "recall_sensitivity": 0.7210884353741497,
+  "specificity": 0.42758620689655175,
+  "negative_predictive_value": 0.6019417475728155,
+  "f1": 0.6309523809523809,
+  "matthews_correlation_coefficient": 0.15557150613175727,
+  "roc_auc": 0.6721557588552662,
+  "pr_auc_average_precision": 0.690502762907533,
+  "true_negative": 62,
+  "false_positive": 83,
+  "false_negative": 41,
+  "true_positive": 106
+}

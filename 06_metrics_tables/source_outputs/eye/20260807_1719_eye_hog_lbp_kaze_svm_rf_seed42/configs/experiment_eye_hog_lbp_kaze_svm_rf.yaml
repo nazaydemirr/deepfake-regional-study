@@ -1,0 +1,55 @@
+seed: 42
+region: eye
+roi_variant: combined_eye
+image_size:
+- 224
+- 224
+hog:
+  orientations: 9
+  pixels_per_cell:
+  - 16
+  - 16
+  cells_per_block:
+  - 2
+  - 2
+  block_norm: L2-Hys
+  transform_sqrt: true
+lbp:
+  radius: 3
+  points: 24
+  method: uniform
+kaze:
+  descriptor_length: 64
+svm:
+  C_values:
+  - 0.1
+  - 1.0
+  - 10.0
+  kernel: rbf
+  gamma: scale
+  class_weight: balanced
+  cache_size_mb: 2000
+random_forest_candidates:
+- name: RF-1
+  n_estimators: 300
+  max_depth: null
+  min_samples_leaf: 1
+  max_features: sqrt
+- name: RF-2
+  n_estimators: 300
+  max_depth: 20
+  min_samples_leaf: 1
+  max_features: sqrt
+- name: RF-3
+  n_estimators: 300
+  max_depth: null
+  min_samples_leaf: 2
+  max_features: sqrt
+selection_metric: f1
+positive_class: fake
+compute_sha256: true
+sha256_workers: 8
+verify_images: true
+feature_cache: true
+figure_dpi: 150
+min_figure_short_edge_px: 600

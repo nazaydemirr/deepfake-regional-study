@@ -1,0 +1,99 @@
+{
+    "run_id": "20260808_0856_mouth_densenet121_seed42",
+    "model": "DenseNet121",
+    "global_best_epoch": 21,
+    "global_best_stage": "finetune",
+    "global_best_validation_auc": 0.7799587845802307,
+    "threshold_selection": {
+        "run_id": "20260808_0856_mouth_densenet121_seed42",
+        "selection_dataset": "validation",
+        "selection_method": "Youden J",
+        "selected_threshold": 0.508567750453949,
+        "youden_j": 0.4562800274536719,
+        "validation_roc_auc": 0.7795470144131778,
+        "validation_f1_at_selected_threshold": 0.7272727272727273,
+        "test_set_used_for_threshold_selection": false
+    },
+    "image_level_test_metrics": {
+        "threshold": 0.508567750453949,
+        "sample_count": 302,
+        "accuracy": 0.695364238410596,
+        "balanced_accuracy": 0.692615033368458,
+        "precision": 0.6797752808988764,
+        "recall": 0.7756410256410257,
+        "specificity": 0.6095890410958904,
+        "f1_score": 0.7245508982035929,
+        "roc_auc": 0.7608447488584476,
+        "pr_auc": 0.7493416279680153,
+        "matthews_correlation_coefficient": 0.39132541930751047,
+        "true_negative": 89,
+        "false_positive": 57,
+        "false_negative": 35,
+        "true_positive": 121
+    },
+    "source_level_test_metrics": {
+        "threshold": 0.508567750453949,
+        "sample_count": 292,
+        "accuracy": 0.6952054794520548,
+        "balanced_accuracy": 0.6946516537649543,
+        "precision": 0.6705882352941176,
+        "recall": 0.7755102040816326,
+        "specificity": 0.6137931034482759,
+        "f1_score": 0.7192429022082019,
+        "roc_auc": 0.7565095003518649,
+        "pr_auc": 0.7297743216928667,
+        "matthews_correlation_coefficient": 0.3946629756064302,
+        "true_negative": 89,
+        "false_positive": 56,
+        "false_negative": 33,
+        "true_positive": 114
+    },
+    "default_threshold_test_metrics": {
+        "threshold": 0.5,
+        "sample_count": 302,
+        "accuracy": 0.695364238410596,
+        "balanced_accuracy": 0.6923955040393397,
+        "precision": 0.6777777777777778,
+        "recall": 0.782051282051282,
+        "specificity": 0.6027397260273972,
+        "f1_score": 0.7261904761904762,
+        "roc_auc": 0.7608447488584476,
+        "pr_auc": 0.7493416279680153,
+        "matthews_correlation_coefficient": 0.39187492398395335,
+        "true_negative": 88,
+        "false_positive": 58,
+        "false_negative": 34,
+        "true_positive": 122
+    },
+    "test_used_once_for_final_evaluation": true,
+    "figures": {
+        "training_curves": {
+            "path": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/DenseNet121_Mouth_Results/20260808_0856_mouth_densenet121_seed42/figures/training_validation_curves.png",
+            "size": [
+                1626,
+                2075
+            ]
+        },
+        "confusion_matrices": {
+            "path": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/DenseNet121_Mouth_Results/20260808_0856_mouth_densenet121_seed42/figures/test_confusion_matrices_matrices.png",
+            "size": [
+                1656,
+                802
+            ]
+        },
+        "roc_pr_curves": {
+            "path": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/DenseNet121_Mouth_Results/20260808_0856_mouth_densenet121_seed42/figures/test_roc_pr_curves.png",
+            "size": [
+                1776,
+                726
+            ]
+        },
+        "probability_distribution": {
+            "path": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/DenseNet121_Mouth_Results/20260808_0856_mouth_densenet121_seed42/figures/test_probability_distribution.png",
+            "size": [
+                1476,
+                876
+            ]
+        }
+    }
+}

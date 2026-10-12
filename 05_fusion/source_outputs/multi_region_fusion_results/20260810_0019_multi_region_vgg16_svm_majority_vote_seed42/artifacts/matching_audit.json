@@ -1,0 +1,20 @@
+{
+  "source_counts": {
+    "eyebrow_raw": 196,
+    "mouth_raw": 302,
+    "eye_raw": 302,
+    "mouth_face0": 292,
+    "eye_face0": 292
+  },
+  "excluded_nonzero_faces": {
+    "mouth": 10,
+    "eye": 10
+  },
+  "eyebrow_missing_in_mouth_face0": 0,
+  "eyebrow_missing_in_eye_face0": 0,
+  "matched_common_test_samples": 196,
+  "all_eyebrow_samples_matched": true,
+  "ground_truth_agreement_all_regions": true,
+  "matching_key": "frame_key derived from real_test_XXXXX / fake_test_XXXXX",
+  "face_policy": "face_index=0 for Mouth and Eye"
+}

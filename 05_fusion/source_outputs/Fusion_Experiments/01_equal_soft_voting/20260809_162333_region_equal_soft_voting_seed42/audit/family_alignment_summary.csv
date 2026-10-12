@@ -1,0 +1,4 @@
+model_family,eye_frames,brow_frames,mouth_frames,common_frames,real_common_frames,fake_common_frames,eye_multi_roi_frames,brow_multi_roi_frames,mouth_multi_roi_frames
+swinv2_tiny,292,196,292,196,101,95,10,0,10
+efficientnet_b0,292,196,292,196,101,95,10,0,10
+swinv2_texture,292,196,292,196,101,95,10,0,10

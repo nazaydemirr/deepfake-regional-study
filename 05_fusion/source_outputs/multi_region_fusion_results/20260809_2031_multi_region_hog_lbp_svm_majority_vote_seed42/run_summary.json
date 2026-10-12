@@ -1,0 +1,195 @@
+{
+  "run_id": "20260809_2031_multi_region_hog_lbp_svm_majority_vote_seed42",
+  "status": "COMPLETED",
+  "method": "decision_level_late_fusion_majority_voting",
+  "new_model_training": false,
+  "source_runs": {
+    "eyebrow": {
+      "owner": "Nazlıcan",
+      "run_id": "20260807_0948_eyebrow_hog_lbp_svm_seed42",
+      "resolved_run_dir": "source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/HOG_LBP_SVM_Kas_Deneyi_Sonuc_.pdf",
+      "prediction_file": "source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/HOG_LBP_SVM_Kas_Deneyi_Sonuc_.pdf/predictions/test_predictions_frame_level.csv",
+      "feature_fusion": [
+        "HOG",
+        "LBP"
+      ],
+      "classifier": "LINEAR SVM",
+      "C": 0.1,
+      "gamma": null,
+      "threshold": -1.355763913766937,
+      "pretrained_weights": false
+    },
+    "eye": {
+      "owner": "Kader",
+      "run_id": "20260807_1119_eye_hog_lbp_svm_seed42",
+      "resolved_run_dir": "source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260807_1119_eye_hog_lbp_svm_seed42",
+      "prediction_file": "source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260807_1119_eye_hog_lbp_svm_seed42/predictions/test_predictions_frame_level.csv",
+      "feature_fusion": [
+        "HOG",
+        "LBP"
+      ],
+      "classifier": "RBF SVM",
+      "C": 10.0,
+      "gamma": 0.0001,
+      "threshold": -0.5433359968892147,
+      "pretrained_weights": false
+    },
+    "mouth": {
+      "owner": "Dilara",
+      "run_id": "20260807_2034_mouth_hog_lbp_svm_seed42",
+      "resolved_run_dir": "source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260807_2034_mouth_hog_lbp_svm_seed42",
+      "prediction_file": "source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260807_2034_mouth_hog_lbp_svm_seed42/predictions/test_predictions_frame_level.csv",
+      "feature_fusion": [
+        "HOG",
+        "LBP"
+      ],
+      "classifier": "RBF SVM",
+      "C": 1.0,
+      "gamma": 0.001,
+      "threshold": -0.14414598526723613,
+      "pretrained_weights": false
+    }
+  },
+  "alignment": {
+    "common_test_frames": 196,
+    "class_counts": {
+      "real": 101,
+      "fake": 95
+    },
+    "input_audit": [
+      {
+        "region": "eyebrow",
+        "input_csv": "source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/HOG_LBP_SVM_Kas_Deneyi_Sonuc_.pdf/predictions/test_predictions_frame_level.csv",
+        "rows_total": 196,
+        "rows_face0": 196,
+        "secondary_face_rows_excluded": 0,
+        "unique_frame_keys_face0": 196,
+        "class_counts_face0": {
+          "0": 101,
+          "1": 95
+        }
+      },
+      {
+        "region": "eye",
+        "input_csv": "source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260807_1119_eye_hog_lbp_svm_seed42/predictions/test_predictions_frame_level.csv",
+        "rows_total": 302,
+        "rows_face0": 292,
+        "secondary_face_rows_excluded": 10,
+        "unique_frame_keys_face0": 292,
+        "class_counts_face0": {
+          "0": 145,
+          "1": 147
+        }
+      },
+      {
+        "region": "mouth",
+        "input_csv": "source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260807_2034_mouth_hog_lbp_svm_seed42/predictions/test_predictions_frame_level.csv",
+        "rows_total": 302,
+        "rows_face0": 292,
+        "secondary_face_rows_excluded": 10,
+        "unique_frame_keys_face0": 292,
+        "class_counts_face0": {
+          "0": 145,
+          "1": 147
+        }
+      }
+    ]
+  },
+  "metrics": {
+    "Eyebrow": {
+      "n": 196,
+      "accuracy": 0.5051020408163265,
+      "precision": 0.4939759036144578,
+      "recall": 0.8631578947368421,
+      "f1": 0.6283524904214559,
+      "specificity": 0.16831683168316833,
+      "balanced_accuracy": 0.5157373632100052,
+      "roc_auc": 0.5398645127670662,
+      "average_precision": 0.512943959848368,
+      "tn": 17,
+      "fp": 84,
+      "fn": 13,
+      "tp": 82
+    },
+    "Eye": {
+      "n": 196,
+      "accuracy": 0.5510204081632653,
+      "precision": 0.5238095238095238,
+      "recall": 0.8105263157894737,
+      "f1": 0.6363636363636364,
+      "specificity": 0.3069306930693069,
+      "balanced_accuracy": 0.5587285044293903,
+      "roc_auc": 0.5683168316831683,
+      "average_precision": 0.5409679156281624,
+      "tn": 31,
+      "fp": 70,
+      "fn": 18,
+      "tp": 77
+    },
+    "Mouth": {
+      "n": 196,
+      "accuracy": 0.5408163265306123,
+      "precision": 0.5177304964539007,
+      "recall": 0.7684210526315789,
+      "f1": 0.6186440677966102,
+      "specificity": 0.32673267326732675,
+      "balanced_accuracy": 0.5475768629494528,
+      "roc_auc": 0.6035435122459613,
+      "average_precision": 0.6020046036487849,
+      "tn": 33,
+      "fp": 68,
+      "fn": 22,
+      "tp": 73
+    },
+    "Majority Vote Fusion": {
+      "n": 196,
+      "accuracy": 0.5306122448979592,
+      "precision": 0.509090909090909,
+      "recall": 0.8842105263157894,
+      "f1": 0.6461538461538462,
+      "specificity": 0.19801980198019803,
+      "balanced_accuracy": 0.5411151641479938,
+      "roc_auc": 0.5783220427305888,
+      "average_precision": 0.5311236065316376,
+      "tn": 20,
+      "fp": 81,
+      "fn": 11,
+      "tp": 84
+    }
+  },
+  "improvement_summary": {
+    "common_test_frames": 196,
+    "best_single_f1_system": "Eye",
+    "best_single_f1": 0.6363636363636364,
+    "fusion_f1": 0.6461538461538462,
+    "fusion_minus_best_single_f1": 0.009790209790209836,
+    "best_single_accuracy_system": "Eye",
+    "best_single_accuracy": 0.5510204081632653,
+    "fusion_accuracy": 0.5306122448979592,
+    "fusion_minus_best_single_accuracy": -0.020408163265306034,
+    "best_single_balanced_accuracy_system": "Eye",
+    "best_single_balanced_accuracy": 0.5587285044293903,
+    "fusion_balanced_accuracy": 0.5411151641479938,
+    "fusion_minus_best_single_balanced_accuracy": -0.017613340281396495
+  },
+  "quality_gates": {
+    "source_run_identity_test": "PASS",
+    "source_feature_method_test": "PASS_HOG_LBP_SVM",
+    "prediction_schema_test": "PASS",
+    "test_only_input_test": "PASS",
+    "face0_uniqueness_test": "PASS",
+    "three_way_common_frame_alignment_test": "PASS",
+    "ground_truth_consistency_test": "PASS",
+    "source_provenance_brow_mouth_test": "PASS",
+    "both_classes_present_test": "PASS",
+    "majority_rule_test": "PASS_FIXED_2_OF_3",
+    "new_model_training": "NOT_PERFORMED",
+    "stacking_or_meta_model": "NOT_USED",
+    "test_set_used_for_method_selection": false,
+    "checkpoint_test": "NOT_APPLICABLE_FUSION_ONLY",
+    "training_smoke_test": "NOT_APPLICABLE_FUSION_ONLY",
+    "figure_min_short_edge_600px_test": "PASS",
+    "figure_language_test": "PASS_ENGLISH"
+  },
+  "completed_at": "2026-08-09T20:31:31.269350"
+}

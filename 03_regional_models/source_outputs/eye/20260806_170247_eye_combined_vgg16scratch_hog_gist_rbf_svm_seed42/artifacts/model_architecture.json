@@ -1,0 +1,9 @@
+{
+  "architecture": "VGG16 convolutional backbone with adaptive global pooling",
+  "pretrained_weights": false,
+  "torchvision_weights_argument": null,
+  "all_parameters_trainable": true,
+  "parameter_count": 14846530,
+  "trainable_parameter_count": 14846530,
+  "device": "cuda"
+}

@@ -1,0 +1,39 @@
+{
+  "training_required_columns": [
+    "combined_eye_path",
+    "label",
+    "sample_id",
+    "split",
+    "status",
+    "video_id"
+  ],
+  "training_required_missing": [],
+  "ssot_expected_columns": [
+    "face_index",
+    "frame_index",
+    "label",
+    "output_path",
+    "roi_state",
+    "run_id",
+    "sample_id",
+    "sha256",
+    "skip_reason",
+    "source_video",
+    "split",
+    "status"
+  ],
+  "ssot_aliases_used": {
+    "source_video": "video_id",
+    "face_index": "face_id",
+    "output_path": "combined_eye_path",
+    "skip_reason": "error"
+  },
+  "ssot_missing_after_aliases": [
+    "frame_index",
+    "roi_state",
+    "run_id",
+    "sha256"
+  ],
+  "strict_ssot_schema": false,
+  "note": "This notebook consumes upstream metadata. Missing SSOT fields are reported, not invented."
+}

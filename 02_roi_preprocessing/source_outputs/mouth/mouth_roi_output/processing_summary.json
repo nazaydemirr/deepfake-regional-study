@@ -1,0 +1,13 @@
+{
+    "total_input_frames": 3000,
+    "total_metadata_records": 3098,
+    "successful_mouth_roi": 2987,
+    "skipped_records": 111,
+    "error_records": 0,
+    "no_face_records": 111,
+    "elapsed_seconds": 487.32,
+    "elapsed_minutes": 8.122,
+    "output_size": 224,
+    "mouth_padding_ratio": 0.25,
+    "completed_at": "2026-08-06 15:34:37"
+}

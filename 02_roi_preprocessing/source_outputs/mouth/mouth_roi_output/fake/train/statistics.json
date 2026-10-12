@@ -1,0 +1,11 @@
+{
+    "label": "fake",
+    "split": "train",
+    "total_records": 1254,
+    "success_count": 1192,
+    "skipped_count": 62,
+    "error_count": 0,
+    "no_face_count": 62,
+    "mouth_not_detected_count": 62,
+    "average_processing_ms": 82.204
+}

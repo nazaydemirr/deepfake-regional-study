@@ -1,0 +1,31 @@
+{
+  "selection_metric": "validation_roc_auc",
+  "selected_stage": "finetune",
+  "selected_checkpoint": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260807_1004_eye_xception_seed42/checkpoints/finetune/best.ckpt",
+  "selected_threshold": 0.30499999999999994,
+  "validation_results": {
+    "frozen": {
+      "checkpoint": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260807_1004_eye_xception_seed42/checkpoints/frozen/best.ckpt",
+      "val_loss": 0.6810716165078653,
+      "accuracy": 0.5608108108108109,
+      "balanced_accuracy": 0.5678334477236331,
+      "precision": 0.5287958115183246,
+      "recall": 0.7163120567375887,
+      "f1": 0.608433734939759,
+      "roc_auc": 0.6035460992907802,
+      "pr_auc": 0.5794403534456058
+    },
+    "finetune": {
+      "checkpoint": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260807_1004_eye_xception_seed42/checkpoints/finetune/best.ckpt",
+      "val_loss": 0.6196322908272615,
+      "accuracy": 0.6587837837837838,
+      "balanced_accuracy": 0.6620224204987417,
+      "precision": 0.6204819277108434,
+      "recall": 0.7304964539007093,
+      "f1": 0.6710097719869706,
+      "roc_auc": 0.7250285975749257,
+      "pr_auc": 0.7108404762757841
+    }
+  },
+  "test_used_for_selection": false
+}

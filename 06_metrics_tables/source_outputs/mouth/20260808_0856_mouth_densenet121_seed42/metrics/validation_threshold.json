@@ -1,0 +1,10 @@
+{
+    "run_id": "20260808_0856_mouth_densenet121_seed42",
+    "selection_dataset": "validation",
+    "selection_method": "Youden J",
+    "selected_threshold": 0.508567750453949,
+    "youden_j": 0.4562800274536719,
+    "validation_roc_auc": 0.7795470144131778,
+    "validation_f1_at_selected_threshold": 0.7272727272727273,
+    "test_set_used_for_threshold_selection": false
+}

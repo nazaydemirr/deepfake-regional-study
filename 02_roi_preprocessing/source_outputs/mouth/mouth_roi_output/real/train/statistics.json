@@ -1,0 +1,11 @@
+{
+    "label": "real",
+    "split": "train",
+    "total_records": 1225,
+    "success_count": 1197,
+    "skipped_count": 28,
+    "error_count": 0,
+    "no_face_count": 28,
+    "mouth_not_detected_count": 28,
+    "average_processing_ms": 114.955
+}

@@ -1,0 +1,10 @@
+family,region,status,n,roc_auc,pr_auc,output_csv,error
+swinv2_tiny,eye,FAILED,0,,,,FileNotFoundError: Usable training/validation manifest not found near: Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260807_1031_eye_swinv2_tiny_seed42
+swinv2_tiny,brow,FAILED,0,,,,FileNotFoundError: Usable training/validation manifest not found near: Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Kas_SwinV2_Tiny_Detayli_Sonuc_pdf
+swinv2_tiny,mouth,FAILED,0,,,,FileNotFoundError: Usable training/validation manifest not found near: Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260807_2235_mouth_swinv2_tiny_seed42
+efficientnet_b0,eye,FAILED,0,,,,FileNotFoundError: Usable training/validation manifest not found near: Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260808_0803_eye_efficientnet_b0_seed42
+efficientnet_b0,brow,FAILED,0,,,,FileNotFoundError: Usable training/validation manifest not found near: Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/20260808_1248_eyebrow_efficientnet_b0_seed42
+efficientnet_b0,mouth,FAILED,0,,,,FileNotFoundError: Usable training/validation manifest not found near: Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260808_1257_mouth_efficientnet_b0_seed42
+swinv2_texture,eye,FAILED,0,,,,FileNotFoundError: Usable training/validation manifest not found near: Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260806_1748_eye_swinv2_texturefusion_seed42/full
+swinv2_texture,brow,FAILED,0,,,,FileNotFoundError: Usable training/validation manifest not found near: Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Swin V2-Tiny + LBP + GLCM + Gabor + Wavelet Fusion
+swinv2_texture,mouth,FAILED,0,,,,FileNotFoundError: Usable training/validation manifest not found near: Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/SwinV2_TextureFusion_Mouth/20260807_1550_mouth_swinv2_texturefusion_seed42/full

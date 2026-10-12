@@ -1,0 +1,9 @@
+{
+  "status": "FAILED",
+  "family": "swinv2_texture",
+  "region": "mouth",
+  "experiment_root": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/SwinV2_TextureFusion_Mouth/20260807_1550_mouth_swinv2_texturefusion_seed42/full",
+  "error_type": "FileNotFoundError",
+  "error": "Usable training/validation manifest not found near: Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/SwinV2_TextureFusion_Mouth/20260807_1550_mouth_swinv2_texturefusion_seed42/full",
+  "test_used": false
+}

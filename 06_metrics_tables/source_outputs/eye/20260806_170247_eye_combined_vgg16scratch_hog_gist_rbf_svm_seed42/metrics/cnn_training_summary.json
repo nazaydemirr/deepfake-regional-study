@@ -1,0 +1,7 @@
+{
+  "training_duration_seconds": 334.2202513217926,
+  "epochs_completed": 11,
+  "best_validation_f1": 0.6453089244851259,
+  "best_checkpoint": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260806_170247_eye_combined_vgg16scratch_hog_gist_rbf_svm_seed42/checkpoints/best.ckpt",
+  "last_checkpoint": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260806_170247_eye_combined_vgg16scratch_hog_gist_rbf_svm_seed42/checkpoints/last.ckpt"
+}

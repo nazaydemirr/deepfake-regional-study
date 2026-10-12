@@ -1,0 +1,19 @@
+{
+  "source_run_identity_test": "PASS",
+  "source_feature_method_test": "PASS_HOG_LBP_SVM",
+  "prediction_schema_test": "PASS",
+  "test_only_input_test": "PASS",
+  "face0_uniqueness_test": "PASS",
+  "three_way_common_frame_alignment_test": "PASS",
+  "ground_truth_consistency_test": "PASS",
+  "source_provenance_brow_mouth_test": "PASS",
+  "both_classes_present_test": "PASS",
+  "majority_rule_test": "PASS_FIXED_2_OF_3",
+  "new_model_training": "NOT_PERFORMED",
+  "stacking_or_meta_model": "NOT_USED",
+  "test_set_used_for_method_selection": false,
+  "checkpoint_test": "NOT_APPLICABLE_FUSION_ONLY",
+  "training_smoke_test": "NOT_APPLICABLE_FUSION_ONLY",
+  "figure_min_short_edge_600px_test": "PASS",
+  "figure_language_test": "PASS_ENGLISH"
+}

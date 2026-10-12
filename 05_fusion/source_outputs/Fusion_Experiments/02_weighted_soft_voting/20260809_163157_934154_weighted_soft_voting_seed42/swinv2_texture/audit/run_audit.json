@@ -1,0 +1,376 @@
+{
+  "run_id": "20260809_163157_934154_weighted_soft_voting_seed42",
+  "method": "02_weighted_soft_voting",
+  "model_family": "swinv2_texture",
+  "decision_threshold": 0.5,
+  "threshold_source": "fixed_predefined_0.50",
+  "frame_aggregation": "mean",
+  "weight_config": {
+    "validation_auc": {
+      "eye": 0.7387096881866455,
+      "brow": 0.7110501029512697,
+      "mouth": 0.7110501029512697
+    },
+    "raw_weight_scores": {
+      "eye": 0.2387096881866455,
+      "brow": 0.2110501029512697,
+      "mouth": 0.2110501029512697
+    },
+    "weights": {
+      "eye": 0.36123806607899933,
+      "brow": 0.31938096696050033,
+      "mouth": 0.31938096696050033
+    },
+    "validation_sources": {
+      "eye": {
+        "auc": 0.7387096881866455,
+        "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260808_1214_eye_densenet121_seed42/metrics/finetune_training_summary.json",
+        "source_field": "best_finetune_val_auc",
+        "source_type": "json",
+        "priority": 102,
+        "selection": "explicit_saved_value",
+        "candidate_count": 100,
+        "top_candidates": [
+          {
+            "auc": 0.7387096881866455,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260808_1214_eye_densenet121_seed42/metrics/finetune_training_summary.json",
+            "source_field": "best_finetune_val_auc",
+            "source_type": "json",
+            "priority": 102,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.7387096881866455,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260808_1214_eye_densenet121_seed42/metrics/finetune_training_summary.json",
+            "source_field": "global_best_val_auc",
+            "source_type": "json",
+            "priority": 102,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.7387096881866455,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260808_1214_eye_densenet121_seed42/metrics/final_evaluation_summary.json",
+            "source_field": "global_best_validation_auc",
+            "source_type": "json",
+            "priority": 102,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.7160146236419678,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260808_1214_eye_densenet121_seed42/metrics/frozen_training_summary.json",
+            "source_field": "best_val_auc_in_this_stage",
+            "source_type": "json",
+            "priority": 102,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.7387096881866455,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260808_1214_eye_densenet121_seed42/metrics/finetune_training_summary.json",
+            "source_field": "best_finetune_val_auc",
+            "source_type": "json",
+            "priority": 101,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.7387096881866455,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260808_1214_eye_densenet121_seed42/metrics/finetune_training_summary.json",
+            "source_field": "global_best_val_auc",
+            "source_type": "json",
+            "priority": 101,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.7387096881866455,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260808_1214_eye_densenet121_seed42/metrics/final_evaluation_summary.json",
+            "source_field": "global_best_validation_auc",
+            "source_type": "json",
+            "priority": 101,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.7160146236419678,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260808_1214_eye_densenet121_seed42/metrics/frozen_training_summary.json",
+            "source_field": "best_val_auc_in_this_stage",
+            "source_type": "json",
+            "priority": 101,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.7222374742621827,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260806_1748_eye_swinv2_texturefusion_seed42/full/metrics/test_metrics.json",
+            "source_field": "best_validation_auc",
+            "source_type": "json",
+            "priority": 99,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.7222374742621827,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260806_1748_eye_swinv2_texturefusion_seed42/full/metrics/test_metrics.json",
+            "source_field": "best_validation_auc",
+            "source_type": "json",
+            "priority": 96,
+            "selection": "explicit_saved_value"
+          }
+        ]
+      },
+      "brow": {
+        "auc": 0.7110501029512697,
+        "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260808_1240_mouth_vgg16_svm_seed42/artifacts/experiment_summary.json",
+        "source_field": "model_selection.best_validation_metrics.roc_auc",
+        "source_type": "json",
+        "priority": 110,
+        "selection": "explicit_saved_value",
+        "candidate_count": 216,
+        "top_candidates": [
+          {
+            "auc": 0.7110501029512697,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260808_1240_mouth_vgg16_svm_seed42/artifacts/experiment_summary.json",
+            "source_field": "model_selection.best_validation_metrics.roc_auc",
+            "source_type": "json",
+            "priority": 110,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.8603752001830244,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/SwinV2_TextureFusion_Mouth/20260807_1550_mouth_swinv2_texturefusion_seed42/full/metrics/test_metrics.json",
+            "source_field": "best_validation_roc_auc",
+            "source_type": "json",
+            "priority": 105,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.727955333076627,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Swin V2-Tiny + LBP + GLCM + Gabor + Wavelet Fusion/run_summary.json",
+            "source_field": "frame_level_metrics.best_validation_auc",
+            "source_type": "json",
+            "priority": 104,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.6706777215003967,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Xception_Kas_Deepfake_Detayli_Sonuc_.pdf/metrics/finetune_training_summary.json",
+            "source_field": "best_validation_auc",
+            "source_type": "json",
+            "priority": 103,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.6137369871139526,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Xception_Kas_Deepfake_Detayli_Sonuc_.pdf/metrics/frozen_training_summary.json",
+            "source_field": "best_validation_auc",
+            "source_type": "json",
+            "priority": 103,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.5752734541893005,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/DenseNet121_Kas_Results_20260808_1335_eyebrow_densenet121_seed42/run_summary.json",
+            "source_field": "best_validation_auc",
+            "source_type": "json",
+            "priority": 103,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.727955333076627,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Swin V2-Tiny + LBP + GLCM + Gabor + Wavelet Fusion/run_summary.json",
+            "source_field": "frame_level_metrics.best_validation_auc",
+            "source_type": "json",
+            "priority": 102,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.6706777215003967,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Xception_Kas_Deepfake_Detayli_Sonuc_.pdf/metrics/finetune_training_summary.json",
+            "source_field": "best_validation_auc",
+            "source_type": "json",
+            "priority": 102,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.6137369871139526,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Xception_Kas_Deepfake_Detayli_Sonuc_.pdf/metrics/frozen_training_summary.json",
+            "source_field": "best_validation_auc",
+            "source_type": "json",
+            "priority": 102,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.5752734541893005,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/DenseNet121_Kas_Results_20260808_1335_eyebrow_densenet121_seed42/run_summary.json",
+            "source_field": "best_validation_auc",
+            "source_type": "json",
+            "priority": 102,
+            "selection": "explicit_saved_value"
+          }
+        ]
+      },
+      "mouth": {
+        "auc": 0.7110501029512697,
+        "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260808_1240_mouth_vgg16_svm_seed42/artifacts/experiment_summary.json",
+        "source_field": "model_selection.best_validation_metrics.roc_auc",
+        "source_type": "json",
+        "priority": 111,
+        "selection": "explicit_saved_value",
+        "candidate_count": 121,
+        "top_candidates": [
+          {
+            "auc": 0.7110501029512697,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260808_1240_mouth_vgg16_svm_seed42/artifacts/experiment_summary.json",
+            "source_field": "model_selection.best_validation_metrics.roc_auc",
+            "source_type": "json",
+            "priority": 111,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.7110501029512697,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260808_1240_mouth_vgg16_svm_seed42/artifacts/experiment_summary.json",
+            "source_field": "model_selection.best_validation_metrics.roc_auc",
+            "source_type": "json",
+            "priority": 110,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.8603752001830244,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/SwinV2_TextureFusion_Mouth/20260807_1550_mouth_swinv2_texturefusion_seed42/full/metrics/test_metrics.json",
+            "source_field": "best_validation_roc_auc",
+            "source_type": "json",
+            "priority": 109,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.8603752001830244,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/SwinV2_TextureFusion_Mouth/20260807_1550_mouth_swinv2_texturefusion_seed42/full/metrics/test_metrics.json",
+            "source_field": "best_validation_roc_auc",
+            "source_type": "json",
+            "priority": 105,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.8227865695953369,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/Xception_Mouth/training_logs/finetune_training_summary.json",
+            "source_field": "best_validation_auc",
+            "source_type": "json",
+            "priority": 101,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.7799587845802307,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/DenseNet121_Mouth_Results/20260808_0856_mouth_densenet121_seed42/metrics/finetune_training_summary.json",
+            "source_field": "best_finetune_val_auc",
+            "source_type": "json",
+            "priority": 101,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.7799587845802307,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/DenseNet121_Mouth_Results/20260808_0856_mouth_densenet121_seed42/metrics/finetune_training_summary.json",
+            "source_field": "global_best_val_auc",
+            "source_type": "json",
+            "priority": 101,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.7799587845802307,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/DenseNet121_Mouth_Results/20260808_0856_mouth_densenet121_seed42/metrics/final_evaluation_summary.json",
+            "source_field": "global_best_validation_auc",
+            "source_type": "json",
+            "priority": 101,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.7335163950920105,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/DenseNet121_Mouth_Results/20260808_0856_mouth_densenet121_seed42/metrics/frozen_training_summary.json",
+            "source_field": "best_val_auc_in_this_stage",
+            "source_type": "json",
+            "priority": 101,
+            "selection": "explicit_saved_value"
+          },
+          {
+            "auc": 0.727957010269165,
+            "source_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/Xception_Mouth/training_logs/frozen_training_summary.json",
+            "source_field": "best_validation_auc",
+            "source_type": "json",
+            "priority": 101,
+            "selection": "explicit_saved_value"
+          }
+        ]
+      }
+    }
+  },
+  "alignment_audit": {
+    "counts": {
+      "eye_frames": 292,
+      "brow_frames": 196,
+      "mouth_frames": 292,
+      "common_frames": 196,
+      "real_common_frames": 101,
+      "fake_common_frames": 95
+    },
+    "eye": {
+      "region": "eye",
+      "prediction_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260806_1748_eye_swinv2_texturefusion_seed42/full/predictions/test_predictions.csv",
+      "source_rows": 302,
+      "unique_upstream_frames": 292,
+      "multi_roi_frames": 10,
+      "max_roi_count_per_frame": 2,
+      "label_column": "target",
+      "probability_column": "probability_fake",
+      "frame_aggregation": "mean",
+      "key_resolution": "prediction_column",
+      "key_column": "image_path"
+    },
+    "brow": {
+      "region": "brow",
+      "prediction_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Swin V2-Tiny + LBP + GLCM + Gabor + Wavelet Fusion/predictions/test_predictions_frame_level.csv",
+      "source_rows": 196,
+      "unique_upstream_frames": 196,
+      "multi_roi_frames": 0,
+      "max_roi_count_per_frame": 1,
+      "label_column": "target",
+      "probability_column": "probability_fake",
+      "frame_aggregation": "mean",
+      "key_resolution": "prediction_column",
+      "key_column": "image_path"
+    },
+    "mouth": {
+      "region": "mouth",
+      "prediction_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/SwinV2_TextureFusion_Mouth/20260807_1550_mouth_swinv2_texturefusion_seed42/full/predictions/test_predictions.csv",
+      "source_rows": 302,
+      "unique_upstream_frames": 292,
+      "multi_roi_frames": 10,
+      "max_roi_count_per_frame": 2,
+      "label_column": "target",
+      "probability_column": "probability_fake",
+      "frame_aggregation": "mean",
+      "key_resolution": "prediction_column",
+      "key_column": "image_path"
+    }
+  },
+  "fusion_metrics": {
+    "model_family": "swinv2_texture",
+    "method": "02_weighted_soft_voting",
+    "evaluation": "fusion",
+    "threshold_source": "fixed_predefined_0.50",
+    "weight_source": "validation_roc_auc_only",
+    "weight_eye": 0.36123806607899933,
+    "weight_brow": 0.31938096696050033,
+    "weight_mouth": 0.31938096696050033,
+    "validation_auc_eye": 0.7387096881866455,
+    "validation_auc_brow": 0.7110501029512697,
+    "validation_auc_mouth": 0.7110501029512697,
+    "n": 196,
+    "threshold": 0.5,
+    "accuracy": 0.6989795918367347,
+    "balanced_accuracy": 0.6969775924960917,
+    "precision": 0.7142857142857143,
+    "recall": 0.631578947368421,
+    "specificity": 0.7623762376237624,
+    "f1": 0.6703910614525139,
+    "roc_auc": 0.7515372589890568,
+    "pr_auc": 0.733694121743949,
+    "tn": 77,
+    "fp": 24,
+    "fn": 35,
+    "tp": 60
+  }
+}

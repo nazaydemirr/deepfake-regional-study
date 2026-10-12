@@ -1,0 +1,5 @@
+figure,path,width_px,height_px,minimum_side_px,status
+training_curves,Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/DenseNet121_Mouth_Results/20260808_0856_mouth_densenet121_seed42/figures/training_validation_curves.png,1626,2075,1626,PASS
+confusion_matrices,Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/DenseNet121_Mouth_Results/20260808_0856_mouth_densenet121_seed42/figures/test_confusion_matrices.png,1656,802,802,PASS
+roc_pr_curves,Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/DenseNet121_Mouth_Results/20260808_0856_mouth_densenet121_seed42/figures/test_roc_pr_curves.png,1776,726,726,PASS
+probability_distribution,Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/DenseNet121_Mouth_Results/20260808_0856_mouth_densenet121_seed42/figures/test_probability_distribution.png,1476,876,876,PASS

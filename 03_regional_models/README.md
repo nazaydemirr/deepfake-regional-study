@@ -2,7 +2,7 @@
 
 Bu klasor, goz, kas ve agiz icin bagimsiz model egitimlerini toplar.
 
-Drive ve literatur tablosuna gore kullanilan / raporlanan model aileleri:
+ve literatur tablosuna gore kullanilan / raporlanan model aileleri:
 
 - Xception
 - EfficientNet-B0
@@ -25,4 +25,4 @@ Her egitim kosusu icin onerilen alanlar:
 - `metrics_path`
 - `predictions_path`
 
-Model agirliklari GitHub'a eklenmez; Drive, release asset veya dis depolama ile saklanir.
+Model agirliklari GitHub'a eklenmez; , release asset veya dis depolama ile saklanir.

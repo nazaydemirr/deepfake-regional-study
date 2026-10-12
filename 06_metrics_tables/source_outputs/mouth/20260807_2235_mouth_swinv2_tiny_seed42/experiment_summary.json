@@ -1,0 +1,61 @@
+{
+  "run_id": "20260807_2235_mouth_swinv2_tiny_seed42",
+  "architecture": "Swin V2 Tiny",
+  "region": "Combined Mouth ROI",
+  "mode": "resume",
+  "seed": 42,
+  "normalization": {
+    "source": "Swin_V2_T_Weights.IMAGENET1K_V1",
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "learned_from_project_data": false,
+    "uses_validation_or_test_statistics": false,
+    "config_source": "pretrained_weights",
+    "rationale": "ImageNet-pretrained Swin V2'nin beklediği normalizasyon kullanılır. Project train/val/test verisinden mean/std öğrenilmez; dolayısıyla validation/test istatistiği sızıntısı oluşmaz."
+  },
+  "best_epoch": 10,
+  "best_validation_score": 0.8858384808968199,
+  "validation_selected_threshold": 0.4049999999999999,
+  "test_frame_metrics": {
+    "accuracy": 0.804635761589404,
+    "precision": 0.8169934640522876,
+    "recall": 0.8012820512820513,
+    "f1": 0.8090614886731392,
+    "roc_auc": 0.860730593607306,
+    "pr_auc": 0.8632472624649614,
+    "threshold": 0.4049999999999999,
+    "best_epoch": 10,
+    "run_id": "20260807_2235_mouth_swinv2_tiny_seed42"
+  },
+  "test_video_metrics": {
+    "accuracy": 0.8047945205479452,
+    "precision": 0.8082191780821918,
+    "recall": 0.8027210884353742,
+    "f1": 0.8054607508532423,
+    "roc_auc": 0.859629368988975,
+    "pr_auc": 0.8554669332661462,
+    "available": true,
+    "threshold": 0.4049999999999999,
+    "run_id": "20260807_2235_mouth_swinv2_tiny_seed42"
+  },
+  "train_frames": 2389,
+  "val_frames": 296,
+  "test_frames": 302,
+  "train_videos": 2310,
+  "val_videos": 287,
+  "test_videos": 292,
+  "ssot_schema_missing_reported": [
+    "frame_index",
+    "roi_state",
+    "run_id",
+    "sha256"
+  ]
+}

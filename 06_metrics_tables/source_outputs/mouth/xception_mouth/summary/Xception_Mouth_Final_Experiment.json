@@ -1,0 +1,50 @@
+{
+    "experiment_name": "Xception Mouth ROI Deepfake Detection",
+    "region": "mouth",
+    "model": "Xception",
+    "pretrained_weights": "ImageNet",
+    "input_size": [
+        224,
+        224,
+        3
+    ],
+    "class_mapping": {
+        "REAL": 0,
+        "FAKE": 1
+    },
+    "dataset": {
+        "initial_frames": 3000,
+        "valid_mouth_roi": 2987,
+        "train_roi": 2389,
+        "validation_roi": 296,
+        "test_roi": 302,
+        "test_real": 146,
+        "test_fake": 156
+    },
+    "training": {
+        "frozen_best_validation_auc": 0.727957010269165,
+        "frozen_best_validation_accuracy": 0.6891891956329346,
+        "frozen_training_minutes": 147.3045675264,
+        "fine_tuned_best_validation_auc": 0.8227865695953369,
+        "fine_tuned_best_validation_accuracy": 0.7668918967247009,
+        "fine_tuning_minutes": 159.61771659641664
+    },
+    "final_test": {
+        "accuracy": 0.7019867549668874,
+        "balanced_accuracy": 0.7003424657534247,
+        "precision_fake": 0.6964285714285714,
+        "recall_fake": 0.75,
+        "specificity": 0.6506849315068494,
+        "f1_score_fake": 0.7222222222222222,
+        "roc_auc": 0.7662012644889358,
+        "confusion_matrix": {
+            "true_negative": 95,
+            "false_positive": 51,
+            "false_negative": 39,
+            "true_positive": 117
+        }
+    },
+    "final_model_path": "Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Sonuçlar/Xception_Mouth/model/Xception_Mouth_Final.keras",
+    "figures_directory": "Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Sonuçlar/Xception_Mouth/figures",
+    "figure_count": 10
+}

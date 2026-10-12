@@ -1,0 +1,35 @@
+EYE ROI DEEPFAKE DETECTION — XCEPTION
+=====================================
+
+Run ID                  : 20260807_1004_eye_xception_seed42
+Region                  : Eye
+ROI                     : combined
+Model                   : legacy_xception
+Seed                    : 42
+Selected stage          : finetune
+Validation threshold    : 0.30500
+
+Test Accuracy           : 0.57285
+Test Balanced Accuracy  : 0.55888
+Test Precision          : 0.54839
+Test Recall             : 0.98077
+Test Specificity        : 0.13699
+Test F1                 : 0.70345
+Test ROC-AUC            : 0.67698
+Test PR-AUC             : 0.68654
+
+Quality Gates
+-------------
+Metadata schema         : PASSED
+Data accounting         : PASSED
+Video split leakage     : PASSED
+Exact duplicate leakage : PASSED
+Smoke test              : PASSED
+Atomic checkpoint       : PASSED
+NaN/Inf guards          : ENABLED
+Fresh-model inference   : PASSED
+Test used for selection : NO
+
+Output
+------
+Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260807_1004_eye_xception_seed42

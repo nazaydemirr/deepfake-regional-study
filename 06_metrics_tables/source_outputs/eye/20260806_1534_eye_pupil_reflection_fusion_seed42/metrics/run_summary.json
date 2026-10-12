@@ -1,0 +1,18 @@
+{
+  "run_id": "20260806_1534_eye_pupil_reflection_fusion_seed42",
+  "model_mode": "fusion",
+  "test_metrics": {
+    "accuracy": 0.6788079470198676,
+    "precision": 0.6745562130177515,
+    "recall_sensitivity": 0.7307692307692307,
+    "specificity": 0.6232876711901857,
+    "f1": 0.7015384615384616,
+    "roc_auc": 0.7412188268352653,
+    "pr_auc": 0.7596111403626824
+  },
+  "best_validation_score": 0.7854495538778312,
+  "figure_count": 35,
+  "all_figures_pass_resolution_check": true,
+  "best_checkpoint": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/PupilSegmentation_CornealReflectionConsistency_FusionCNN/20260806_1534_eye_pupil_reflection_fusion_seed42/checkpoints/best.ckpt",
+  "last_checkpoint": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/PupilSegmentation_CornealReflectionConsistency_FusionCNN/20260806_1534_eye_pupil_reflection_fusion_seed42/checkpoints/last.ckpt"
+}

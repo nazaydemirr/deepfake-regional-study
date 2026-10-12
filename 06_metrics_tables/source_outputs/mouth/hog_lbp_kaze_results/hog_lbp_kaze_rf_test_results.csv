@@ -1,0 +1,2 @@
+﻿model,selected_configuration,test_accuracy,test_precision_fake,test_recall_fake,test_f1_fake,test_roc_auc,test_specificity_real,tn,fp,fn,tp
+HOG + LBP + KAZE → Random Forest,RF-2,0.5960264900662252,0.6118421052631579,0.5961538461538461,0.6038961038961039,0.6440990516332983,0.5958904109589042,87,59,63,93

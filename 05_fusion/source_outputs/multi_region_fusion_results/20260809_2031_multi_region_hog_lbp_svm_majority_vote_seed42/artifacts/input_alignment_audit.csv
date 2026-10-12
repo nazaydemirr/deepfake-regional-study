@@ -1,0 +1,4 @@
+region,input_csv,rows_total,rows_face0,secondary_face_rows_excluded,unique_frame_keys_face0,class_counts_face0
+eyebrow,source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/HOG_LBP_SVM_Kas_Deneyi_Sonuc_.pdf/predictions/test_predictions_frame_level.csv,196,196,0,196,"{'0': 101, '1': 95}"
+eye,source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260807_1119_eye_hog_lbp_svm_seed42/predictions/test_predictions_frame_level.csv,302,292,10,292,"{'0': 145, '1': 147}"
+mouth,source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260807_2034_mouth_hog_lbp_svm_seed42/predictions/test_predictions_frame_level.csv,302,292,10,292,"{'0': 145, '1': 147}"

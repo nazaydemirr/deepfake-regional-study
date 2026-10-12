@@ -1,0 +1,79 @@
+experiment:
+  region: mouth
+  model_name: swinv2_tiny
+  seed: 42
+  notebook_version: v3_stabilized
+  mode: new
+  resume_run_id: null
+paths:
+  project_root_candidates:
+  - Deney1_Source/AISC Çalışmalar
+  - Deney1_Source/AISC Çalışmalar
+  - Deney1_Source/AISC DeepFake Çalışmaları
+  - Deney1_Source/AISC
+    DeepFake Çalışmaları
+  mouth_roi_relative_candidates:
+  - Deneyler/Dilara/Deney 1/mouth_roi_output
+  - Deneyler/Dilara/Deney 1/Ağız/mouth_roi_output
+  - Deneyler/Dilara/Deney 1/Agiz/mouth_roi_output
+  results_relative: Deneyler/Dilara/Deney 1/Sonuçlar
+data:
+  metadata_filename: metadata.csv
+  image_column: mouth_path
+  image_column_candidates:
+  - mouth_path
+  - mouth_roi_path
+  - combined_mouth_path
+  - output_path
+  sample_id_column: sample_id
+  video_id_column: video_id
+  label_column: label
+  split_column: split
+  status_column: status
+  accepted_status:
+  - success
+  allowed_labels:
+  - real
+  - fake
+  allowed_splits:
+  - train
+  - val
+  - test
+  image_size: 224
+  batch_size: 32
+  num_workers: 2
+  pin_memory: true
+  strict_ssot_schema: false
+normalization:
+  source: pretrained_weights
+  weights: Swin_V2_T_Weights.IMAGENET1K_V1
+  rationale: ImageNet-pretrained Swin V2'nin beklediği normalizasyon kullanılır. Project
+    train/val/test verisinden mean/std öğrenilmez; dolayısıyla validation/test istatistiği
+    sızıntısı oluşmaz.
+model:
+  pretrained: true
+  dropout: 0.2
+training:
+  epochs: 20
+  backbone_lr: 1.0e-05
+  head_lr: 0.0001
+  weight_decay: 0.01
+  gradient_clip_norm: 1.0
+  mixed_precision: false
+  amp_overflow_abort_after: 8
+  early_stopping_patience: 6
+  monitor_metric: roc_auc
+  fallback_metric: f1
+  keep_last_n_epoch_checkpoints: 3
+augmentation:
+  horizontal_flip_probability: 0.5
+  rotation_degrees: 5
+  brightness: 0.1
+  contrast: 0.1
+  saturation: 0.05
+  hue: 0.02
+quality:
+  smoke_test_batches: 2
+  min_figure_short_edge_px: 600
+  checkpoint_continuity_atol: 1.0e-07
+  checkpoint_continuity_rtol: 1.0e-06

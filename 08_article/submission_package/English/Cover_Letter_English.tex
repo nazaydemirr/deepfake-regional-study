@@ -1,0 +1,30 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times.TTF}[Path=fonts/,BoldFont=Timesbd.TTF,ItalicFont=Timesi.TTF,BoldItalicFont=Timesbi.TTF]
+\usepackage[margin=2cm]{geometry}
+\usepackage{array,booktabs}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt}
+\begin{document}
+7 October 2026
+
+Editor-in-Chief\\Turkish Journal of Electrical Engineering \& Computer Sciences
+
+Dear Editor-in-Chief,
+
+We submit our manuscript entitled “Comparison of eyebrow, eye, and mouth regions for deepfake detection and late fusion analysis” for consideration as a research article in the Turkish Journal of Electrical Engineering \& Computer Sciences.
+
+This study investigates how the discriminative contribution of anatomical facial regions varies in deepfake detection and whether combining predictions from different regions provides additional performance over the strongest individual region. Eyebrow, eye, and mouth regions were evaluated using four model configurations: Xception, EfficientNet-B0, Swin V2 Tiny, and Swin V2 Tiny + Texture. Probability scores from the three regions were compared using equal-weighted and validation-weighted late fusion on a common test cohort.
+
+The main contribution is a systematic comparison of three anatomical regions within a common experimental framework, together with an evaluation of late fusion behavior on the same test samples. Rather than proposing a new deep learning architecture, we focus on understanding regional discriminative information and examining whether multi-region fusion offers additional benefit over the strongest individual region. Performance differences between fusion and the mouth region were assessed using paired bootstrap confidence intervals and error-pattern analysis.
+
+The mouth region produced the highest regional ROC-AUC point estimates across all four model configurations. Swin V2 Tiny achieved a ROC-AUC of 0.8607 on the full mouth-region test set. On the common test cohort, validation-weighted fusion produced higher ROC-AUC point estimates than equal-weighted fusion, but neither fusion approach exceeded mouth-only performance in any model configuration. The confidence intervals for the AUC differences between fusion and mouth-only predictions included zero. We therefore interpret the findings cautiously within the dataset and evaluation protocol used, make no definitive claim of additional fusion benefit or equivalence between approaches, and explicitly discuss the limitations of the study.
+
+The manuscript addresses computer vision, image processing, and machine learning topics relevant to the journal’s scope. We believe that the systematic comparison of anatomical regions and the analysis of late fusion behavior and decision changes may be of interest to researchers working on facial manipulation detection and visual classification.
+
+Thank you for considering our manuscript.
+
+Yours sincerely,\\{} [Corresponding author’s full name]\\{} Department of Computer Engineering, Faculty of Engineering\\{} Balıkesir University, Balıkesir, Türkiye\\{} E-mail: [Corresponding author’s e-mail address]
+\end{document}

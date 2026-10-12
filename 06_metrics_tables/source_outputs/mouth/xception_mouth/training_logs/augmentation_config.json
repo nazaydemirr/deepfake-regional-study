@@ -1,0 +1,18 @@
+{
+    "random_flip": "horizontal",
+    "random_rotation_factor": 0.02,
+    "random_zoom_height": [
+        -0.05,
+        0.05
+    ],
+    "random_zoom_width": [
+        -0.05,
+        0.05
+    ],
+    "random_contrast_factor": 0.05,
+    "xception_preprocess_input": true,
+    "train_augmentation": true,
+    "validation_augmentation": false,
+    "test_augmentation": false,
+    "seed": 42
+}

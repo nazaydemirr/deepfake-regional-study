@@ -1,0 +1,23 @@
+{
+    "selection_metric": "validation_auc",
+    "frozen_validation_auc": 0.727957010269165,
+    "finetuned_validation_auc": 0.8227865695953369,
+    "selected_stage": "fine_tuned",
+    "selected_model_path": "Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Ağız/xception_experiment/models/best_xception_finetuned.keras",
+    "selected_validation_auc": 0.8227865695953369,
+    "decision_threshold": 0.5,
+    "test_samples": 302,
+    "actual_real": 146,
+    "actual_fake": 156,
+    "predicted_real": 134,
+    "predicted_fake": 168,
+    "keras_test_evaluation": {
+        "accuracy": 0.7019867300987244,
+        "auc": 0.7665305137634277,
+        "loss": 0.5839594006538391,
+        "precision": 0.6964285969734192,
+        "recall": 0.75
+    },
+    "evaluation_seconds": 73.63532605200089,
+    "prediction_seconds": 68.92524219100233
+}

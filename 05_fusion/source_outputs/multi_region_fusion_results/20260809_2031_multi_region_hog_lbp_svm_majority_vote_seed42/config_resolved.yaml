@@ -1,0 +1,79 @@
+seed: 42
+verified_source_archive_folder_ids:
+  aisc_root: 1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1
+  eyebrow_result_folder: 1TggphAKNSNlTRe9jg8euKcw32ucKDnAn
+  eye_result_folder: 122Rp9Rp1FQkjx0AZgeP_b6pB7RLAeJwJ
+  mouth_result_folder: 1nNeuRAdpGYgJBOV_AjAqR-XzvK95ASOn
+  fusion_output_folder: 1B_MDgzWuLwqSwGL8o-WBwK3iBsz22Z_y
+project: Deepfake Detection - Multi-Region Fusion
+method:
+  name: decision_level_late_fusion_majority_voting
+  level: decision_level_late_fusion
+  rule: fake if at least 2 of 3 regional predictions are fake
+  fake_vote_threshold: 2
+  new_model_training: false
+  stacking: false
+  score_calibration: false
+alignment:
+  key_source: normalized original selected-frame filename
+  frame_key_regex: ((?:fake|real)_(?:train|val|test)_\d+)
+  face_policy: face_index_0_only
+  strict_one_to_one: true
+  minimum_common_frames: 20
+  comparison_scope: same common frozen test frames for all systems
+source_runs:
+  eyebrow:
+    owner: Nazlıcan
+    run_id: 20260807_0948_eyebrow_hog_lbp_svm_seed42
+    resolved_run_dir: source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC
+      DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/HOG_LBP_SVM_Kas_Deneyi_Sonuc_.pdf
+    prediction_file: source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC
+      DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/HOG_LBP_SVM_Kas_Deneyi_Sonuc_.pdf/predictions/test_predictions_frame_level.csv
+    feature_fusion:
+    - HOG
+    - LBP
+    classifier: LINEAR SVM
+    C: 0.1
+    gamma: null
+    threshold: -1.355763913766937
+    pretrained_weights: false
+  eye:
+    owner: Kader
+    run_id: 20260807_1119_eye_hog_lbp_svm_seed42
+    resolved_run_dir: source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC
+      DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260807_1119_eye_hog_lbp_svm_seed42
+    prediction_file: source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC
+      DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260807_1119_eye_hog_lbp_svm_seed42/predictions/test_predictions_frame_level.csv
+    feature_fusion:
+    - HOG
+    - LBP
+    classifier: RBF SVM
+    C: 10.0
+    gamma: 0.0001
+    threshold: -0.5433359968892147
+    pretrained_weights: false
+  mouth:
+    owner: Dilara
+    run_id: 20260807_2034_mouth_hog_lbp_svm_seed42
+    resolved_run_dir: source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC
+      DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260807_2034_mouth_hog_lbp_svm_seed42
+    prediction_file: source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC
+      DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260807_2034_mouth_hog_lbp_svm_seed42/predictions/test_predictions_frame_level.csv
+    feature_fusion:
+    - HOG
+    - LBP
+    classifier: RBF SVM
+    C: 1.0
+    gamma: 0.001
+    threshold: -0.14414598526723613
+    pretrained_weights: false
+output:
+  fusion_root: source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC
+    DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/füzyon sonuçları
+  run_id: 20260809_2031_multi_region_hog_lbp_svm_majority_vote_seed42
+  run_dir: source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC
+    DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/füzyon sonuçları/20260809_2031_multi_region_hog_lbp_svm_majority_vote_seed42
+figure_standard:
+  dpi: 150
+  minimum_short_edge_px: 600
+  language: English

@@ -1,0 +1,18 @@
+{
+  "run_id": "20260809_163157_934154_weighted_soft_voting_seed42",
+  "method": "02_weighted_soft_voting",
+  "seed": 42,
+  "decision_threshold": 0.5,
+  "threshold_source": "fixed_predefined_0.50",
+  "weight_source": "validation_roc_auc_only",
+  "weight_formula": "max(validation_roc_auc - 0.5, epsilon), normalized to sum=1",
+  "frame_aggregation": "mean",
+  "model_families_completed": [
+    "efficientnet_b0",
+    "swinv2_texture",
+    "swinv2_tiny"
+  ],
+  "metric_rows": 12,
+  "output_files_before_manifest": 90,
+  "quality_gates": "PASSED"
+}

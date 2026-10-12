@@ -1,0 +1,79 @@
+metadata_csv: Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney
+  1/Göz/eye_roi_output/metadata.csv
+output_root: Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Sonuçlar/SwinV2_TextureFusion
+path_column: combined_eye_path
+label_column: label
+split_column: split
+video_column: video_id
+sample_id_column: sample_id
+status_column: status
+success_status_values:
+- ok
+- success
+- SUCCESS
+image_size: 224
+model_name: swin_v2_t
+pretrained: true
+freeze_backbone_epochs: 5
+unfreeze_last_stages: true
+lbp_radii:
+- 1
+- 2
+- 3
+lbp_points:
+- 8
+- 16
+- 24
+glcm_distances:
+- 1
+- 2
+- 4
+glcm_angles_deg:
+- 0
+- 45
+- 90
+- 135
+glcm_levels: 32
+gabor_orientations_deg:
+- 0
+- 30
+- 60
+- 90
+- 120
+- 150
+gabor_frequencies:
+- 0.1
+- 0.2
+- 0.3
+wavelet: db2
+wavelet_level: 2
+seed: 42
+batch_size: 16
+num_workers: 2
+epochs: 30
+learning_rate: 0.0002
+backbone_learning_rate: 2.0e-05
+weight_decay: 0.0001
+dropout: 0.3
+hidden_dim: 256
+patience: 8
+threshold: 0.5
+threshold_search_min: 0.1
+threshold_search_max: 0.9
+threshold_search_steps: 161
+amp: true
+gradient_clip_norm: 1.0
+smoke_test: true
+smoke_train_batches: 2
+smoke_val_batches: 2
+feature_cache_flush_every: 100
+overwrite_feature_cache: false
+ablation_modes:
+- swin_only
+- texture_only
+- swin_lbp
+- swin_lbp_glcm
+- swin_lbp_glcm_gabor
+- full
+run_all_ablations: false
+active_mode: full

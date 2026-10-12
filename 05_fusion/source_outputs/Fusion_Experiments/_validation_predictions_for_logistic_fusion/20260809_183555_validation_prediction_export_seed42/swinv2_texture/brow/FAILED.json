@@ -1,0 +1,9 @@
+{
+  "status": "FAILED",
+  "family": "swinv2_texture",
+  "region": "brow",
+  "experiment_root": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Swin V2-Tiny + LBP + GLCM + Gabor + Wavelet Fusion",
+  "error_type": "RuntimeError",
+  "error": "Texture checkpoint architecture mismatch: Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Swin V2-Tiny + LBP + GLCM + Gabor + Wavelet Fusion/checkpoints/best.ckpt\nError(s) in loading state_dict for SwinTextureFusion:\n\tMissing key(s) in state_dict: \"classifier.1.running_mean\", \"classifier.1.running_var\". ",
+  "test_used": false
+}

@@ -1,0 +1,67 @@
+{
+  "run_id": "20260808_1257_mouth_efficientnet_b0_seed42",
+  "run_schema_version": 4,
+  "experiment": "EfficientNet-B0 Mouth ROI Transfer Learning Baseline",
+  "model": "torchvision EfficientNet-B0",
+  "pretrained_weights": "EfficientNet_B0_Weights.DEFAULT",
+  "roi_region": "mouth",
+  "input": "mouth ROI images",
+  "image_preprocessing": "224x224 RGB + ImageNet normalization",
+  "image_size": 224,
+  "seed": 42,
+  "device": "cpu",
+  "metadata_path": "Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Ağız/mouth_roi_output/metadata.csv",
+  "roi_root": "Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Ağız/mouth_roi_output",
+  "results_root": "Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Sonuçlar",
+  "run_dir": "Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Sonuçlar/20260808_1257_mouth_efficientnet_b0_seed42",
+  "split_counts": {
+    "train": {
+      "fake": 1192,
+      "real": 1197
+    },
+    "val": {
+      "fake": 141,
+      "real": 155
+    },
+    "test": {
+      "fake": 156,
+      "real": 146
+    }
+  },
+  "validation_selected_threshold": 0.19,
+  "validation_metrics": {
+    "threshold": 0.19,
+    "accuracy": 0.6993243243243243,
+    "balanced_accuracy": 0.7080988332189431,
+    "precision": 0.63,
+    "recall": 0.8936170212765957,
+    "f1": 0.7390029325513197,
+    "specificity": 0.5225806451612903,
+    "roc_auc": 0.7968885838480896,
+    "average_precision": 0.7783525916777316,
+    "tn": 81,
+    "fp": 74,
+    "fn": 15,
+    "tp": 126
+  },
+  "final_test_metrics": {
+    "threshold": 0.19,
+    "accuracy": 0.7152317880794702,
+    "balanced_accuracy": 0.7085528626624518,
+    "precision": 0.6635514018691588,
+    "recall": 0.9102564102564102,
+    "f1": 0.7675675675675676,
+    "specificity": 0.5068493150684932,
+    "roc_auc": 0.8331577098700387,
+    "average_precision": 0.8527717483914827,
+    "tn": 74,
+    "fp": 72,
+    "fn": 14,
+    "tp": 142
+  },
+  "inference_reload_test": "PASSED",
+  "best_model_checkpoint": "Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Sonuçlar/20260808_1257_mouth_efficientnet_b0_seed42/checkpoints/finetune/best.ckpt",
+  "figure_resolution_dpi": 600,
+  "figure_count": 6,
+  "output_file_count": 26
+}

@@ -1,0 +1,95 @@
+{
+  "status": "COMPLETED",
+  "run_id": "20260808_1124_eye_vgg16_svm_seed42",
+  "source_dataset": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output",
+  "source_metadata": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output/metadata.csv",
+  "source_read_only_policy": true,
+  "output_dir": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/outputs/20260808_1124_eye_vgg16_svm_seed42",
+  "dataset_counts": [
+    {
+      "split": "test",
+      "label": "fake",
+      "count": 156
+    },
+    {
+      "split": "test",
+      "label": "real",
+      "count": 146
+    },
+    {
+      "split": "train",
+      "label": "fake",
+      "count": 1191
+    },
+    {
+      "split": "train",
+      "label": "real",
+      "count": 1197
+    },
+    {
+      "split": "val",
+      "label": "fake",
+      "count": 141
+    },
+    {
+      "split": "val",
+      "label": "real",
+      "count": 155
+    }
+  ],
+  "feature_shapes": {
+    "train": [
+      2388,
+      512
+    ],
+    "val": [
+      296,
+      512
+    ],
+    "test": [
+      302,
+      512
+    ]
+  },
+  "best_svm_params": {
+    "kernel": "rbf",
+    "C": 1.0,
+    "gamma": 0.001
+  },
+  "final_fit_seconds": 25.539213180541992,
+  "frame_level_metrics": {
+    "accuracy": 0.5993377483443708,
+    "precision": 0.5945945945945946,
+    "recall": 0.7051282051282052,
+    "f1_score": 0.6451612903225806,
+    "roc_auc": 0.6051106427818755,
+    "average_precision": 0.59960712871292,
+    "n_test_frames": 302
+  },
+  "video_level_status": "AVAILABLE",
+  "video_level_metrics": {
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1_score": 1.0,
+    "roc_auc": 1.0,
+    "n_test_videos": 2
+  },
+  "quality_gates": {
+    "run_id": "20260808_1124_eye_vgg16_svm_seed42",
+    "schema_gate": "PASSED",
+    "accounting_equality": "PASSED",
+    "unique_sample_id": "PASSED",
+    "sha256_hashed_images": 2986,
+    "sha256_resume_enabled": true,
+    "exact_content_split_isolation": "PASSED",
+    "source_video_split_isolation": "PASSED",
+    "source_video_complete": true,
+    "note": "SHA-256 hashing is resumable and -safe. If source_video is NOT_VERIFIABLE, no source-video-based claim is made and no identifier is fabricated.",
+    "smoke_test": "PASSED",
+    "checkpoint_test": "PASSED",
+    "numerical_test": "PASSED",
+    "inference_test": "PASSED",
+    "figure_quality": "PASSED"
+  }
+}

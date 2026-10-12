@@ -8,7 +8,7 @@ Hedef ROI bolgeleri:
 - `brow`: kas / kas-cevresi bolgesi
 - `mouth`: agiz bolgesi
 
-Literatur tablosuna gore bolgesel deepfake tespitinde agiz, goz, burun ve tum yuz gibi ROI'lerin ayri modellenmesi onemlidir. Bu projede Drive'daki mevcut deney yapisina uygun olarak goz, kas ve agiz bolgeleri kullanilir.
+Literatur tablosuna gore bolgesel deepfake tespitinde agiz, goz, burun ve tum yuz gibi ROI'lerin ayri modellenmesi onemlidir. Bu projede 'daki mevcut deney yapisina uygun olarak goz, kas ve agiz bolgeleri kullanilir.
 
 ## Cikti Semasi
 

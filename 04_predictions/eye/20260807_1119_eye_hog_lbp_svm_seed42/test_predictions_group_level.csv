@@ -1,0 +1,3 @@
+source_video,y_true,decision_score,frame_count,threshold,y_pred,label,predicted_label,correct,run_id
+fake_test,1,0.21019946277588133,156,-0.5433359968892147,1,fake,fake,True,20260807_1119_eye_hog_lbp_svm_seed42
+real_test,0,-0.07698287668643682,146,-0.5433359968892147,1,real,fake,False,20260807_1119_eye_hog_lbp_svm_seed42

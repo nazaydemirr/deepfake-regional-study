@@ -1,5 +1,5 @@
 {
-  "source": "Google Drive / AISC DeepFake Calismalari / Deney 1 Frame",
+  "source": "source package / AISC DeepFake Calismalari / Deney 1 Frame",
   "total_frames": 3000,
   "real": {
     "train": 1200,

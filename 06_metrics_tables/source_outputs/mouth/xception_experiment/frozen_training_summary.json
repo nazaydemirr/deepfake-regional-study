@@ -1,0 +1,15 @@
+{
+    "training_stage": "frozen_backbone",
+    "requested_epochs": 15,
+    "completed_epochs": 14,
+    "batch_size": 16,
+    "initial_learning_rate": 0.0001,
+    "train_samples": 2389,
+    "validation_samples": 296,
+    "best_validation_auc": 0.727957010269165,
+    "best_validation_auc_epoch": 10,
+    "best_validation_accuracy": 0.6891891956329346,
+    "training_seconds": 8838.274051584,
+    "training_minutes": 147.3045675264,
+    "best_model_path": "Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Ağız/xception_experiment/models/best_xception_frozen.keras"
+}

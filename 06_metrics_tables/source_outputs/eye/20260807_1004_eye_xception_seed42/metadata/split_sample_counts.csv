@@ -1,0 +1,4 @@
+split,fake,real
+test,156,146
+train,1191,1197
+val,141,155

@@ -1,6 +1,6 @@
 # Literature Notes
 
-Bu notlar, Drive'daki `AISC Makale Inceleme ve Literatur Tarama Tablosu` iceriginden bu repo icin secilen ana dayanaklari ozetler.
+Bu notlar, 'daki `AISC Makale Inceleme ve Literatur Tarama Tablosu` iceriginden bu repo icin secilen ana dayanaklari ozetler.
 
 ## Bolgesel Analiz
 

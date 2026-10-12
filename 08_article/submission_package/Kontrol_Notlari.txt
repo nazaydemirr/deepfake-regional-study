@@ -1,0 +1,10 @@
+SON BELGE KONTROLÜ
+
+Tabloların tüm sayısal hücreleri önceki sürümle karşılaştırılarak korunmuştur.
+Şekil 1–3 panel etiketleri ve metin atıfları düzenlenmiştir.
+Anatomik bölge ve füzyon bulguları, güven aralıkları ve sınırlılıklar korunmuştur.
+Kaynak PDF veya revizyon sürecine ilişkin düzenleme notları ana makaleden çıkarılmıştır.
+İngilizce metinde Amerikan İngilizcesi, Türkçe metinde tutarlı teknik terimler kullanılmıştır.
+Dergi sınıfı değiştirilmemiştir. Henüz atanmamış cilt/sayfa/DOI başlık alanları boş etiket olarak gösterilmez.
+Önceden bildirilen bootstrap sonuçları değiştirilmemiştir; bu düzenleme deneylerin yeniden çalıştırılmasını içermez.
+Gönderim öncesi gerçek yazar bilgileri ve beyanların ekipçe tamamlanması gerekmektedir.

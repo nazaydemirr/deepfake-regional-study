@@ -1,0 +1,22 @@
+{
+  "run_id": "20260807_1410_mouth_vgg16scratch_hog_gist_rbf_svm_seed42",
+  "model": "VGG16 + HOG + GIST + PCA + RBF-SVM",
+  "test_evaluation_stage": "after preprocessing, hyperparameters and threshold were frozen",
+  "test_frame_count": 292,
+  "test_source_video_count": 196,
+  "decision_threshold": 0.44480303313075675,
+  "threshold_selected_using": "validation_only",
+  "test_used_for_preprocessing_fit": false,
+  "test_used_for_model_selection": false,
+  "test_used_for_threshold_selection": false,
+  "frame_predictions": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/VGG16_HOG_GIST_RBF_SVM_Mouth/20260807_1410_mouth_vgg16scratch_hog_gist_rbf_svm_seed42/predictions/frame_level_test_predictions.csv",
+  "video_predictions": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/VGG16_HOG_GIST_RBF_SVM_Mouth/20260807_1410_mouth_vgg16scratch_hog_gist_rbf_svm_seed42/predictions/video_level_test_predictions.csv",
+  "frame_metrics": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/VGG16_HOG_GIST_RBF_SVM_Mouth/20260807_1410_mouth_vgg16scratch_hog_gist_rbf_svm_seed42/metrics/frame_level_test_metrics.json",
+  "video_metrics": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/VGG16_HOG_GIST_RBF_SVM_Mouth/20260807_1410_mouth_vgg16scratch_hog_gist_rbf_svm_seed42/metrics/video_level_test_metrics.json",
+  "final_figure": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/VGG16_HOG_GIST_RBF_SVM_Mouth/20260807_1410_mouth_vgg16scratch_hog_gist_rbf_svm_seed42/figures/final_test_evaluation.png",
+  "figure_dpi": 600,
+  "figure_size_pixels": [
+    7734,
+    5898
+  ]
+}

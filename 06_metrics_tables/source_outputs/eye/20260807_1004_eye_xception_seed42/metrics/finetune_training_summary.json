@@ -1,0 +1,10 @@
+{
+  "stage": "finetune",
+  "best_metric_score": 0.7252345001143902,
+  "best_checkpoint": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260807_1004_eye_xception_seed42/checkpoints/finetune/best.ckpt",
+  "history_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260807_1004_eye_xception_seed42/logs/finetune_history.csv",
+  "amp_enabled": false,
+  "configured_finetune_lr": 1e-05,
+  "effective_finetune_lr": 5e-06,
+  "batchnorm_running_stats": "frozen"
+}

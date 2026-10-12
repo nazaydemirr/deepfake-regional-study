@@ -1,0 +1,70 @@
+DENSENET121 MOUTH ROI DEEPFAKE EXPERIMENT
+=========================================
+
+Run ID
+------
+20260808_0856_mouth_densenet121_seed42
+
+Dataset
+-------
+Training images   : 2389
+Validation images : 296
+Test images       : 302
+Total ROI images  : 2987
+
+Model
+-----
+Architecture      : ImageNet-pretrained DenseNet121
+Input             : 224 x 224 RGB mouth ROI
+Frozen stage      : 12 epochs
+Fine-tuning stage : 10 epochs
+Global best epoch : 21
+Best val ROC-AUC  : 0.779959
+
+Threshold Selection
+-------------------
+Dataset           : Validation
+Method            : Youden J
+Threshold         : 0.508568
+Test used         : No
+
+Image-Level Independent Test Results
+------------------------------------
+Accuracy          : 0.695364
+Balanced Accuracy : 0.692615
+Precision         : 0.679775
+Recall            : 0.775641
+Specificity       : 0.609589
+F1-score          : 0.724551
+ROC-AUC           : 0.760845
+PR-AUC            : 0.749342
+
+Source-Level Independent Test Results
+-------------------------------------
+Source count      : 292
+Accuracy          : 0.695205
+Balanced Accuracy : 0.694652
+Precision         : 0.670588
+Recall            : 0.775510
+Specificity       : 0.613793
+F1-score          : 0.719243
+ROC-AUC           : 0.756510
+PR-AUC            : 0.729774
+
+Quality Gates
+-------------
+Metadata accounting       : PASS
+Image-metadata matching   : PASS
+Source-video leakage      : PASS
+SHA-256 leakage           : PASS
+Two-batch training smoke  : PASS
+Gradient NaN/Inf          : PASS
+Atomic checkpoint         : PASS
+Checkpoint reload         : PASS
+Clean-load inference      : PASS
+Figure resolution         : PASS
+
+Label Mapping
+-------------
+Real = 0
+Fake = 1

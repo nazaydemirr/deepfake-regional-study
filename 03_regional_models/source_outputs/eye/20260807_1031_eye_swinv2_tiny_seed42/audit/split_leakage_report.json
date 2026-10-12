@@ -1,0 +1,14 @@
+{
+  "raw_rows": 3097,
+  "accepted_rows": 2986,
+  "status_counts_before_filter": {
+    "ok": 2986,
+    "no_face": 111
+  },
+  "train_video_count": 2,
+  "val_video_count": 2,
+  "test_video_count": 2,
+  "train_val_overlap": 0,
+  "train_test_overlap": 0,
+  "val_test_overlap": 0
+}

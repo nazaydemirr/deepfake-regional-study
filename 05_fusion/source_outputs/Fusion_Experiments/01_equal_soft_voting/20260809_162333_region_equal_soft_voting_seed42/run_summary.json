@@ -1,0 +1,16 @@
+{
+  "run_id": "20260809_162333_region_equal_soft_voting_seed42",
+  "method": "01_equal_soft_voting",
+  "seed": 42,
+  "decision_threshold": 0.5,
+  "threshold_source": "fixed_predefined_0.50",
+  "frame_aggregation": "mean",
+  "model_families_completed": [
+    "efficientnet_b0",
+    "swinv2_texture",
+    "swinv2_tiny"
+  ],
+  "total_metric_rows": 12,
+  "total_output_files_before_manifest": 80,
+  "quality_gates": "PASSED"
+}

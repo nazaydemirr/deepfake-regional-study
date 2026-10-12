@@ -1,0 +1,9 @@
+{
+  "status": "FAILED",
+  "family": "efficientnet_b0",
+  "region": "brow",
+  "experiment_root": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/20260808_1248_eyebrow_efficientnet_b0_seed42",
+  "error_type": "FileNotFoundError",
+  "error": "Usable training/validation manifest not found near: Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/20260808_1248_eyebrow_efficientnet_b0_seed42",
+  "test_used": false
+}

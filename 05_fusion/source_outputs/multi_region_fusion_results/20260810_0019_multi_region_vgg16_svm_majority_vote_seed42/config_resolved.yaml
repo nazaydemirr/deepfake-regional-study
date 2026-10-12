@@ -1,0 +1,32 @@
+{
+  "schema_version": "ssot-v2.0-fusion",
+  "run_id": "20260810_0019_multi_region_vgg16_svm_majority_vote_seed42",
+  "seed": 42,
+  "region": "multi_region",
+  "source_runs": {
+    "eyebrow": "VGG16_FeatureExtractor_SVM_Kas",
+    "mouth": "20260808_1240_mouth_vgg16_svm_seed42",
+    "eye": "20260808_1124_eye_vgg16_svm_seed42"
+  },
+  "fusion": {
+    "method": "equal_weight_3way_majority_vote_late_fusion",
+    "retraining": false,
+    "meta_model": null,
+    "calibration": null,
+    "weights": {
+      "eyebrow": 0.3333333333333333,
+      "mouth": 0.3333333333333333,
+      "eye": 0.3333333333333333
+    },
+    "positive_class": "FAKE",
+    "final_rule": "fake_vote_count >= 2",
+    "vote_score": "(pred_eyebrow + pred_mouth + pred_eye) / 3"
+  },
+  "matching": {
+    "key": "frame_key",
+    "face_policy": "Mouth/Eye face_index=0",
+    "require_complete_eyebrow_coverage": true,
+    "require_ground_truth_agreement": true
+  },
+  "output_dir": "source_archive/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/füzyon sonuçları/20260810_0019_multi_region_vgg16_svm_majority_vote_seed42"
+}

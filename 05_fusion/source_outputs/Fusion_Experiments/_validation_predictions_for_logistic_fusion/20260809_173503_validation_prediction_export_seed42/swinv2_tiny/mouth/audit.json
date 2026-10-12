@@ -1,0 +1,39 @@
+{
+  "metadata_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260807_2235_mouth_swinv2_tiny_seed42/audit/validated_training_manifest.csv",
+  "split_col": "split",
+  "label_col": "label",
+  "image_col": "_resolved_image_path",
+  "resolved_image_col": "_image_path",
+  "split_counts": {
+    "train": 2389,
+    "test": 302,
+    "val": 296
+  },
+  "image_column_audits": [
+    {
+      "column": "_resolved_image_path",
+      "checked": 250,
+      "resolved": 250,
+      "fraction": 1.0,
+      "priority_index": 0
+    },
+    {
+      "column": "mouth_path",
+      "checked": 250,
+      "resolved": 0,
+      "fraction": 0.0,
+      "priority_index": 7
+    }
+  ],
+  "legacy_path_rewrite_enabled": true,
+  "checkpoint": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/20260807_2235_mouth_swinv2_tiny_seed42/checkpoints/best.ckpt",
+  "validation_rows": 296,
+  "model_family": "swinv2_tiny",
+  "status": "SUCCESS",
+  "family": "swinv2_tiny",
+  "region": "mouth",
+  "roc_auc": 0.8858384808968199,
+  "pr_auc": 0.8789509882493729,
+  "output_csv": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/Fusion_Experiments/_validation_predictions_for_logistic_fusion/20260809_173503_validation_prediction_export_seed42/swinv2_tiny/mouth/validation_predictions.csv",
+  "test_used": false
+}

@@ -1,0 +1,19 @@
+{
+  "language": "English",
+  "dpi": 150,
+  "minimum_short_side_px": 600,
+  "files": {
+    "confusion_matrix_20260808_1124_eye_vgg16_svm_seed42.png": [
+      924,
+      885
+    ],
+    "roc_curve_20260808_1124_eye_vgg16_svm_seed42.png": [
+      1485,
+      885
+    ],
+    "precision_recall_curve_20260808_1124_eye_vgg16_svm_seed42.png": [
+      1485,
+      885
+    ]
+  }
+}

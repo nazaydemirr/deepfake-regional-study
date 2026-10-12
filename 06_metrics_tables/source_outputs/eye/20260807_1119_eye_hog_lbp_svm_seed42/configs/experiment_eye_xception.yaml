@@ -1,0 +1,29 @@
+seed: 42
+region: eye
+roi_variant: combined
+model_name: legacy_xception
+pretrained: true
+image_size: 299
+batch_size: 16
+num_workers: 2
+initial_epochs: 12
+finetune_epochs: 8
+initial_lr: 0.0001
+finetune_lr: 1.0e-05
+weight_decay: 0.0001
+early_stopping_patience: 4
+scheduler_patience: 2
+scheduler_factor: 0.5
+gradient_clip_norm: 5.0
+checkpoint_keep_last_n: 3
+threshold_grid_points: 181
+compute_sha256: true
+verify_image_files: true
+source_video_regex: null
+strict_source_video: true
+resume_active_run: true
+train_augmentation:
+  horizontal_flip_p: 0.5
+  rotation_deg: 5
+  brightness: 0.08
+  contrast: 0.08

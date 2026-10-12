@@ -1,0 +1,30 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{Times.TTF}[Path=fonts/,BoldFont=Timesbd.TTF,ItalicFont=Timesi.TTF,BoldItalicFont=Timesbi.TTF]
+\usepackage[margin=2cm]{geometry}
+\usepackage{array,booktabs}
+\usepackage[hidelinks]{hyperref}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{7pt}
+\begin{document}
+7 Ekim 2026
+
+Başeditör\\Turkish Journal of Electrical Engineering \& Computer Sciences
+
+Sayın Editör,
+
+“Deepfake tespitinde kaş, göz ve ağız bölgelerinin karşılaştırılması ve geç füzyon analizi” başlıklı makalemizi Turkish Journal of Electrical Engineering \& Computer Sciences dergisinde araştırma makalesi olarak değerlendirilmek üzere sunuyoruz.
+
+Bu çalışmada, deepfake tespitinde anatomik yüz bölgelerinin ayırt edici katkılarının nasıl değiştiğini ve farklı bölgelerden elde edilen tahminlerin birleştirilmesinin en güçlü tek bölgeye kıyasla ek performans sağlayıp sağlamadığını araştırıyoruz. Kaş, göz ve ağız bölgeleri Xception, EfficientNet-B0, Swin V2 Tiny ve Swin V2 Tiny + Texture olmak üzere dört model yapılandırmasıyla değerlendirilmiştir. Üç bölgenin olasılık skorları, ortak bir test kohortunda eşit ağırlıklı ve doğrulama performansına göre ağırlıklandırılmış geç füzyon kullanılarak karşılaştırılmıştır.
+
+Çalışmanın temel katkısı, üç anatomik bölgenin ortak bir deneysel çerçevede sistematik olarak karşılaştırılması ve aynı test örnekleri üzerinde geç füzyon davranışının değerlendirilmesidir. Yeni bir derin öğrenme mimarisi önermek yerine bölgesel ayırt edici bilginin anlaşılmasına ve çok bölgeli füzyonun en güçlü tek bölgeye kıyasla ek fayda sağlayıp sağlamadığının incelenmesine odaklanıyoruz. Füzyon ile ağız bölgesi arasındaki performans farkları, eşleştirilmiş bootstrap güven aralıkları ve hata örüntüsü analiziyle değerlendirilmiştir.
+
+Ağız bölgesi, dört model yapılandırmasının tamamında en yüksek bölgesel ROC-AUC nokta tahminlerini üretmiştir. Swin V2 Tiny, ağız bölgesinin tam test kümesinde 0,8607 ROC-AUC değerine ulaşmıştır. Ortak test kohortunda doğrulama performansına göre ağırlıklandırılmış füzyon, eşit ağırlıklı füzyondan daha yüksek ROC-AUC nokta tahminleri üretmiş; ancak hiçbir model yapılandırmasında yalnız ağız performansını aşmamıştır. Füzyon ile ağız arasındaki AUC farklarının güven aralıkları sıfırı içermektedir. Bu nedenle sonuçlar, kullanılan veri kümesi ve değerlendirme protokolü kapsamında temkinli biçimde yorumlanmaktadır; füzyonun ek kazancı ya da yaklaşımların eşdeğerliği konusunda kesin bir iddiada bulunulmamakta ve çalışmanın sınırlılıkları açıkça tartışılmaktadır.
+
+Çalışma, derginin kapsamıyla ilişkili bilgisayarlı görü, görüntü işleme ve makine öğrenmesi konularını ele almaktadır. Anatomik bölgelerin sistematik karşılaştırılmasının, geç füzyon davranışının ve karar değişimlerinin analizinin yüz manipülasyonu tespiti ve görsel sınıflandırma üzerine çalışan araştırmacıların ilgisini çekebileceğini düşünüyoruz.
+
+Makalemizi değerlendirdiğiniz için teşekkür ederiz.
+
+Saygılarımızla,\\{} [Sorumlu yazarın adı soyadı]\\{} Bilgisayar Mühendisliği Bölümü, Mühendislik Fakültesi\\{} Balıkesir Üniversitesi, Balıkesir, Türkiye\\{} E-posta: [Sorumlu yazarın e-posta adresi]
+\end{document}

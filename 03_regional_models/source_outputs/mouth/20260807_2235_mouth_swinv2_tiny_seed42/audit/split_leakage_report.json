@@ -1,0 +1,18 @@
+{
+  "raw_rows": 3098,
+  "accepted_rows": 2987,
+  "status_counts_before_filter": {
+    "success": 2987,
+    "skipped": 111
+  },
+  "train_video_count": 2310,
+  "val_video_count": 287,
+  "test_video_count": 292,
+  "train_val_overlap": 0,
+  "train_test_overlap": 0,
+  "val_test_overlap": 0,
+  "mouth_roi_root": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Ağız/mouth_roi_output",
+  "metadata_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Ağız/mouth_roi_output/metadata.csv",
+  "image_column": "mouth_path",
+  "path_remapping_enabled": true
+}

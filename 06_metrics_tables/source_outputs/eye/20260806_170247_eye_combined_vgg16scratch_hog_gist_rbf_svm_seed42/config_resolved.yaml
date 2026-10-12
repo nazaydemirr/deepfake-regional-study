@@ -1,0 +1,65 @@
+input_root: Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney
+  1/Göz/eye_roi_output
+output_root: Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney
+  1/Sonuçlar
+seed: 42
+region: eye_combined
+model_name: vgg16scratch_hog_gist_rbf_svm
+image_size: 224
+batch_size: 16
+num_workers: 2
+epochs: 30
+early_stopping_patience: 7
+learning_rate: 0.0001
+weight_decay: 0.0001
+dropout: 0.4
+classifier_hidden_dim: 256
+horizontal_flip_probability: 0.5
+affine_degrees: 5.0
+affine_translate: 0.03
+color_jitter_brightness: 0.08
+color_jitter_contrast: 0.08
+hog_width: 128
+hog_height: 64
+hog_orientations: 9
+hog_pixels_per_cell:
+- 8
+- 8
+hog_cells_per_block:
+- 2
+- 2
+gist_image_size: 128
+gist_grid_size: 4
+gist_orientations: 8
+gist_scales:
+- - 2.0
+  - 4.0
+- - 3.0
+  - 6.0
+- - 4.0
+  - 8.0
+- - 5.0
+  - 10.0
+pca_components: 256
+svm_c_values:
+- 0.1
+- 1.0
+- 10.0
+- 100.0
+svm_gamma_values:
+- scale
+- 0.001
+- 0.0001
+svm_class_weight: balanced
+checkpoint_keep_last_n_epochs: 3
+figure_dpi: 150
+minimum_figure_short_edge_px: 600
+resume_run_id: null
+run_id: 20260806_170247_eye_combined_vgg16scratch_hog_gist_rbf_svm_seed42
+data_root: Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output
+roi_metadata_path: Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney
+  1/Göz/eye_roi_output/metadata.csv
+results_root: Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney
+  1/Sonuçlar
+run_dir: Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260806_170247_eye_combined_vgg16scratch_hog_gist_rbf_svm_seed42
+created_at: '2026-08-06T17:03:12.679886'

@@ -1,0 +1,76 @@
+{
+  "run_id": "20260806_170247_eye_combined_vgg16scratch_hog_gist_rbf_svm_seed42",
+  "status": "COMPLETED",
+  "model": {
+    "cnn": "VGG16 trained from scratch",
+    "pretrained_weights": false,
+    "feature_fusion": [
+      "HOG",
+      "GIST-style Gabor",
+      "VGG16 learned features"
+    ],
+    "classifier": "RBF SVM"
+  },
+  "paths": {
+    "input_data": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output",
+    "output_run": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260806_170247_eye_combined_vgg16scratch_hog_gist_rbf_svm_seed42",
+    "best_checkpoint": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260806_170247_eye_combined_vgg16scratch_hog_gist_rbf_svm_seed42/checkpoints/best.ckpt",
+    "svm_model": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260806_170247_eye_combined_vgg16scratch_hog_gist_rbf_svm_seed42/artifacts/svm_model.joblib"
+  },
+  "data": {
+    "metadata_rows_original": 3097,
+    "metadata_rows_after_basic_cleaning": 3097,
+    "status_counts": {
+      "ok": 2986,
+      "no_face": 111
+    },
+    "missing_sample_ids_generated": 0,
+    "exact_duplicate_rows_removed": 0,
+    "usable_combined_eye_rows": 2986,
+    "class_split_counts": {
+      "test_fake": 156,
+      "test_real": 146,
+      "train_fake": 1191,
+      "train_real": 1197,
+      "val_fake": 141,
+      "val_real": 155
+    },
+    "source_video_counts": {
+      "train": 2,
+      "val": 2,
+      "test": 2
+    },
+    "cross_split_duplicate_hash_count": 0,
+    "input_view": "combined_eye",
+    "source_roi_size": "224x224 letterboxed",
+    "metadata_used_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260806_170247_eye_combined_vgg16scratch_hog_gist_rbf_svm_seed42/artifacts/metadata_used.csv"
+  },
+  "selected_svm": {
+    "C": 10.0,
+    "gamma": "0.0001",
+    "threshold": -0.799298914802356
+  },
+  "test_metrics": {
+    "frame_level": {
+      "accuracy": 0.5596026490066225,
+      "precision": 0.5437262357414449,
+      "recall": 0.9166666666666666,
+      "f1": 0.6825775656324582,
+      "specificity": 0.1780821917808219,
+      "roc_auc": 0.6226290832455216,
+      "average_precision": 0.5952881717932947
+    },
+    "video_level": {
+      "accuracy": 0.5,
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1": 0.6666666666666666,
+      "specificity": 0.0,
+      "roc_auc": 1.0,
+      "average_precision": 1.0
+    }
+  },
+  "training_duration_seconds": 334.2202513217926,
+  "figure_count": 11,
+  "completed_at": "2026-08-06T18:17:19.142311"
+}

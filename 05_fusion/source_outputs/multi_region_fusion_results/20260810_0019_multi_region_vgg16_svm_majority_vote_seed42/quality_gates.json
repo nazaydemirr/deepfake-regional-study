@@ -1,0 +1,17 @@
+{
+  "source_path_resolution_by_name": "PASSED",
+  "no_hardcoded_source_archive_id_removeds": "PASSED",
+  "source_files_read_only": "PASSED",
+  "source_prediction_schema": "PASSED",
+  "mouth_csv_npz_row_alignment": "PASSED",
+  "canonical_frame_key_parse": "PASSED",
+  "face0_uniqueness": "PASSED",
+  "complete_eyebrow_cross_region_coverage": "PASSED",
+  "ground_truth_label_agreement": "PASSED",
+  "no_retraining_or_meta_model": "PASSED",
+  "test_rule_fixed_before_evaluation": "PASSED",
+  "nan_inf_numeric_check": "PASSED",
+  "figure_language": "ENGLISH",
+  "figure_min_short_side_600px": "PASSED",
+  "output_atomic_writes": "PASSED"
+}

@@ -1,0 +1,2 @@
+﻿model,selected_C,test_accuracy,test_precision_fake,test_recall_fake,test_f1_fake,test_roc_auc,test_specificity_real,tn,fp,fn,tp
+HOG + LBP + KAZE → RBF-SVM,1.0,0.6324503311258278,0.6380368098159509,0.6666666666666666,0.6520376175548589,0.6586318932209342,0.5958904109589042,87,59,52,104

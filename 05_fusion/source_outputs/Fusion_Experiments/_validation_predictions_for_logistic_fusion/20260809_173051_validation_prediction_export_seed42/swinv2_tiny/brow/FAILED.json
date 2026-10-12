@@ -1,0 +1,9 @@
+{
+  "status": "FAILED",
+  "family": "swinv2_tiny",
+  "region": "brow",
+  "experiment_root": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Kas_SwinV2_Tiny_Detayli_Sonuc_pdf",
+  "error_type": "FileNotFoundError",
+  "error": "Usable training/validation manifest not found near: Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/Kas_SwinV2_Tiny_Detayli_Sonuc_pdf",
+  "test_used": false
+}

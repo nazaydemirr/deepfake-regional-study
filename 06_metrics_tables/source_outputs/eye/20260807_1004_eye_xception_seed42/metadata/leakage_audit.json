@@ -1,0 +1,12 @@
+{
+  "run_id": "20260807_1004_eye_xception_seed42",
+  "sample_id_split_isolation": "PASSED",
+  "exact_sha256_split_isolation": "PASSED",
+  "source_frame_identity_uniqueness": "PASSED",
+  "video_level_split_isolation": "NOT_AVAILABLE",
+  "video_level_reason": "source_video is not present in the current Eye ROI filenames. Video-level leakage cannot be scientifically verified from these filenames alone.",
+  "total_success_samples": 2986,
+  "samples_with_source_video": 0,
+  "samples_without_source_video": 2986,
+  "cross_split_exact_hash_count": 0
+}

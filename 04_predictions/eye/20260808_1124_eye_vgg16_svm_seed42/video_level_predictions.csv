@@ -1,0 +1,3 @@
+﻿source_video,true_label,true_class,fake_probability,frame_count,predicted_label,predicted_class
+fake_test,1,FAKE,0.5405478985450163,156,1,FAKE
+real_test,0,REAL,0.47774649806832487,146,0,REAL

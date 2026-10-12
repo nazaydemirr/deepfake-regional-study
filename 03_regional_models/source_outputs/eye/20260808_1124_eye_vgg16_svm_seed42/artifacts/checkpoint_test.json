@@ -1,0 +1,8 @@
+{
+  "atomic_model_save": "PASSED",
+  "atomic_scaler_save": "PASSED",
+  "fresh_reload_inference": "PASSED",
+  "checkpoint_type": "joblib + state JSON",
+  "epoch_state": "NOT_APPLICABLE",
+  "reason": "Single-fit frozen-feature + SVM pipeline; no epoch-based optimizer state exists."
+}

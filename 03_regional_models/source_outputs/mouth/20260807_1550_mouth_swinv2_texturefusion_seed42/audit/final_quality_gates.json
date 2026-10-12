@@ -1,0 +1,58 @@
+{
+  "roi_type": "mouth",
+  "mode": "full",
+  "required_outputs": "PASSED",
+  "checkpoint_integrity": "PASSED",
+  "numeric_metrics": "PASSED",
+  "test_prediction_count": 302,
+  "prediction_uniqueness": "PASSED",
+  "probability_range": "PASSED",
+  "figure_count": 6,
+  "figure_quality": {
+    "01_training_validation_loss_curve.png": {
+      "resolution": [
+        1485,
+        885
+      ],
+      "minimum_short_edge_600": "PASSED"
+    },
+    "02_training_validation_f1_curve.png": {
+      "resolution": [
+        1485,
+        885
+      ],
+      "minimum_short_edge_600": "PASSED"
+    },
+    "03_test_confusion_matrix.png": {
+      "resolution": [
+        1137,
+        1185
+      ],
+      "minimum_short_edge_600": "PASSED"
+    },
+    "04_test_roc_curve.png": {
+      "resolution": [
+        1335,
+        1035
+      ],
+      "minimum_short_edge_600": "PASSED"
+    },
+    "05_test_precision_recall_curve.png": {
+      "resolution": [
+        1335,
+        1035
+      ],
+      "minimum_short_edge_600": "PASSED"
+    },
+    "06_test_probability_distribution.png": {
+      "resolution": [
+        1485,
+        885
+      ],
+      "minimum_short_edge_600": "PASSED"
+    }
+  },
+  "best_epoch": 14,
+  "selected_threshold": 0.45499999999999996,
+  "final_status": "EXPERIMENT COMPLETED SUCCESSFULLY"
+}

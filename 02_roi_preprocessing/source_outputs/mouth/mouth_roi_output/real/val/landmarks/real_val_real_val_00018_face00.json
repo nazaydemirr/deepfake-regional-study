@@ -1,0 +1,328 @@
+{
+    "face_id": 0,
+    "frame_width": 1920,
+    "frame_height": 1080,
+    "landmark_count": 40,
+    "mouth_landmarks": [
+        {
+            "landmark_index": 0,
+            "x_normalized": 0.5916600227355957,
+            "y_normalized": 0.4096059203147888,
+            "z_normalized": -0.02922436222434044,
+            "x_pixel": 1136,
+            "y_pixel": 442
+        },
+        {
+            "landmark_index": 13,
+            "x_normalized": 0.5932638645172119,
+            "y_normalized": 0.42445459961891174,
+            "z_normalized": -0.022018790245056152,
+            "x_pixel": 1139,
+            "y_pixel": 458
+        },
+        {
+            "landmark_index": 14,
+            "x_normalized": 0.5936924815177917,
+            "y_normalized": 0.4262309670448303,
+            "z_normalized": -0.022105837240815163,
+            "x_pixel": 1140,
+            "y_pixel": 460
+        },
+        {
+            "landmark_index": 17,
+            "x_normalized": 0.5956894159317017,
+            "y_normalized": 0.4491179585456848,
+            "z_normalized": -0.025704141706228256,
+            "x_pixel": 1144,
+            "y_pixel": 485
+        },
+        {
+            "landmark_index": 37,
+            "x_normalized": 0.5817795991897583,
+            "y_normalized": 0.4099124073982239,
+            "z_normalized": -0.027197593823075294,
+            "x_pixel": 1117,
+            "y_pixel": 443
+        },
+        {
+            "landmark_index": 39,
+            "x_normalized": 0.5733734369277954,
+            "y_normalized": 0.4182930290699005,
+            "z_normalized": -0.02162664197385311,
+            "x_pixel": 1101,
+            "y_pixel": 452
+        },
+        {
+            "landmark_index": 40,
+            "x_normalized": 0.5681045055389404,
+            "y_normalized": 0.42599862813949585,
+            "z_normalized": -0.015318316407501698,
+            "x_pixel": 1091,
+            "y_pixel": 460
+        },
+        {
+            "landmark_index": 61,
+            "x_normalized": 0.5628080368041992,
+            "y_normalized": 0.4386444687843323,
+            "z_normalized": -0.0019428129307925701,
+            "x_pixel": 1081,
+            "y_pixel": 474
+        },
+        {
+            "landmark_index": 78,
+            "x_normalized": 0.5660455226898193,
+            "y_normalized": 0.4366978406906128,
+            "z_normalized": -0.00502484617754817,
+            "x_pixel": 1087,
+            "y_pixel": 472
+        },
+        {
+            "landmark_index": 80,
+            "x_normalized": 0.5740314722061157,
+            "y_normalized": 0.43160367012023926,
+            "z_normalized": -0.012880456633865833,
+            "x_pixel": 1102,
+            "y_pixel": 466
+        },
+        {
+            "landmark_index": 81,
+            "x_normalized": 0.5791616439819336,
+            "y_normalized": 0.42850616574287415,
+            "z_normalized": -0.01675470732152462,
+            "x_pixel": 1112,
+            "y_pixel": 463
+        },
+        {
+            "landmark_index": 82,
+            "x_normalized": 0.5855246782302856,
+            "y_normalized": 0.42615070939064026,
+            "z_normalized": -0.020239194855093956,
+            "x_pixel": 1124,
+            "y_pixel": 460
+        },
+        {
+            "landmark_index": 84,
+            "x_normalized": 0.5858344435691833,
+            "y_normalized": 0.45062798261642456,
+            "z_normalized": -0.024236785247921944,
+            "x_pixel": 1125,
+            "y_pixel": 487
+        },
+        {
+            "landmark_index": 87,
+            "x_normalized": 0.5859622955322266,
+            "y_normalized": 0.42781585454940796,
+            "z_normalized": -0.020330760627985,
+            "x_pixel": 1125,
+            "y_pixel": 462
+        },
+        {
+            "landmark_index": 88,
+            "x_normalized": 0.5743064880371094,
+            "y_normalized": 0.43215781450271606,
+            "z_normalized": -0.013002298772335052,
+            "x_pixel": 1103,
+            "y_pixel": 467
+        },
+        {
+            "landmark_index": 91,
+            "x_normalized": 0.5704333186149597,
+            "y_normalized": 0.4455493986606598,
+            "z_normalized": -0.015105834230780602,
+            "x_pixel": 1095,
+            "y_pixel": 481
+        },
+        {
+            "landmark_index": 95,
+            "x_normalized": 0.570503294467926,
+            "y_normalized": 0.4342920482158661,
+            "z_normalized": -0.00849468819797039,
+            "x_pixel": 1095,
+            "y_pixel": 469
+        },
+        {
+            "landmark_index": 146,
+            "x_normalized": 0.566141664981842,
+            "y_normalized": 0.44246333837509155,
+            "z_normalized": -0.008118761703372002,
+            "x_pixel": 1087,
+            "y_pixel": 478
+        },
+        {
+            "landmark_index": 178,
+            "x_normalized": 0.5795696377754211,
+            "y_normalized": 0.42997056245803833,
+            "z_normalized": -0.016856029629707336,
+            "x_pixel": 1113,
+            "y_pixel": 464
+        },
+        {
+            "landmark_index": 181,
+            "x_normalized": 0.5771400332450867,
+            "y_normalized": 0.4492354989051819,
+            "z_normalized": -0.020119842141866684,
+            "x_pixel": 1108,
+            "y_pixel": 485
+        },
+        {
+            "landmark_index": 185,
+            "x_normalized": 0.5647681951522827,
+            "y_normalized": 0.43269082903862,
+            "z_normalized": -0.008474799804389477,
+            "x_pixel": 1084,
+            "y_pixel": 467
+        },
+        {
+            "landmark_index": 191,
+            "x_normalized": 0.5703529715538025,
+            "y_normalized": 0.4341466426849365,
+            "z_normalized": -0.00835066195577383,
+            "x_pixel": 1095,
+            "y_pixel": 469
+        },
+        {
+            "landmark_index": 267,
+            "x_normalized": 0.6013542413711548,
+            "y_normalized": 0.4039872884750366,
+            "z_normalized": -0.028759190812706947,
+            "x_pixel": 1155,
+            "y_pixel": 436
+        },
+        {
+            "landmark_index": 269,
+            "x_normalized": 0.6119245886802673,
+            "y_normalized": 0.40667539834976196,
+            "z_normalized": -0.02478083036839962,
+            "x_pixel": 1175,
+            "y_pixel": 439
+        },
+        {
+            "landmark_index": 270,
+            "x_normalized": 0.6197283864021301,
+            "y_normalized": 0.4104999899864197,
+            "z_normalized": -0.019555900245904922,
+            "x_pixel": 1190,
+            "y_pixel": 443
+        },
+        {
+            "landmark_index": 291,
+            "x_normalized": 0.6292952299118042,
+            "y_normalized": 0.41815152764320374,
+            "z_normalized": -0.007400831673294306,
+            "x_pixel": 1208,
+            "y_pixel": 452
+        },
+        {
+            "landmark_index": 308,
+            "x_normalized": 0.626179039478302,
+            "y_normalized": 0.41836017370224,
+            "z_normalized": -0.009660284034907818,
+            "x_pixel": 1202,
+            "y_pixel": 452
+        },
+        {
+            "landmark_index": 310,
+            "x_normalized": 0.6153973937034607,
+            "y_normalized": 0.4188791811466217,
+            "z_normalized": -0.016267210245132446,
+            "x_pixel": 1182,
+            "y_pixel": 452
+        },
+        {
+            "landmark_index": 311,
+            "x_normalized": 0.6090078353881836,
+            "y_normalized": 0.41965192556381226,
+            "z_normalized": -0.019340043887495995,
+            "x_pixel": 1169,
+            "y_pixel": 453
+        },
+        {
+            "landmark_index": 312,
+            "x_normalized": 0.6016202569007874,
+            "y_normalized": 0.42158403992652893,
+            "z_normalized": -0.021731235086917877,
+            "x_pixel": 1155,
+            "y_pixel": 455
+        },
+        {
+            "landmark_index": 314,
+            "x_normalized": 0.6060373187065125,
+            "y_normalized": 0.44476446509361267,
+            "z_normalized": -0.025770900771021843,
+            "x_pixel": 1164,
+            "y_pixel": 480
+        },
+        {
+            "landmark_index": 317,
+            "x_normalized": 0.6018803119659424,
+            "y_normalized": 0.42359164357185364,
+            "z_normalized": -0.02184181474149227,
+            "x_pixel": 1156,
+            "y_pixel": 457
+        },
+        {
+            "landmark_index": 318,
+            "x_normalized": 0.6157213449478149,
+            "y_normalized": 0.41980668902397156,
+            "z_normalized": -0.01631269045174122,
+            "x_pixel": 1182,
+            "y_pixel": 453
+        },
+        {
+            "landmark_index": 321,
+            "x_normalized": 0.621881365776062,
+            "y_normalized": 0.43057921528816223,
+            "z_normalized": -0.018784252926707268,
+            "x_pixel": 1194,
+            "y_pixel": 465
+        },
+        {
+            "landmark_index": 324,
+            "x_normalized": 0.620781421661377,
+            "y_normalized": 0.41915884613990784,
+            "z_normalized": -0.01253848522901535,
+            "x_pixel": 1192,
+            "y_pixel": 453
+        },
+        {
+            "landmark_index": 375,
+            "x_normalized": 0.6264708042144775,
+            "y_normalized": 0.4240313768386841,
+            "z_normalized": -0.01271102949976921,
+            "x_pixel": 1203,
+            "y_pixel": 458
+        },
+        {
+            "landmark_index": 402,
+            "x_normalized": 0.6094028949737549,
+            "y_normalized": 0.42105817794799805,
+            "z_normalized": -0.01944073475897312,
+            "x_pixel": 1170,
+            "y_pixel": 455
+        },
+        {
+            "landmark_index": 405,
+            "x_normalized": 0.6149823665618896,
+            "y_normalized": 0.43817511200904846,
+            "z_normalized": -0.022994495928287506,
+            "x_pixel": 1181,
+            "y_pixel": 473
+        },
+        {
+            "landmark_index": 409,
+            "x_normalized": 0.625349223613739,
+            "y_normalized": 0.4144413471221924,
+            "z_normalized": -0.013443161733448505,
+            "x_pixel": 1201,
+            "y_pixel": 448
+        },
+        {
+            "landmark_index": 415,
+            "x_normalized": 0.620475172996521,
+            "y_normalized": 0.41884374618530273,
+            "z_normalized": -0.012495385482907295,
+            "x_pixel": 1191,
+            "y_pixel": 452
+        }
+    ]
+}

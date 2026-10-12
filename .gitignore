@@ -9,30 +9,36 @@ venv/
 
 # Data and model artifacts
 *.h5
+*.weights.h5
 *.keras
 *.pt
 *.pth
+*.ckpt
 *.onnx
 *.pkl
 *.joblib
 *.npy
 *.npz
+*.zip
+*.part-*
 data/raw/
 data/interim/
 data/processed/
 models/
+checkpoints/
+*_parts/
+feature_batches/
+feature_chunks/
+*feature_cache*/
+LOCAL_LARGE_ASSETS_NOT_FOR_GIT/
 
 # Local notebooks and runtime outputs
 .ipynb_checkpoints/
 outputs/
 logs/
 
-# Deney 1 Drive archive outputs are intentionally versioned, including
-# checkpoints, model files, logs, and feature arrays copied from Drive.
-!03_regional_models/drive_outputs/
-!03_regional_models/drive_outputs/**
-!06_metrics_tables/drive_outputs/
-!06_metrics_tables/drive_outputs/**
+# Large Deney 1 model/checkpoint/cache binaries stay local-only. The repo keeps
+# code, notebooks, reports, metrics, figures, manifests, and explanatory notes.
 
 # OS
 .DS_Store

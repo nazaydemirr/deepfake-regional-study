@@ -1,0 +1,23 @@
+{
+  "run_id": "20260807_1410_mouth_vgg16scratch_hog_gist_rbf_svm_seed42",
+  "evaluation_level": "source_video",
+  "aggregation": "mean frame-level fake probability",
+  "model": "VGG16 + HOG + GIST + PCA + RBF-SVM",
+  "threshold_source": "validation_only",
+  "decision_threshold": 0.44480303313075675,
+  "sample_count": 196,
+  "accuracy": 0.6224489795918368,
+  "balanced_accuracy": 0.5883943661971831,
+  "precision": 0.7007874015748031,
+  "recall_sensitivity": 0.712,
+  "specificity": 0.4647887323943662,
+  "negative_predictive_value": 0.4782608695652174,
+  "f1": 0.7063492063492064,
+  "matthews_correlation_coefficient": 0.17791491475491034,
+  "roc_auc": 0.6981971830985915,
+  "pr_auc_average_precision": 0.8261888394964787,
+  "true_negative": 33,
+  "false_positive": 38,
+  "false_negative": 36,
+  "true_positive": 89
+}

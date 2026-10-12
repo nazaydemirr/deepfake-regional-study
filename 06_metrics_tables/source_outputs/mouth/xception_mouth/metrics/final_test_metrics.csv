@@ -1,0 +1,2 @@
+﻿model,region,test_samples,accuracy,balanced_accuracy,precision_fake,recall_fake,specificity,f1_fake,roc_auc,tn,fp,fn,tp
+Xception,mouth,302,0.7019867549668874,0.7003424657534247,0.6964285714285714,0.75,0.6506849315068494,0.7222222222222222,0.7662012644889358,95,51,39,117

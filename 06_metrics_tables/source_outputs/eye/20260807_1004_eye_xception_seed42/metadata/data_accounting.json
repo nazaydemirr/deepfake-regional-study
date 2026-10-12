@@ -1,0 +1,12 @@
+{
+  "total_inputs": 2986,
+  "success_count": 2986,
+  "skipped_count": 0,
+  "error_count": 0,
+  "real_train": 1197,
+  "real_val": 155,
+  "real_test": 146,
+  "fake_train": 1191,
+  "fake_val": 141,
+  "fake_test": 156
+}

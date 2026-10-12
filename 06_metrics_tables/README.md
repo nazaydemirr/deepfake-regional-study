@@ -8,4 +8,4 @@ Icerik:
 - Literatur kaynak ozetleri
 - Deney ozetleri ve model karsilastirmalari
 
-Tablolar Drive'daki AISC literatur tablosu ve Deney 1 fuzyon ciktilarina gore hazirlanmistir.
+Tablolar 'daki AISC literatur tablosu ve Deney 1 fuzyon ciktilarina gore hazirlanmistir.

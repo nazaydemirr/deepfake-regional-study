@@ -1,0 +1,38 @@
+{
+  "run_id": "20260808_1257_mouth_efficientnet_b0_seed42",
+  "metadata_path": "Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Ağız/mouth_roi_output/metadata.csv",
+  "total_metadata_rows": 3098,
+  "accepted_status_rows": 2987,
+  "audit_only_rows": 111,
+  "missing_files_among_accepted": 0,
+  "training_eligible_success_count": 2987,
+  "status_counts": {
+    "success": 2987,
+    "skipped": 111
+  },
+  "split_class_counts": {
+    "train": {
+      "fake": 1192,
+      "real": 1197
+    },
+    "val": {
+      "fake": 141,
+      "real": 155
+    },
+    "test": {
+      "fake": 156,
+      "real": 146
+    }
+  },
+  "cross_split_path_intersections": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "metadata_video_id_intersections": {
+    "train_val": 0,
+    "train_test": 0,
+    "val_test": 0
+  },
+  "video_leakage_status": "ZERO_INTERSECTION_FOR_METADATA_VIDEO_ID"
+}

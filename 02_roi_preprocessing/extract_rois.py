@@ -1,7 +1,7 @@
 """Extract simple face-region ROI crops from frame metadata.
 
 This script is intentionally lightweight: it documents the project contract and
-can be adapted to the exact landmark detector used in the Drive notebooks.
+can be adapted to the exact landmark detector used in the  notebooks.
 """
 
 from __future__ import annotations

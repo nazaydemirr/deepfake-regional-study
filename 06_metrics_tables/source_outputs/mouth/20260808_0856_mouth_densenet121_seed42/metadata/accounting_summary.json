@@ -1,0 +1,18 @@
+{
+    "run_id": "20260808_0856_mouth_densenet121_seed42",
+    "total_metadata_records": 3098,
+    "success_count": 2987,
+    "skipped_count": 111,
+    "error_count": 0,
+    "model_image_count": 2987,
+    "video_overlap_counts": {
+        "train_vs_val": 0,
+        "train_vs_test": 0,
+        "val_vs_test": 0
+    },
+    "sha256_overlap_counts": {
+        "train_vs_val": 0,
+        "train_vs_test": 0,
+        "val_vs_test": 0
+    }
+}

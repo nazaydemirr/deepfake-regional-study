@@ -1,0 +1,26 @@
+{
+  "run_id": "20260807_1410_mouth_vgg16scratch_hog_gist_rbf_svm_seed42",
+  "pipeline": "VGG16 + HOG + GIST + PCA + RBF-SVM",
+  "raw_feature_dimension": 4804,
+  "pca_components": 256,
+  "pca_explained_variance_ratio": 0.8608051538467407,
+  "preprocessing_fit_scope": "train_only",
+  "model_selection_scope": "validation_only",
+  "selection_order": [
+    "validation_f1",
+    "validation_roc_auc",
+    "validation_accuracy"
+  ],
+  "best_C": 10.0,
+  "best_gamma": "scale",
+  "best_threshold": 0.44480303313075675,
+  "best_validation_accuracy": 0.6480836236933798,
+  "best_validation_precision": 0.5978260869565217,
+  "best_validation_recall": 0.8029197080291971,
+  "best_validation_f1": 0.6853582554517134,
+  "best_validation_roc_auc": 0.6765936739659367,
+  "pca_minutes": 0.06660255988438925,
+  "grid_search_minutes": 1.3909480214118957,
+  "test_metrics_calculated": false,
+  "seed": 42
+}

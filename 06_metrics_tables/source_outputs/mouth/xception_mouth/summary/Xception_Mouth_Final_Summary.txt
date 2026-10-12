@@ -1,0 +1,110 @@
+
+============================================================
+XCEPTION MOUTH ROI DEEPFAKE DETECTION
+FINAL EXPERIMENT SUMMARY
+============================================================
+
+1. EXPERIMENT
+
+Region                  : Mouth
+Model                   : Xception
+Pretrained weights      : ImageNet
+Input size              : 224 x 224 x 3
+Task                    : Binary Classification
+Class mapping           : REAL = 0, FAKE = 1
+
+
+2. DATASET
+
+Initial frames          : 3000
+Valid Mouth ROI         : 2987
+
+Train ROI               : 2389
+Validation ROI          : 296
+Test ROI                : 302
+
+Test REAL               : 146
+Test FAKE               : 156
+
+
+3. FROZEN BACKBONE TRAINING
+
+Best Validation AUC     : 0.7280
+Best Validation Acc.    : 0.6892
+Training Time           : 147.30 minutes
+
+
+4. FINE-TUNING
+
+Best Validation AUC     : 0.8228
+Best Validation Acc.    : 0.7669
+Fine-Tuning Time        : 159.62 minutes
+
+
+5. FINAL TEST PERFORMANCE
+
+Accuracy                : 0.7020
+Balanced Accuracy       : 0.7003
+
+Precision (FAKE)        : 0.6964
+Recall / Sensitivity    : 0.7500
+Specificity             : 0.6507
+
+F1 Score (FAKE)         : 0.7222
+ROC-AUC                 : 0.7662
+
+
+6. CONFUSION MATRIX
+
+True Negative (TN)      : 95
+False Positive (FP)     : 51
+False Negative (FN)     : 39
+True Positive (TP)      : 117
+
+
+7. INTERPRETATION
+
+Frozen Xception validation AUC:
+0.7280
+
+Fine-tuned Xception validation AUC:
+0.8228
+
+Fine-tuning improved validation discrimination performance.
+
+On the independent test set, the final model achieved:
+
+Accuracy:
+70.20%
+
+FAKE Recall:
+75.00%
+
+ROC-AUC:
+0.7662
+
+The model showed stronger sensitivity for detecting FAKE samples
+than specificity for correctly identifying REAL samples.
+
+
+8. OUTPUTS
+
+Final model:
+Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Sonuçlar/Xception_Mouth/model/Xception_Mouth_Final.keras
+
+Metrics:
+Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Sonuçlar/Xception_Mouth/metrics
+
+Predictions:
+Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Sonuçlar/Xception_Mouth/predictions
+
+Training Logs:
+Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Sonuçlar/Xception_Mouth/training_logs
+
+600 DPI Figures:
+Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Sonuçlar/Xception_Mouth/figures
+
+
+============================================================
+END OF EXPERIMENT
+============================================================

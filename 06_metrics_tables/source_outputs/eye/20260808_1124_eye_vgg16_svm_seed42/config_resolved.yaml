@@ -1,0 +1,73 @@
+schema_version: ssot-v2.0
+run_id: 20260808_1124_eye_vgg16_svm_seed42
+experiment_name: VGG16_FeatureExtractor_SVM_Eye
+region: eye
+roi_variant: combined
+seed: 42
+dataset:
+  root: Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output
+  metadata_csv: Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney
+    1/Göz/eye_roi_output/metadata.csv
+  labels:
+    real: 0
+    fake: 1
+  splits:
+  - train
+  - val
+  - test
+  success_values:
+  - success
+  - ok
+  - completed
+  - complete
+  source_is_read_only: true
+image:
+  width: 224
+  height: 224
+  channels: 3
+  batch_size: 32
+  resize_resample: bilinear
+feature_extractor:
+  architecture: VGG16
+  weights: imagenet
+  include_top: false
+  pooling: avg
+  trainable: false
+  feature_dim: 512
+svm:
+  class_weight: balanced
+  probability_final: true
+  selection_sort:
+  - val_f1
+  - val_roc_auc
+  - val_accuracy
+  search_space:
+    linear_C:
+    - 0.1
+    - 1.0
+    - 10.0
+    rbf_C:
+    - 1.0
+    - 10.0
+    - 100.0
+    rbf_gamma:
+    - scale
+    - 0.001
+    - 0.01
+cache:
+  reuse_cached_features: false
+  reason: SSOT run directories are immutable; each run recomputes features.
+figures:
+  figsize:
+  - 10
+  - 6
+  dpi: 150
+  minimum_short_side_px: 600
+  language: English
+quality_gates:
+  require_two_classes_per_split: true
+  require_exact_content_split_isolation: true
+  require_source_video_isolation_when_available: true
+  fail_on_unreadable_success_image: true
+  fail_on_nan_or_inf: true
+  inference_reload_test: true

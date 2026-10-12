@@ -1,0 +1,31 @@
+{
+  "n_samples": 138,
+  "threshold": 0.5,
+  "accuracy": 0.572463768115942,
+  "precision": 0.6896551724137931,
+  "recall": 0.49382716049382713,
+  "f1": 0.5755395683453237,
+  "specificity": 0.6842105263157895,
+  "confusion_matrix": [
+    [
+      39,
+      18
+    ],
+    [
+      41,
+      40
+    ]
+  ],
+  "roc_auc": 0.6764132553606237,
+  "average_precision": 0.7373805332148091,
+  "fusion_method": "calibrated_weighted_score_level_late_fusion",
+  "weights": {
+    "eyebrow": 0.3257974404403565,
+    "eye": 0.32873390560165394,
+    "mouth": 0.34546865395798954
+  },
+  "alignment_common_videos": 138,
+  "test_used_for_weight_selection": false,
+  "test_used_for_calibration": false,
+  "test_used_for_threshold_selection": false
+}

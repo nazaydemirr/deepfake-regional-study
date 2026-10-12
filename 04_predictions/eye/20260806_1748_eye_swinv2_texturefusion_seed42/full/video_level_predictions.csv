@@ -1,0 +1,3 @@
+video_id,target,probability_fake,sample_count,prediction,correct
+fake_test,1,0.5265929393279247,156,1,True
+real_test,0,0.3577897581335616,146,0,True

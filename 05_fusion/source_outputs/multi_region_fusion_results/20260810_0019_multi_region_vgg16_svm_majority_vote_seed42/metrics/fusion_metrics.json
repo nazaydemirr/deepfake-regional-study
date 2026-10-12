@@ -1,0 +1,27 @@
+{
+  "n_test_samples": 196,
+  "fusion_method": "equal_weight_3way_majority_vote_late_fusion",
+  "no_model_training": true,
+  "positive_class": "FAKE",
+  "weights": {
+    "eyebrow": 0.3333333333333333,
+    "mouth": 0.3333333333333333,
+    "eye": 0.3333333333333333
+  },
+  "decision_rule": "FAKE if at least 2 of 3 regional models predict FAKE",
+  "accuracy": 0.5969387755102041,
+  "balanced_accuracy": 0.5995310057321521,
+  "precision_fake": 0.5701754385964912,
+  "recall_fake": 0.6842105263157895,
+  "specificity_real": 0.5148514851485149,
+  "f1_fake": 0.6220095693779905,
+  "roc_auc_vote_score": 0.6245961438249088,
+  "average_precision_vote_score": 0.5702613259545695,
+  "mcc": 0.20167474934828117,
+  "confusion_matrix": {
+    "tn": 52,
+    "fp": 49,
+    "fn": 30,
+    "tp": 65
+  }
+}

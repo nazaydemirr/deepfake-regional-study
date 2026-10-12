@@ -1,0 +1,42 @@
+{
+  "run_id": "20260807_1410_mouth_vgg16scratch_hog_gist_rbf_svm_seed42",
+  "seed": 42,
+  "image_size": 128,
+  "batch_size": 32,
+  "num_workers": 2,
+  "class_mapping": {
+    "real": 0,
+    "fake": 1
+  },
+  "resize_method": "aspect_ratio_preserving_letterbox",
+  "normalization": {
+    "scope": "train_only",
+    "mean_rgb": [
+      0.33161286081669483,
+      0.22449789437260165,
+      0.20001922247356213
+    ],
+    "std_rgb": [
+      0.3339895295062531,
+      0.23719973559661456,
+      0.21596226998939322
+    ]
+  },
+  "train_augmentation": {
+    "random_horizontal_flip_probability": 0.5,
+    "random_affine_degrees": 5,
+    "random_affine_translate": [
+      0.03,
+      0.03
+    ],
+    "brightness": 0.08,
+    "contrast": 0.08
+  },
+  "validation_augmentation": null,
+  "test_augmentation": null,
+  "split_sizes": {
+    "train": 2310,
+    "validation": 287,
+    "test": 292
+  }
+}

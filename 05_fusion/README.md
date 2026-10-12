@@ -15,7 +15,7 @@ weight = raw_weight / sum(raw_weight)
 fusion_score = sum(weight_roi * score_roi)
 ```
 
-Drive'daki 4 model ailesi:
+'daki 4 model ailesi:
 
 - xception
 - efficientnet_b0

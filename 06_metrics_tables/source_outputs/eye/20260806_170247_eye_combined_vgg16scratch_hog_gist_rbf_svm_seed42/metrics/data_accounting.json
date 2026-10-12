@@ -1,0 +1,28 @@
+{
+  "metadata_rows_original": 3097,
+  "metadata_rows_after_basic_cleaning": 3097,
+  "status_counts": {
+    "ok": 2986,
+    "no_face": 111
+  },
+  "missing_sample_ids_generated": 0,
+  "exact_duplicate_rows_removed": 0,
+  "usable_combined_eye_rows": 2986,
+  "class_split_counts": {
+    "test_fake": 156,
+    "test_real": 146,
+    "train_fake": 1191,
+    "train_real": 1197,
+    "val_fake": 141,
+    "val_real": 155
+  },
+  "source_video_counts": {
+    "train": 2,
+    "val": 2,
+    "test": 2
+  },
+  "cross_split_duplicate_hash_count": 0,
+  "input_view": "combined_eye",
+  "source_roi_size": "224x224 letterboxed",
+  "metadata_used_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260806_170247_eye_combined_vgg16scratch_hog_gist_rbf_svm_seed42/artifacts/metadata_used.csv"
+}

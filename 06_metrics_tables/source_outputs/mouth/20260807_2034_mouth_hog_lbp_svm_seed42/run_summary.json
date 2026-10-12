@@ -1,0 +1,170 @@
+{
+  "run_id": "20260807_2034_mouth_hog_lbp_svm_seed42",
+  "status": "COMPLETED",
+  "region": "mouth",
+  "model": {
+    "pretrained_weights": false,
+    "feature_fusion": [
+      "HOG",
+      "LBP"
+    ],
+    "classifier": "RBF SVM",
+    "C": 1.0,
+    "gamma": 0.001,
+    "threshold": -0.14414598526723613,
+    "positive_class": "fake"
+  },
+  "paths": {
+    "input_data": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Ağız/mouth_roi_output",
+    "roi_metadata": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Ağız/mouth_roi_output/metadata.csv",
+    "selection_metadata": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Deney 1 Frame/secim_metadata.csv",
+    "output_run": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/20260807_2034_mouth_hog_lbp_svm_seed42",
+    "best_checkpoint": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/20260807_2034_mouth_hog_lbp_svm_seed42/checkpoints/best.ckpt",
+    "last_checkpoint": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/20260807_2034_mouth_hog_lbp_svm_seed42/checkpoints/last.ckpt",
+    "svm_model": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Dilara/Deney 1/Sonuçlar/20260807_2034_mouth_hog_lbp_svm_seed42/artifacts/svm_model.joblib"
+  },
+  "data": {
+    "run_id": "20260807_2034_mouth_hog_lbp_svm_seed42",
+    "total_metadata_rows": 3098,
+    "unique_source_frames": 3000,
+    "success_count": 2987,
+    "skipped_count": 111,
+    "error_count": 0,
+    "training_eligible_success_count": 2987,
+    "unique_source_videos": 1940,
+    "split_class_counts": {
+      "test": {
+        "fake": 156,
+        "real": 146
+      },
+      "train": {
+        "fake": 1192,
+        "real": 1197
+      },
+      "val": {
+        "fake": 141,
+        "real": 155
+      }
+    },
+    "split_source_video_counts": {
+      "train": 1557,
+      "val": 187,
+      "test": 196
+    },
+    "source_video_intersections": {
+      "train_val": 0,
+      "train_test": 0,
+      "val_test": 0
+    }
+  },
+  "feature_dimensions": {
+    "hog": 3780,
+    "lbp": 10,
+    "fused": 3790
+  },
+  "feature_pipeline": {
+    "input": "mouth ROI",
+    "grayscale": true,
+    "resize": [
+      128,
+      64
+    ],
+    "hog": {
+      "orientations": 9,
+      "pixels_per_cell": [
+        8,
+        8
+      ],
+      "cells_per_block": [
+        2,
+        2
+      ],
+      "block_norm": "L2-Hys"
+    },
+    "lbp": {
+      "points": 8,
+      "radius": 1,
+      "method": "uniform"
+    },
+    "fusion": "HOG + LBP concatenation",
+    "scaler": "StandardScaler fitted on train only",
+    "feature_dimensions": {
+      "hog": 3780,
+      "lbp": 10,
+      "fused": 3790
+    }
+  },
+  "selected_svm": {
+    "selection_set": "validation",
+    "selection_metric": "f1",
+    "kernel": "rbf",
+    "C": 1.0,
+    "gamma": 0.001,
+    "threshold": -0.14414598526723613,
+    "validation_metrics": {
+      "accuracy": 0.6283783783783784,
+      "precision": 0.5688888888888889,
+      "recall": 0.9078014184397163,
+      "specificity": 0.3741935483870968,
+      "balanced_accuracy": 0.6409974834134066,
+      "f1": 0.6994535519125683,
+      "roc_auc": 0.7165179592770534,
+      "average_precision": 0.6718237141597949,
+      "tn": 58.0,
+      "fp": 97.0,
+      "fn": 13.0,
+      "tp": 128.0
+    },
+    "candidate_count": 12,
+    "search_seconds": 251.3162100315094,
+    "test_set_used_for_selection": false
+  },
+  "test_metrics": {
+    "frame_level": {
+      "accuracy": 0.5562913907284768,
+      "precision": 0.5486725663716814,
+      "recall": 0.7948717948717948,
+      "specificity": 0.3013698630136986,
+      "balanced_accuracy": 0.5481208289427467,
+      "f1": 0.6492146596858639,
+      "roc_auc": 0.5850895679662804,
+      "average_precision": 0.5933972300707224,
+      "tn": 44,
+      "fp": 102,
+      "fn": 32,
+      "tp": 124
+    },
+    "video_level": {
+      "accuracy": 0.6122448979591837,
+      "precision": 0.6644295302013423,
+      "recall": 0.792,
+      "specificity": 0.29577464788732394,
+      "balanced_accuracy": 0.543887323943662,
+      "f1": 0.7226277372262774,
+      "roc_auc": 0.5789295774647887,
+      "average_precision": 0.7227328268884463,
+      "tn": 21,
+      "fp": 50,
+      "fn": 26,
+      "tp": 99
+    }
+  },
+  "quality_gates": {
+    "schema_test": "PASS",
+    "split_test": "PASS",
+    "data_accounting_test": "PASS",
+    "source_video_leakage_test": "PASS",
+    "numerical_feature_test": "PASS",
+    "classical_ml_smoke_test": "PASS",
+    "train_only_scaler_test": "PASS",
+    "validation_only_selection_test": "PASS",
+    "pytorch_forward_backward_smoke_test": "NOT_APPLICABLE_CLASSICAL_ML",
+    "checkpoint_atomic_save_reload_test": "PASS",
+    "fresh_load_inference_test": "PASS",
+    "test_set_used_for_selection": false
+  },
+  "figure_count": 9,
+  "checkpoint_note": "PyTorch optimizer and epoch state are not applicable to HOG, LBP and sklearn SVC. The complete SVC, train-fitted StandardScaler, validation-selected threshold, configuration and RNG states were atomically serialized and reload-tested.",
+  "data_leakage_note": "Source-video intersections between train, validation and test were zero. StandardScaler was fitted on train only. SVM hyperparameters and threshold were selected on validation only. The frozen test set was used only for final evaluation.",
+  "completed_at": "2026-08-07T22:45:00.270360"
+}

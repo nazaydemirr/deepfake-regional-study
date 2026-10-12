@@ -13,7 +13,7 @@ Onerilen figurlar:
 
 Buyuk gorseller ve ornek frame'ler GitHub'a eklenmeden once etik, izin ve dosya boyutu acisindan kontrol edilmelidir.
 
-## Drive'dan Acilan Deney 1 Figurlari
+## 'dan Acilan Deney 1 Figurlari
 
 ZIP arsivlerinden acilan figurlar bolge ve run adina gore ayrildi:
 

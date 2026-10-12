@@ -1,0 +1,5 @@
+{
+  "available": false,
+  "run_id": "20260807_1031_eye_swinv2_tiny_seed42",
+  "reason": "video_id appears to be a label/split bucket rather than a true source-video identifier; per-original-video metrics are disabled."
+}

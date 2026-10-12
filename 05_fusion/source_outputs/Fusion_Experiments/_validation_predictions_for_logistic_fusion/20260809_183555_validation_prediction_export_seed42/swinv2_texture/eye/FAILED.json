@@ -1,0 +1,9 @@
+{
+  "status": "FAILED",
+  "family": "swinv2_texture",
+  "region": "eye",
+  "experiment_root": "Deney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260806_1748_eye_swinv2_texturefusion_seed42/full",
+  "error_type": "FileNotFoundError",
+  "error": "No usable training/validation manifest was resolved near:\nDeney1_Source/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260806_1748_eye_swinv2_texturefusion_seed42/full\n\nInspected manifest diagnostics:\n[]",
+  "test_used": false
+}

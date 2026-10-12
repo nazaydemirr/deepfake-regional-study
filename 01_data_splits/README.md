@@ -2,7 +2,7 @@
 
 Bu klasor, Deney 1 icin frame secimi, sinif dengesi ve train/validation/test ayrimini belgeler.
 
-Drive'daki `Deney 1 Frame` klasorlerinden okunan ortak ozet:
+`Deney 1 Frame` kaynak klasorlerinden alinan yerel ozet:
 
 - Genel toplam: 3000 frame
 - Real: train 1200, validation 150, test 150
@@ -10,7 +10,7 @@ Drive'daki `Deney 1 Frame` klasorlerinden okunan ortak ozet:
 - Reddedilen / yuzsuz veya okunamayan frame sayisi: 206
 - Tamamlanan splitler: `Real/train`, `Real/val`, `Real/test`, `Fake/train`, `Fake/val`, `Fake/test`
 
-Buyuk gorsel veri GitHub'a eklenmez. Repo, frame secim mantigini ve metadata semasini tutar; raw veri Drive'da kalir.
+Repo, frame secim mantigini, metadata semasini ve makalede kullanilan sayisal ozetleri yerel olarak tutar. Rapor metninde dis linki kullanilmaz.
 
 ## Beklenen Metadata
 
@@ -24,7 +24,8 @@ Buyuk gorsel veri GitHub'a eklenmez. Repo, frame secim mantigini ve metadata sem
 - `roi_status`
 - `notes`
 
-## Drive Klasorleri
+## Yerel Kaynak Karsiliklari
 
-- Ana Deney 1: `https://drive.google.com/drive/folders/1aUHJOgb9YVdqJuIQZrF0q5-nlo506Fue`
-- Frame secim klasorleri: Drive'da birden fazla `Deney 1 Frame` kopyasi bulunur.
+- Frame secim metadata dosyalari: `01_data_splits/source_exports/deney_1_frame_primary/`
+- Ikincil/kontrol metadata dosyalari: `01_data_splits/source_exports/deney_1_frame_secondary/`
+- Frame kaynak envanterleri: `08_article/reports/source_large_assets/`

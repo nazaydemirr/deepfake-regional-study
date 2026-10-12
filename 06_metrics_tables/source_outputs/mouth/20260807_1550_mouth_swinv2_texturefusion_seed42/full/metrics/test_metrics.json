@@ -1,0 +1,15 @@
+{
+  "accuracy": 0.7185430463576159,
+  "balanced_accuracy": 0.7159290481208289,
+  "precision": 0.7005649717514124,
+  "recall": 0.7948717948717948,
+  "f1": 0.7447447447447447,
+  "roc_auc": 0.7918203371970496,
+  "average_precision": 0.7798549328065172,
+  "best_epoch": 14,
+  "selected_threshold": 0.45499999999999996,
+  "best_validation_roc_auc": 0.8603752001830244,
+  "test_sample_count": 302,
+  "mode": "full",
+  "roi_type": "mouth"
+}

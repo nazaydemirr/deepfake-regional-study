@@ -1,0 +1,2 @@
+﻿model,selected_C,test_accuracy,test_precision_fake,test_recall_fake,test_f1_fake,test_roc_auc,test_specificity_real,tn,fp,fn,tp
+HOG + LBP → RBF-SVM,1.0,0.6158940397350994,0.6234567901234568,0.6474358974358975,0.6352201257861635,0.659905163329821,0.5821917808219178,85,61,55,101

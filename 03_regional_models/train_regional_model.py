@@ -1,6 +1,6 @@
 """Train a classical ROI baseline from precomputed features.
 
-Deep-learning notebooks in Drive can stay as notebooks; this baseline keeps the
+Deep-learning notebooks in  can stay as notebooks; this baseline keeps the
 repo runnable without storing heavy images or model weights.
 """
 

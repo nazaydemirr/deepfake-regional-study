@@ -1,0 +1,54 @@
+{
+    "project": "Mouth ROI Extraction",
+    "validation_passed": true,
+    "input_dataset": {
+        "expected_total_frames": 3000,
+        "actual_total_frames": 3000,
+        "input_count_valid": true,
+        "counts_by_label_split": {
+            "fake": {
+                "train": 1200,
+                "val": 150,
+                "test": 150
+            },
+            "real": {
+                "train": 1200,
+                "val": 150,
+                "test": 150
+            }
+        }
+    },
+    "metadata": {
+        "total_records": 3098,
+        "unique_source_frames": 3000,
+        "success": 2987,
+        "skipped": 111,
+        "error": 0,
+        "unknown": -3099,
+        "no_face_detected": 111,
+        "duplicate_sample_ids": 0,
+        "metadata_success_ratio_percent": 96.417,
+        "frame_coverage_ratio_percent": 100.0
+    },
+    "output_files": {
+        "mouth_roi": 2987,
+        "landmarks": 2987,
+        "debug": 2987,
+        "mouth_matches_success": true,
+        "landmarks_match_success": true,
+        "debug_matches_success": true
+    },
+    "configuration": {
+        "output_size": 224,
+        "mouth_padding_ratio": 0.25,
+        "mouth_landmark_count": 40,
+        "aspect_ratio_preserved": true,
+        "save_debug": true
+    },
+    "critical_files": {
+        "metadata.csv": true,
+        "run_config.json": true,
+        "processing_summary.json": true
+    },
+    "validated_at": "2026-08-06 15:44:34"
+}

@@ -1,0 +1,65 @@
+run_id: 20260807_1640_mouth_hog_lbp_kaze_seed42
+region: mouth
+seed: 42
+dataset:
+  dataset_path: Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Ağız/mouth_roi_output
+  total_samples: 2987
+  train_samples: 2389
+  validation_samples: 296
+  test_samples: 302
+  label_mapping:
+    real: 0
+    fake: 1
+  split_source: pre-existing train/val/test folders
+  source_video_audit: PASSED
+  source_video_column: video_id
+  roi_metadata_file: Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney
+    1/Ağız/mouth_roi_output/metadata.csv
+  unique_source_videos:
+    train: 2400
+    validation: 300
+    test: 300
+  video_overlap_counts:
+    train_validation: 0
+    train_test: 0
+    validation_test: 0
+features:
+  image_size:
+  - 224
+  - 224
+  hog:
+    orientations: 9
+    pixels_per_cell:
+    - 16
+    - 16
+    cells_per_block:
+    - 2
+    - 2
+    length: 6084
+  lbp:
+    radius: 3
+    points: 24
+    method: uniform
+    length: 26
+  kaze:
+    descriptor_pooling: mean + standard deviation
+    length: 128
+models:
+  hog_lbp_svm:
+    kernel: rbf
+    selected_C: 1.0
+  hog_lbp_kaze_svm:
+    kernel: rbf
+    selected_C: 1.0
+  hog_lbp_kaze_random_forest:
+    name: RF-2
+    n_estimators: 300
+    max_depth: 20
+    min_samples_leaf: 1
+    max_features: sqrt
+environment:
+  python: 3.12.13
+  opencv: 4.10.0
+  numpy: 2.0.2
+  pandas: 2.2.2
+  scikit_learn: 1.6.1

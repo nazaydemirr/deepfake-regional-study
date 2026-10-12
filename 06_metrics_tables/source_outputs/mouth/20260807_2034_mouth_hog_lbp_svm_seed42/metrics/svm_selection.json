@@ -1,0 +1,25 @@
+{
+  "selection_set": "validation",
+  "selection_metric": "f1",
+  "kernel": "rbf",
+  "C": 1.0,
+  "gamma": 0.001,
+  "threshold": -0.14414598526723613,
+  "validation_metrics": {
+    "accuracy": 0.6283783783783784,
+    "precision": 0.5688888888888889,
+    "recall": 0.9078014184397163,
+    "specificity": 0.3741935483870968,
+    "balanced_accuracy": 0.6409974834134066,
+    "f1": 0.6994535519125683,
+    "roc_auc": 0.7165179592770534,
+    "average_precision": 0.6718237141597949,
+    "tn": 58.0,
+    "fp": 97.0,
+    "fn": 13.0,
+    "tp": 128.0
+  },
+  "candidate_count": 12,
+  "search_seconds": 251.3162100315094,
+  "test_set_used_for_selection": false
+}

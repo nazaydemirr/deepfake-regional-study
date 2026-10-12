@@ -1,0 +1,78 @@
+{
+  "run_id": "20260809_1929_multi_region_calibrated_weighted_score_fusion_seed42",
+  "status": "COMPLETED",
+  "fusion_method": "Calibrated Weighted Score-Level Late Fusion",
+  "source_regions": [
+    "eyebrow",
+    "eye",
+    "mouth"
+  ],
+  "source_run_dirs": {
+    "eyebrow": "source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Nazlıcan/Deney 1/Sonuçlar/VGG16 (sıfırdan eğitim) + HOG + GIST + RBF SVM",
+    "eye": "source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Kader/Deney 1/Sonuçlar/20260806_170247_eye_combined_vgg16scratch_hog_gist_rbf_svm_seed42",
+    "mouth": "source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Dilara/Deney 1/Sonuçlar/VGG16_HOG_GIST_RBF_SVM_Mouth/20260807_1410_mouth_vgg16scratch_hog_gist_rbf_svm_seed42"
+  },
+  "calibration": {
+    "method": "logistic",
+    "derived_from": "validation_only"
+  },
+  "weighting": {
+    "strategy": "validation_auc_reliability",
+    "weights": {
+      "eyebrow": 0.3257974404403565,
+      "eye": 0.32873390560165394,
+      "mouth": 0.34546865395798954
+    },
+    "derived_from": "validation_only"
+  },
+  "fusion": {
+    "aggregation": "mean",
+    "threshold": 0.5,
+    "aligned_video_count": 138
+  },
+  "test_metrics": {
+    "n_samples": 138,
+    "threshold": 0.5,
+    "accuracy": 0.572463768115942,
+    "precision": 0.6896551724137931,
+    "recall": 0.49382716049382713,
+    "f1": 0.5755395683453237,
+    "specificity": 0.6842105263157895,
+    "confusion_matrix": [
+      [
+        39,
+        18
+      ],
+      [
+        41,
+        40
+      ]
+    ],
+    "roc_auc": 0.6764132553606237,
+    "average_precision": 0.7373805332148091,
+    "fusion_method": "calibrated_weighted_score_level_late_fusion",
+    "weights": {
+      "eyebrow": 0.3257974404403565,
+      "eye": 0.32873390560165394,
+      "mouth": 0.34546865395798954
+    },
+    "alignment_common_videos": 138,
+    "test_used_for_weight_selection": false,
+    "test_used_for_calibration": false,
+    "test_used_for_threshold_selection": false
+  },
+  "provenance_restoration": {
+    "eye_source_video_restored": true,
+    "method": "dosya_adi -> orijinal_yol parent folder",
+    "source_file": "source_archive/.shortcut-targets-by-id/1qDJf3MYGlyKCNCfp7hS82eXp9H8F1Br1/AISC DeepFake Çalışmaları/Deney 1/Deney 1 Frame/secim_metadata.csv",
+    "row_order_matching_used": false
+  },
+  "data_leakage_guards": {
+    "test_used_for_calibration": false,
+    "test_used_for_weight_selection": false,
+    "test_used_for_threshold_selection": false,
+    "alignment_by_row_position": false,
+    "alignment_key": "target + canonical source_video"
+  },
+  "completed_at": "2026-08-09T19:29:27"
+}

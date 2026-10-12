@@ -1,0 +1,11 @@
+{
+  "quality_gates": [
+    {
+      "mode": "full",
+      "required_outputs": "PASSED",
+      "checkpoint_integrity": "PASSED",
+      "numeric_metrics": "PASSED",
+      "prediction_uniqueness": "PASSED"
+    }
+  ]
+}

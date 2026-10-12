@@ -1,0 +1,12 @@
+{
+  "run_id": "20260808_1124_eye_vgg16_svm_seed42",
+  "schema_gate": "PASSED",
+  "accounting_equality": "PASSED",
+  "unique_sample_id": "PASSED",
+  "sha256_hashed_images": 2986,
+  "sha256_resume_enabled": true,
+  "exact_content_split_isolation": "PASSED",
+  "source_video_split_isolation": "PASSED",
+  "source_video_complete": true,
+  "note": "SHA-256 hashing is resumable and -safe. If source_video is NOT_VERIFIABLE, no source-video-based claim is made and no identifier is fabricated."
+}

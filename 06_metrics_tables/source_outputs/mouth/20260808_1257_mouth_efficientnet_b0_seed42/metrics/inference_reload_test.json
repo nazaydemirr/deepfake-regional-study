@@ -1,0 +1,20 @@
+{
+  "status": "PASSED",
+  "model": "EfficientNet-B0",
+  "roi_region": "mouth",
+  "checkpoint": "Deney1_Source/AISC Çalışmalar/Deneyler/Dilara/Deney 1/Sonuçlar/20260808_1257_mouth_efficientnet_b0_seed42/checkpoints/finetune/best.ckpt",
+  "threshold": 0.19,
+  "n_samples": 4,
+  "probabilities": [
+    0.8178461790084839,
+    0.926552414894104,
+    0.6797011494636536,
+    0.9244805574417114
+  ],
+  "predictions": [
+    1,
+    1,
+    1,
+    1
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "strategy": "validation_auc_reliability",
+  "weights": {
+    "eyebrow": 0.3257974404403565,
+    "eye": 0.32873390560165394,
+    "mouth": 0.34546865395798954
+  },
+  "derived_from": "validation_only"
+}

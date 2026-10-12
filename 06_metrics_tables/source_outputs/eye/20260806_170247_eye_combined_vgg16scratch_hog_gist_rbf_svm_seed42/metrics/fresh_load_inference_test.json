@@ -1,0 +1,10 @@
+{
+  "status": "PASSED",
+  "checkpoint": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260806_170247_eye_combined_vgg16scratch_hog_gist_rbf_svm_seed42/checkpoints/best.ckpt",
+  "batch_size": 16,
+  "output_shape": [
+    16,
+    2
+  ],
+  "tested_at": "2026-08-06T18:11:19.567366"
+}

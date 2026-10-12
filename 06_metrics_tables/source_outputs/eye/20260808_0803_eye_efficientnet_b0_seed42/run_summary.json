@@ -1,0 +1,62 @@
+{
+  "run_id": "20260808_0803_eye_efficientnet_b0_seed42",
+  "run_schema_version": 4,
+  "experiment": "EfficientNet-B0 Eye ROI Transfer Learning Baseline",
+  "model": "torchvision EfficientNet-B0",
+  "pretrained_weights": "EfficientNet_B0_Weights.DEFAULT",
+  "input": "combined eye ROI",
+  "image_size": 224,
+  "seed": 42,
+  "device": "cpu",
+  "metadata_path": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output/metadata.csv",
+  "roi_root": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Göz/eye_roi_output",
+  "results_root": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar",
+  "run_dir": "Deney1_Source/AISC DeepFake Çalışmaları/Deneyler/Kader/Deney 1/Sonuçlar/20260808_0803_eye_efficientnet_b0_seed42",
+  "split_counts": {
+    "train": {
+      "fake": 1191,
+      "real": 1197
+    },
+    "val": {
+      "fake": 141,
+      "real": 155
+    },
+    "test": {
+      "fake": 156,
+      "real": 146
+    }
+  },
+  "validation_selected_threshold": 0.21999999999999997,
+  "validation_metrics": {
+    "threshold": 0.21999999999999997,
+    "accuracy": 0.597972972972973,
+    "balanced_accuracy": 0.6110043468313887,
+    "precision": 0.5482456140350878,
+    "recall": 0.8865248226950354,
+    "f1": 0.6775067750677507,
+    "specificity": 0.33548387096774196,
+    "roc_auc": 0.7129261038663921,
+    "average_precision": 0.7135297888692095,
+    "tn": 52,
+    "fp": 103,
+    "fn": 16,
+    "tp": 125
+  },
+  "final_test_metrics": {
+    "threshold": 0.21999999999999997,
+    "accuracy": 0.6357615894039735,
+    "balanced_accuracy": 0.6263610818405339,
+    "precision": 0.5966386554621849,
+    "recall": 0.9102564102564102,
+    "f1": 0.7208121827411168,
+    "specificity": 0.3424657534246575,
+    "roc_auc": 0.7286178433438707,
+    "average_precision": 0.7431642056672721,
+    "tn": 50,
+    "fp": 96,
+    "fn": 14,
+    "tp": 142
+  },
+  "inference_reload_test": "PASSED",
+  "output_file_count": 27
+}

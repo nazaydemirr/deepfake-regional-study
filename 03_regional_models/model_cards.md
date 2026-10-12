@@ -1,6 +1,6 @@
 # Model Cards
 
-| Model family | ROI kullanimi | Drive / literatur notu |
+| Model family | ROI kullanimi |  / literatur notu |
 | --- | --- | --- |
 | Xception | Goz, kas, agiz | FaceForensics++ ve Xception literaturu ile uyumlu bolgesel transfer learning omurgasi |
 | EfficientNet-B0 | Goz, kas, agiz | Corrected weighted fusion tekrarinda 4 aileden biri |
